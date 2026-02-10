@@ -226,4 +226,72 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Animate stat numbers on scroll
+   */
+  const animateStatNumbers = () => {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    if (statNumbers.length === 0) return;
+    
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+          const target = parseInt(entry.target.getAttribute('data-target'));
+          const duration = 2000; // 2 seconds
+          const startTime = Date.now();
+          
+          const updateCounter = () => {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const current = Math.floor(progress * target);
+            entry.target.textContent = current;
+            
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              entry.target.textContent = target;
+              entry.target.classList.add('animated');
+            }
+          };
+          
+          updateCounter();
+        }
+      });
+    }, observerOptions);
+    
+    statNumbers.forEach(stat => observer.observe(stat));
+  };
+
+  window.addEventListener('load', animateStatNumbers);
+
+  /**
+   * Smooth scroll animation for scroll indicator
+   */
+  const scrollIndicator = document.querySelector('.scroll-indicator');
+  if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+      const nextSection = document.querySelector('#hero').nextElementSibling;
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+    
+    // Hide scroll indicator on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        scrollIndicator.style.opacity = '0';
+        scrollIndicator.style.pointerEvents = 'none';
+      } else {
+        scrollIndicator.style.opacity = '1';
+        scrollIndicator.style.pointerEvents = 'auto';
+      }
+    });
+  }
+
 })();
