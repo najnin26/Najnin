@@ -558,6 +558,14 @@ section,
 .hero .social-links {
   margin-top: 25px;
 }
+.pubcard {
+  transition: all 0.3s ease;
+}
+
+.pubcard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
 
 .hero .social-links a {
   font-size: 20px;
