@@ -2181,6 +2181,78 @@ section,
     grid-template-columns: 1fr;
   }
 }
+/* Research Line Under Social Icons */
+.research-line {
+  margin-top: 30px;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
 
+.research-text {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+  position: relative;
+}
+
+.research-text::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--accent-color);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Research Buttons */
+.research-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.research-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  background: transparent;
+}
+
+.research-btn i {
+  font-size: 16px;
+}
+
+/* Hover Effects */
+.research-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(5, 99, 187, 0.25);
+}
+
+/* Scholar Style */
+.research-btn.scholar:hover {
+  background: linear-gradient(135deg, #4285F4, #0F9D58);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* ORCID Style */
+.research-btn.orcid:hover {
+  background: linear-gradient(135deg,  #4285F4, #0F9D58);
+  color: #fff;
+  border-color: transparent;
+}
 
 
