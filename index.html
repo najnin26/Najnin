@@ -91,46 +91,78 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
-
+     <section id="about" class="about section">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
       </div><!-- End Section Title -->
+      
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4 text-center">
-            <img src="assets/img/cut.png" class="img-fluid rounded-3 shadow-lg" style="max-width: 400px; border: 5px solid #45505b; border-radius: 18px;" alt="Profile">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Research Assistant @ ELITE Research Lab | Quantum Machine Learning &amp; Artificial Intelligence</h2>
-            <p class="fst-italic py-3">
-              I am a Computer Science graduate from Jagannath University and currently pursuing an MSc in Computer Science and Engineering at the same institution. I am working as a Research Assistant at the ELITE Research Lab, where my research focuses on quantum machine learning, machine learning, deep learning, natural language processing, computer vision, and artificial intelligence. My expertise spans Data Science, Computer Vision, and Python programming, with hands-on experience in both classical and quantum models, including CNNs, GNNs, Graph Signal Processing, QCNNs, and LLMs. I am passionate about bridging cutting-edge quantum approaches with real-world applications in healthcare and beyond, aiming to contribute impactful research at the intersection of AI and quantum technologies.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Programming Languages:</strong> <span>Python, C, C++</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Dhaka, Bangladesh</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>English, Bangla</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MSc in Computer Science (ongoing)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>b190305031@cse.jnu.ac.bd</span></li>
-                </ul>
-              </div>
+          <!-- Profile Image -->
+           <div class="col-lg-4 text-center">
+            <div class="profile-img-wrapper" style="overflow: hidden; border-radius: 18px;">
+              <img src="assets/img/cut.png" 
+               class="img-fluid rounded-3 shadow-lg" 
+               style="max-width: 400px; border: 5px solid #45505b; border-radius: 18px; transition: transform 0.3s ease;" 
+               alt="Profile">
             </div>
-            <p class="py-3">
-              I’m eager to collaborate on cutting-edge, research-driven projects in Quantum Machine Learning, Artificial Intelligence, Machine Learning, Deep Learning and Computer Vision, especially those with real-world impact.
-            </p>
+          </div>
+
+      <!-- Content -->
+      <div class="col-lg-8 content" data-aos="fade-left" data-aos-delay="200">
+        <h2>Research Assistant @ ELITE Research Lab | Quantum Machine Learning &amp; Artificial Intelligence</h2>
+
+        <p class="fst-italic py-3">
+          I am a Computer Science graduate from Jagannath University and currently pursuing an MSc in Computer Science and Engineering at the same institution. I am working as a Research Assistant at the ELITE Research Lab, where my research focuses on quantum machine learning, machine learning, deep learning, natural language processing, computer vision, and artificial intelligence. My expertise spans Data Science, Computer Vision, and Python programming, with hands-on experience in both classical and quantum models, including CNNs, GNNs, Graph Signal Processing, QCNNs, and LLMs. I am passionate about bridging cutting-edge quantum approaches with real-world applications in healthcare and beyond, aiming to contribute impactful research at the intersection of AI and quantum technologies.
+        </p>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="about-list">
+              <li><i class="bi bi-chevron-right interactive-icon"></i> <strong>Programming Languages:</strong> Python, C, C++</li>
+              <li><i class="bi bi-chevron-right interactive-icon"></i> <strong>Website:</strong> <a href="https://www.example.com" target="_blank">www.example.com</a></li>
+              <li><i class="bi bi-chevron-right interactive-icon"></i> <strong>City:</strong> Dhaka, Bangladesh</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul class="about-list">
+              <li><i class="bi bi-chevron-right interactive-icon"></i> <strong>Languages:</strong> English, Bangla</li>
+              <li><i class="bi bi-chevron-right interactive-icon"></i> <strong>Degree:</strong> MSc in Computer Science (ongoing)</li>
+              <li><i class="bi bi-chevron-right interactive-icon"></i> <strong>Email:</strong> <a href="mailto:b190305031@cse.jnu.ac.bd">b190305031@cse.jnu.ac.bd</a></li>
+            </ul>
           </div>
         </div>
-
+        <p class="py-3">
+          I’m eager to collaborate on cutting-edge, research-driven projects in Quantum Machine Learning, Artificial Intelligence, Machine Learning, Deep Learning and Computer Vision.
+        </p>
       </div>
-    </section><!-- /About Section -->
+    </div>
+  </div>
+</section><!-- /About Section -->
+
+<!-- Additional CSS -->
+<style>
+  /* Image Hover Zoom */
+  .profile-img-wrapper img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Interactive icons hover */
+  .interactive-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .interactive-icon:hover {
+    transform: translateX(5px);
+    color: #0d6efd;
+  }
+
+  /* Button hover */
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+</style>
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
@@ -297,6 +329,7 @@
       </div>
 
     </section><!-- /Research Section -->
+
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
