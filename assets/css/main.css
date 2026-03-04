@@ -2256,3 +2256,52 @@ section,
 }
 
 
+.resume-heading {
+  margin-bottom: 25px;
+  font-weight: 600;
+  border-left: 4px solid #0d6efd;
+  padding-left: 10px;
+}
+
+.resume-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  border-left: 3px solid #0d6efd;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+
+.resume-header h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.resume-header span {
+  font-size: 14px;
+  color: #777;
+}
+
+.resume-body {
+  display: none;
+  margin-top: 15px;
+}
+
+.resume-body.active {
+  display: block;
+}
+
+
