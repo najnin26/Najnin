@@ -167,92 +167,111 @@
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>A comprehensive overview of my academic qualifications, professional experience, and key accomplishments. I bring expertise in Quantum Machine Learning, AI, and Computer Vision, with a strong foundation in both theoretical research and practical implementation across cutting-edge technologies.</p>
-      </div><!-- End Section Title -->
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>
+      Academic background and professional research experience in Quantum
+      Machine Learning, Artificial Intelligence, and Computer Vision.
+    </p>
+  </div>
 
-      <div class="container">
+  <div class="container">
+    <div class="row">
 
-        <div class="row">
+      <!-- ================= EDUCATION ================= -->
+      <div class="col-lg-6" data-aos="fade-right">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <!-- <h3 class="resume-title">Sumary</h3>
+        <h3 class="resume-heading">Education</h3>
 
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div> -->
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Science &longrightarrow; Computer Science and Engineering</h4>
-              <h5>2025 - Present</h5>
-              <p><em>Jagannath University, Dhaka</em></p>
-              <p>Currently enrolled in the 1st semester of the MSc program in Computer Science and Engineering.</p>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Science &longrightarrow; Computer Science and Engineering</h4>
-              <h5>2020 - 2025</h5>
-              <p><em>Jagannath University, Dhaka</em></p>
-              <p>Graduated with First-Class Honors, CGPA: 3.81</p>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Higher Secondary Certificate (HSC) &longrightarrow; Science</h4>
-              <h5>2019</h5>
-              <p><em>Dhaka City College, Dhaka</em></p>
-              <p>Achieved GPA: 5.00</p>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Secondary School Certificate (SSC) &longrightarrow; Science</h4>
-              <h5>2017</h5>
-              <p><em>Birshrestha Munshi Abdur Rouf Public College, Dhaka</em></p>
-              <p>Achieved GPA: 5.00</p>
-            </div><!-- End Resume Item -->
-
+        <div class="resume-card">
+          <div class="resume-header" onclick="toggleDetails(this)">
+            <h4>MSc in Computer Science & Engineering</h4>
+            <span>2025 – Present</span>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-
-            <div class="resume-item">
-              <h4>Research Assistant (Part-time, Remote)</h4>
-              <h5>01/11/2025 – Present</h5>
-              <p><em>ELITE Research Lab, New York, USA</em></p>
-              <ul>
-                <li>Conducting research in quantum machine learning, deep learning, NLP, and artificial intelligence.</li>
-                <li>Collaborating with senior researchers to benchmark classical and quantum models.</li>
-                <li>Developing and refining experiments with CNNs, GNNs, QCNNs, and LLMs for real-world applications.</li>
-                <li>Supporting publication-ready writing and technical documentation for ongoing projects.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Research Intern (Part-time, Remote)</h4>
-              <h5>01/09/2025 – 31/10/2025</h5>
-              <p><em>ELITE Research Lab, New York, USA</em></p>
-              <ul>
-                <li>Assisted in exploratory projects on quantum approaches to machine learning.</li>
-                <li>Performed literature reviews and comparative analysis of emerging AI techniques.</li>
-                <li>Implemented prototype models in Python for benchmarking classical vs. quantum performance.</li>
-                <li>Contributed to collaborative discussions on applying AI in healthcare and other domains.</li>
-              </ul>
-            </div><!-- End Resume Item -->
+          <div class="resume-body">
+            <p><strong>Jagannath University, Dhaka</strong></p>
+            <p>Currently enrolled in MSc (1st semester). Focused on Quantum AI research.</p>
           </div>
+        </div>
 
+        <div class="resume-card">
+          <div class="resume-header" onclick="toggleDetails(this)">
+            <h4>BSc in Computer Science & Engineering</h4>
+            <span>2020 – 2025</span>
+          </div>
+          <div class="resume-body">
+            <p><strong>Jagannath University, Dhaka</strong></p>
+            <p>Graduated with First-Class Honors. CGPA: 3.81</p>
+          </div>
+        </div>
+
+        <div class="resume-card">
+          <div class="resume-header" onclick="toggleDetails(this)">
+            <h4>HSC (Science)</h4>
+            <span>2019</span>
+          </div>
+          <div class="resume-body">
+            <p><strong>Dhaka City College, Dhaka</strong></p>
+            <p>GPA: 5.00</p>
+          </div>
+        </div>
+
+        <div class="resume-card">
+          <div class="resume-header" onclick="toggleDetails(this)">
+            <h4>SSC (Science)</h4>
+            <span>2017</span>
+          </div>
+          <div class="resume-body">
+            <p><strong>Birshrestha Munshi Abdur Rouf Public College, Dhaka</strong></p>
+            <p>GPA: 5.00</p>
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Resume Section -->
+      <!-- ================= EXPERIENCE ================= -->
+      <div class="col-lg-6" data-aos="fade-left">
+
+        <h3 class="resume-heading">Professional Experience</h3>
+
+        <div class="resume-card">
+          <div class="resume-header" onclick="toggleDetails(this)">
+            <h4>Research Assistant (Remote)</h4>
+            <span>Nov 2025 – Present</span>
+          </div>
+          <div class="resume-body">
+            <p><strong>ELITE Research Lab, New York, USA</strong></p>
+            <ul>
+              <li>Research in Quantum Machine Learning and NLP.</li>
+              <li>Benchmarking classical vs quantum models.</li>
+              <li>Experimentation with CNNs, GNNs, QCNNs, LLMs.</li>
+              <li>Technical writing for journal publications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-card">
+          <div class="resume-header" onclick="toggleDetails(this)">
+            <h4>Research Intern (Remote)</h4>
+            <span>Sep 2025 – Oct 2025</span>
+          </div>
+          <div class="resume-body">
+            <p><strong>ELITE Research Lab, New York, USA</strong></p>
+            <ul>
+              <li>Exploratory research in quantum ML.</li>
+              <li>Comparative AI performance analysis.</li>
+              <li>Prototype implementation in Python.</li>
+              <li>AI applications in healthcare.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
     <!-- Research Section -->
     <section id="research" class="card">
@@ -884,3 +903,9 @@
 </body>
 
 </html>
+<script>
+  function toggleDetails(header) {
+    const body = header.nextElementSibling;
+    body.classList.toggle("active");
+  }
+</script>
