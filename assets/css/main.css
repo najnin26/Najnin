@@ -2259,8 +2259,9 @@ section,
 .resume-heading {
   margin-bottom: 25px;
   font-weight: 600;
-  border-left: 4px solid #0d6efd;
+  border-left: 4px solid #0563bb;
   padding-left: 10px;
+  color: #0563bb;
 }
 
 .resume-card {
@@ -2270,7 +2271,7 @@ section,
   margin-bottom: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease;
-  border-left: 3px solid #0d6efd;
+  border-left: 3px solid #0563bb;
 }
 
 .resume-card:hover {
@@ -2303,5 +2304,3 @@ section,
 .resume-body.active {
   display: block;
 }
-
-
