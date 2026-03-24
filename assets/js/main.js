@@ -271,6 +271,41 @@
   window.addEventListener('load', animateStatNumbers);
 
   /**
+   * Resume card expand/collapse
+   */
+  window.toggleDetails = function(header) {
+    const card = header.parentElement;
+    card.classList.toggle('open');
+  };
+
+  /**
+   * Animate skills bars on scroll
+   */
+  function initSkillBars() {
+    const bars = document.querySelectorAll('#skills .progress-bar');
+    bars.forEach(bar => {
+      const target = bar.getAttribute('aria-valuenow');
+      bar.style.setProperty('--value', target + '%');
+    });
+
+    const skillsSection = document.querySelector('#skills');
+    if (!skillsSection) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          bars.forEach(bar => bar.classList.add('active'));
+          observer.unobserve(skillsSection);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    observer.observe(skillsSection);
+  }
+
+  window.addEventListener('load', initSkillBars);
+
+  /**
    * Smooth scroll animation for scroll indicator
    */
   const scrollIndicator = document.querySelector('.scroll-indicator');
