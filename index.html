@@ -469,8 +469,8 @@ section:nth-child(even){background:var(--ink2)}
 .ps-pub{background:rgba(45,212,191,.1);color:var(--teal);border:1px solid rgba(45,212,191,.28);box-shadow:0 0 12px rgba(45,212,191,.1);}
 .ps-rev{background:rgba(56,200,232,.08);color:var(--cyan);border:1px solid rgba(56,200,232,.22);}
 .ps-acc{background:rgba(200,168,75,.1);color:var(--gold);border:1px solid rgba(200,168,75,.3);}
-.pnum{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:rgba(255,255,255,.05);line-height:1;margin-top:.3rem;text-align:right;letter-spacing:-.02em;}
-[data-theme="light"] .pnum{color:rgba(0,0,0,.05)}
+.pnum{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:rgba(255,255,255,.2);line-height:1;margin-top:.3rem;text-align:right;letter-spacing:-.02em;}
+[data-theme="light"] .pnum{color:rgba(0,0,0,.2)}
 
 /* ================================================================
    CV
@@ -1073,7 +1073,7 @@ footer{
         <div class="ptitle">Quantum Computing in Medical Diagnostics and Treatment: A Systematic Review of Trends, Challenges and Future Directions</div>
         <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Mehedi Hasan, Md Kishor Morol, Nafiz Fahad, Md Tanzib Hossain, Md Jakir Hossen, Dip Nandi</div>
         <div class="pabstract" id="a1">This systematic review comprehensively surveys the intersection of quantum computing and medical diagnostics, covering quantum algorithms for imaging analysis, drug discovery, genomic data processing, and treatment optimization. Key trends include variational quantum eigensolvers, quantum kernel methods for disease classification, and hybrid quantum-classical pipelines for clinical decision support.</div>
-        <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank" class="plink live">↗ Full Paper</a><button class="plink" onclick="toggleAbs('a1',this)">Abstract ▾</button></div>
+        <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank" class="plink live">↗ Full Paper</a><a href="https://github.com/najnin26/quantum-medicine-review" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a1',this)">Abstract ▾</button></div>
       </div><div style="text-align:right"><div class="pstatus ps-pub">● Published</div><div class="pnum">01</div></div></div>
     </article>
     <article class="pub-entry rev" data-pt="conf" data-ps="acc" style="transition-delay:.07s">
@@ -1082,7 +1082,7 @@ footer{
         <div class="ptitle">ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification</div>
         <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Shabikun Nahar</div>
         <div class="pabstract" id="a2">We introduce ACAM-MobileNetV2, integrating channel-wise and spatial attention modules with a supervised contrastive loss into MobileNetV2 for multi-class viral skin lesion classification. ACAM-MobileNetV2 outperforms vanilla MobileNetV2 and attention-augmented baselines in macro-F1 and per-class accuracy.</div>
-        <div class="plinks"><button class="plink" onclick="toggleAbs('a2',this)">Abstract ▾</button></div>
+        <div class="plinks"><a href="#" onclick="openCertModal(4)" class="plink">↗ Acceptance Certificate</a><a href="https://github.com/najnin26/ACAM-MobileNetV2" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a2',this)">Abstract ▾</button></div>
       </div><div style="text-align:right"><div class="pstatus ps-acc">◆ Accepted</div><div class="pnum">02</div></div></div>
     </article>
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.14s">
@@ -1091,7 +1091,7 @@ footer{
         <div class="ptitle">Q-EmotionNet: A Quantum Convolutional Neural Network for Facial Emotion Recognition via Variational Quantum Circuits</div>
         <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Kishor Morol, Tze Hui Liew, Dip Nandi</div>
         <div class="pabstract" id="a3">We propose Q-EmotionNet, a quantum convolutional neural network that encodes facial feature maps into parameterized quantum states and processes them through variational quantum circuits. The model achieves competitive emotion classification accuracy with favorable parameter efficiency compared to classical CNNs.</div>
-        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><button class="plink" onclick="toggleAbs('a3',this)">Abstract ▾</button></div>
+        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/Q-EmotionNet" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a3',this)">Abstract ▾</button></div>
       </div><div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">03</div></div></div>
     </article>
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.21s">
@@ -1100,7 +1100,7 @@ footer{
         <div class="ptitle">Hybrid Quantum–Classical Transfer Learning Using Vision Transformer Features for Breast Cancer Histopathology</div>
         <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Kishor Morol, Tze Hui Liew, Dip Nandi</div>
         <div class="pabstract" id="a4">A hybrid quantum-classical transfer learning framework for breast cancer histopathology classification. Visual features extracted via a pre-trained Vision Transformer (ViT) are encoded into quantum states and classified through variational quantum circuits. Benchmarked on the BreakHis dataset across multiple magnification levels.</div>
-        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><button class="plink" onclick="toggleAbs('a4',this)">Abstract ▾</button></div>
+        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/quantum-vit-breast-cancer" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a4',this)">Abstract ▾</button></div>
       </div><div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">04</div></div></div>
     </article>
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.28s">
@@ -1109,7 +1109,7 @@ footer{
         <div class="ptitle">QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping</div>
         <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md. Aminul Islam, Maria Akter Abin, Mahmoud Abouyoussef</div>
         <div class="pabstract" id="a5">QBERT-LSTM is a novel quantum-classical hybrid for real-time mental health detection from social media text. Combining quantum-enhanced BERT representations with a classical LSTM model, results demonstrate improvements in precision and recall over classical baselines, particularly for minority-class detection.</div>
-        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><button class="plink" onclick="toggleAbs('a5',this)">Abstract ▾</button></div>
+        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/QBERT-LSTM" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a5',this)">Abstract ▾</button></div>
       </div><div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">05</div></div></div>
     </article>
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.35s">
@@ -1118,7 +1118,7 @@ footer{
         <div class="ptitle">SPARK — Signal Processing with Adaptive Reconstruction via Knowledge-aware GNNs</div>
         <div class="pauthors">Fahim Hasan, <span class="me">Najnin Sultana Shirin</span>, Sajeeb Saha, Selina Sharmin, Tanvir Ahammed</div>
         <div class="pabstract" id="a6">SPARK is a novel framework for signal processing with adaptive reconstruction using knowledge-aware Graph Neural Networks. The approach leverages domain-specific knowledge to enhance learning of graph structures from raw signal data, showing significant improvements in reconstruction accuracy and computational efficiency.</div>
-        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><button class="plink" onclick="toggleAbs('a6',this)">Abstract ▾</button></div>
+        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/SPARK-GNN" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a6',this)">Abstract ▾</button></div>
       </div><div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">06</div></div></div>
     </article>
   </div>
@@ -1342,6 +1342,12 @@ const CERTS = [
     issuer:  'Sololearn · Jan 2024',
     desc:    'Certification covering Python data structures — lists, dictionaries, tuples, sets — and algorithmic complexity.',
     image:   'assets/img/4859601a-f05c-450e-9311-3f292831f56a.png', // ← paste your image URL here
+  },
+  {
+    name:    'Paper Acceptance - MECON 2026',
+    issuer:  'MECON Conference',
+    desc:    'Acceptance certificate for the paper "ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification"',
+    image:   'assets/img/mecon-acceptance.jpg', // ← paste your image URL here
   },
 ];
 
