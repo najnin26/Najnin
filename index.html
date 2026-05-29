@@ -17,10 +17,10 @@
   --ink3:        #0f1122;
   --ink4:        #161929;
   --ink5:        #1d2136;
-  --paper:       #d8daea;
-  --paper2:      #adb3ce;
-  --paper3:      #5c6485;
-  --paper4:      #363d5e;
+  --paper:       #ffffff;
+  --paper2:      #d4d8f0;
+  --paper3:      #8b93b8;
+  --paper4:      #555e82;
   --gold:        #c8a84b;
   --gold2:       #e8cc7a;
   --gold3:       rgba(200,168,75,.12);
@@ -465,12 +465,14 @@ section:nth-child(even){background:var(--ink2)}
 .plink{font-family:'Space Mono',monospace;font-size:.57rem;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .6rem;border-radius:var(--r-xs);border:1px solid var(--border);color:var(--paper3);background:var(--ink3);cursor:pointer;transition:all .2s;}
 .plink:hover{border-color:var(--gold);color:var(--gold);opacity:1}
 .plink.live{color:var(--gold);border-color:var(--border2)}
+.plink.plink-acc{color:var(--teal);border-color:rgba(45,212,191,.3);background:rgba(45,212,191,.07);}
+.plink.plink-acc:hover{border-color:var(--teal);background:rgba(45,212,191,.15);color:var(--teal)}
 .pstatus{display:inline-flex;align-items:center;gap:.32rem;font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;padding:.28rem .62rem;border-radius:50px;white-space:nowrap;}
 .ps-pub{background:rgba(45,212,191,.1);color:var(--teal);border:1px solid rgba(45,212,191,.28);box-shadow:0 0 12px rgba(45,212,191,.1);}
 .ps-rev{background:rgba(56,200,232,.08);color:var(--cyan);border:1px solid rgba(56,200,232,.22);}
 .ps-acc{background:rgba(200,168,75,.1);color:var(--gold);border:1px solid rgba(200,168,75,.3);}
-.pnum{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:rgba(255,255,255,.2);line-height:1;margin-top:.3rem;text-align:right;letter-spacing:-.02em;}
-[data-theme="light"] .pnum{color:rgba(0,0,0,.2)}
+.pnum{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:rgba(255,255,255,.05);line-height:1;margin-top:.3rem;text-align:right;letter-spacing:-.02em;}
+[data-theme="light"] .pnum{color:rgba(0,0,0,.05)}
 
 /* ================================================================
    CV
@@ -1082,7 +1084,7 @@ footer{
         <div class="ptitle">ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification</div>
         <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Shabikun Nahar</div>
         <div class="pabstract" id="a2">We introduce ACAM-MobileNetV2, integrating channel-wise and spatial attention modules with a supervised contrastive loss into MobileNetV2 for multi-class viral skin lesion classification. ACAM-MobileNetV2 outperforms vanilla MobileNetV2 and attention-augmented baselines in macro-F1 and per-class accuracy.</div>
-        <div class="plinks"><a href="#" onclick="openCertModal(4)" class="plink">↗ Acceptance Certificate</a><a href="https://github.com/najnin26/ACAM-MobileNetV2" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a2',this)">Abstract ▾</button></div>
+        <div class="plinks"><button class="plink plink-acc" onclick="event.preventDefault();openCertModal(4)">🎓 Acceptance Cert</button><a href="https://github.com/najnin26/ACAM-MobileNetV2" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a2',this)">Abstract ▾</button></div>
       </div><div style="text-align:right"><div class="pstatus ps-acc">◆ Accepted</div><div class="pnum">02</div></div></div>
     </article>
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.14s">
@@ -1133,7 +1135,7 @@ footer{
     <div class="rev-l">
       <div class="cv-hd">Education</div>
       <div class="tl">
-        <div class="tlr"><div class="tldot"></div><div><div class="tlyr">2026 – Present</div><div class="tltitle">M.Sc. in Computer Science &amp; Engineering</div><div class="tlorg">Jagannath University, Dhaka</div><div class="tlbody">Quantum AI, variational circuits, and intelligent healthcare diagnostics.</div><span class="tlchip">Ongoing</span></div></div>
+        <div class="tlr"><div class="tldot"></div><div><div class="tlyr">2026 – Present</div><div class="tltitle">M.Sc. in Computer Science &amp; Engineering</div><div class="tlorg">Jagannath University, Dhaka</div><div class="tlbody">Quantum AI, variational circuits, and intelligent healthcare diagnostics. Supervised by Dr. Md. Aminul Islam.</div><span class="tlchip">Ongoing</span></div></div>
         <div class="tlr"><div class="tldot"></div><div><div class="tlyr">2020 – 2025</div><div class="tltitle">B.Sc. in Computer Science &amp; Engineering</div><div class="tlorg">Jagannath University, Dhaka</div><div class="tlbody">First Class Honours. CGPA <strong>3.81 / 4.00</strong>. Thesis: QBERT-LSTM.</div><span class="tlchip">First Class · CGPA 3.81</span></div></div>
         <div class="tlr"><div class="tldot"></div><div><div class="tlyr">2019</div><div class="tltitle">HSC — Science</div><div class="tlorg">Dhaka City College, Dhaka</div><div class="tlbody">GPA <strong>5.00 / 5.00</strong></div><span class="tlchip">Perfect GPA</span></div></div>
         <div class="tlr"><div class="tldot"></div><div><div class="tlyr">2017</div><div class="tltitle">SSC — Science</div><div class="tlorg">Birshrestha Munshi Abdur Rouf Public College</div><div class="tlbody">GPA <strong>5.00 / 5.00</strong></div><span class="tlchip">Perfect GPA</span></div></div>
@@ -1222,7 +1224,7 @@ footer{
       <div class="cert-ico" style="font-family:'Space Mono',monospace;font-size:.9rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
       <div>
         <div class="cert-issuer">IBM · CognitiveClass.ai</div>
-        <div class="cert-name">Data Science Tools</div>
+        <div class="cert-name">Data Science Tools (DS0105EN)</div>
         <div class="cert-desc">Comprehensive coverage of data science toolkits — Jupyter, RStudio, GitHub, and Watson Studio through IBM's Developer Skills Network.</div>
       </div>
     </div>
@@ -1318,36 +1320,36 @@ footer{
      or a hosted URL:
        image: 'https://example.com/cert.png'
 ================================================================ */
-const CERTS = [ 
+const CERTS = [
   {
     name:    'Quantum Computing Bootcamp',
     issuer:  'Quantum School Bangladesh',
     desc:    'Quantum Information, Computation, Cryptography, Secure Communication, Error & Noise Models, Mathematical Foundations, and hands-on lab sessions.',
-    image:   'assets/img/Najnin Sultana Shirin_page-0001.jpg', // ← paste your image URL here
+    image:   '', // ← paste your image URL here
   },
   {
     name:    'Data Science Tools (DS0105EN)',
     issuer:  'IBM · CognitiveClass.ai',
     desc:    'Comprehensive coverage of data science toolkits — Jupyter, RStudio, GitHub, and Watson Studio through IBM\'s Developer Skills Network.',
-    image:   'assets/img/IBM DS0105EN Certificate _ Cognitive Class_page-0001.jpg', // ← paste your image URL here
+    image:   '', // ← paste your image URL here
   },
   {
     name:    'Data Analysis with Python (DA0101EN)',
     issuer:  'IBM · CognitiveClass.ai',
     desc:    'Hands-on data analysis covering wrangling, exploratory analysis, model development, and evaluation using real-world datasets.',
-    image:   'assets/img/IBM DA0101EN Certificate _ Cognitive Class_page-0001.jpg', // ← paste your image URL here
+    image:   '', // ← paste your image URL here
   },
   {
     name:    'Python Data Structures',
     issuer:  'Sololearn · Jan 2024',
     desc:    'Certification covering Python data structures — lists, dictionaries, tuples, sets — and algorithmic complexity.',
-    image:   'assets/img/4859601a-f05c-450e-9311-3f292831f56a.png', // ← paste your image URL here
+    image:   '', // ← paste your image URL here
   },
   {
-    name:    'Paper Acceptance - MECON 2026',
-    issuer:  'MECON Conference',
-    desc:    'Acceptance certificate for the paper "ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification"',
-    image:   'assets/img/Cert_Author 80.JPG', // ← paste your image URL here
+    name:    'Paper Acceptance — MECON 2026',
+    issuer:  'MECON Conference · Malaysia',
+    desc:    'Official acceptance certificate for "ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification".',
+    image:   'assets/img/Cert_Author 80.JPG', // ← paste your acceptance image path here
   },
 ];
 
