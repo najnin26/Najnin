@@ -6,68 +6,72 @@
 <title>Najnin Sultana Shirin — Quantum AI Researcher</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 /* ================================================================
-   TOKENS
+   DESIGN TOKENS — Refined dark academic palette
 ================================================================ */
 :root {
-  --ink:         #05060e;
-  --ink2:        #090b18;
-  --ink3:        #0f1122;
-  --ink4:        #161929;
-  --ink5:        #1d2136;
-  --paper:       #ffffff;
-  --paper2:      #d4d8f0;
-  --paper3:      #8b93b8;
-  --paper4:      #555e82;
-  --gold:        #c8a84b;
-  --gold2:       #e8cc7a;
-  --gold3:       rgba(200,168,75,.12);
-  --cyan:        #38c8e8;
-  --violet:      #8b5cf6;
-  --rose:        #e2607a;
-  --teal:        #2dd4bf;
-  --border:      rgba(200,168,75,.1);
-  --border2:     rgba(200,168,75,.25);
-  --glass:       rgba(255,255,255,.028);
-  --glass2:      rgba(255,255,255,.055);
-  --glow-g:      0 0 60px rgba(200,168,75,.12);
-  --glow-c:      0 0 60px rgba(56,200,232,.09);
-  --shadow:      0 20px 60px rgba(0,0,0,.8);
-  --shadow-sm:   0 6px 24px rgba(0,0,0,.5);
-  --nav-w:       280px;
+  --ink:         #06070f;
+  --ink2:        #0b0d1c;
+  --ink3:        #111428;
+  --ink4:        #181c35;
+  --ink5:        #1f2440;
+  --paper:       #f0effc;
+  --paper2:      #bec3e8;
+  --paper3:      #7880b0;
+  --paper4:      #434a72;
+  --gold:        #d4a843;
+  --gold2:       #f0cc70;
+  --gold3:       rgba(212,168,67,.1);
+  --gold4:       rgba(212,168,67,.05);
+  --cyan:        #4fcde8;
+  --violet:      #a78bfa;
+  --rose:        #f472b6;
+  --teal:        #34d399;
+  --amber:       #fbbf24;
+  --border:      rgba(212,168,67,.09);
+  --border2:     rgba(212,168,67,.22);
+  --glass:       rgba(255,255,255,.025);
+  --glass2:      rgba(255,255,255,.05);
+  --glow-g:      0 0 60px rgba(212,168,67,.1);
+  --glow-c:      0 0 60px rgba(79,205,232,.08);
+  --shadow:      0 24px 64px rgba(0,0,0,.85);
+  --shadow-sm:   0 8px 28px rgba(0,0,0,.6);
+  --nav-w:       270px;
   --ease:        cubic-bezier(.4,0,.2,1);
   --spring:      cubic-bezier(.34,1.56,.64,1);
-  --r:           14px;
-  --r-sm:        8px;
-  --r-xs:        4px;
+  --r:           16px;
+  --r-sm:        9px;
+  --r-xs:        5px;
 }
 [data-theme="light"] {
-  --ink:         #f5f4ef;
-  --ink2:        #eeece5;
-  --ink3:        #e5e2d8;
-  --ink4:        #d9d5c8;
-  --ink5:        #ccc7b8;
-  --paper:       #1a1830;
-  --paper2:      #3d3a5e;
-  --paper3:      #6b6890;
-  --paper4:      #9896b4;
-  --gold:        #8a6010;
-  --gold2:       #6a480a;
-  --gold3:       rgba(138,96,16,.1);
-  --cyan:        #0e7490;
-  --violet:      #5b21b6;
-  --rose:        #be185d;
-  --teal:        #0d9488;
-  --border:      rgba(138,96,16,.14);
-  --border2:     rgba(138,96,16,.3);
-  --glass:       rgba(255,255,255,.6);
-  --glass2:      rgba(255,255,255,.85);
-  --glow-g:      0 0 40px rgba(138,96,16,.07);
-  --glow-c:      0 0 40px rgba(14,116,144,.06);
-  --shadow:      0 20px 60px rgba(0,0,0,.15);
-  --shadow-sm:   0 6px 24px rgba(0,0,0,.1);
+  --ink:         #f4f3ee;
+  --ink2:        #ece9e0;
+  --ink3:        #e2ddd2;
+  --ink4:        #d6d0c4;
+  --ink5:        #c8c1b4;
+  --paper:       #1a1730;
+  --paper2:      #3b3860;
+  --paper3:      #6e6a9a;
+  --paper4:      #9e9bbf;
+  --gold:        #9a6c0e;
+  --gold2:       #7a5208;
+  --gold3:       rgba(154,108,14,.1);
+  --gold4:       rgba(154,108,14,.05);
+  --cyan:        #0e87a0;
+  --violet:      #6d28d9;
+  --rose:        #db2777;
+  --teal:        #059669;
+  --amber:       #d97706;
+  --border:      rgba(154,108,14,.13);
+  --border2:     rgba(154,108,14,.28);
+  --glass:       rgba(255,255,255,.55);
+  --glass2:      rgba(255,255,255,.8);
+  --glow-g:      0 0 40px rgba(154,108,14,.07);
+  --glow-c:      0 0 40px rgba(14,135,160,.06);
+  --shadow:      0 24px 64px rgba(0,0,0,.14);
+  --shadow-sm:   0 8px 28px rgba(0,0,0,.1);
 }
 
 /* ================================================================
@@ -76,7 +80,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:'Syne',system-ui,sans-serif;
+  font-family:'Outfit',system-ui,sans-serif;
   background:var(--ink);color:var(--paper);
   line-height:1.7;font-size:16px;
   transition:background .45s var(--ease),color .45s var(--ease);
@@ -86,10 +90,10 @@ a{color:var(--gold);text-decoration:none;transition:color .2s,opacity .2s}
 a:hover{color:var(--gold2);opacity:1}
 img{max-width:100%;display:block}
 ul{list-style:none}
-h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.15}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
 ::-webkit-scrollbar{width:3px}
 ::-webkit-scrollbar-track{background:transparent}
-::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px;opacity:.4}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
 ::selection{background:var(--gold);color:var(--ink)}
 
 /* ================================================================
@@ -98,29 +102,28 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.15}
 #progress-bar{
   position:fixed;top:0;left:0;z-index:9999;
   height:2px;width:0%;
-  background:linear-gradient(90deg,var(--gold),var(--cyan),var(--gold));
-  background-size:200%;
+  background:linear-gradient(90deg,var(--gold),var(--cyan),var(--violet),var(--gold));
+  background-size:300%;
   transition:width .1s linear;
-  animation:shimmer 3s linear infinite;
+  animation:shimmer 4s linear infinite;
 }
-@keyframes shimmer{to{background-position:200% center}}
+@keyframes shimmer{to{background-position:300% center}}
 
 /* ================================================================
    THEME TOGGLE
 ================================================================ */
 #theme-btn{
   position:fixed;top:1.1rem;right:1.3rem;z-index:3000;
-  display:flex;align-items:center;gap:.5rem;
+  display:flex;align-items:center;gap:.45rem;
   background:var(--ink3);border:1px solid var(--border2);
-  border-radius:50px;padding:.3rem .8rem;
-  cursor:pointer;
-  font-family:'Space Mono',monospace;
-  font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;
+  border-radius:50px;padding:.32rem .85rem;
+  cursor:pointer;font-family:'DM Mono',monospace;
+  font-size:.53rem;letter-spacing:.15em;text-transform:uppercase;
   color:var(--paper3);transition:all .3s;white-space:nowrap;
 }
 #theme-btn:hover{border-color:var(--gold);color:var(--gold);box-shadow:var(--glow-g)}
 .tdot{
-  width:6px;height:6px;border-radius:50%;
+  width:5px;height:5px;border-radius:50%;
   background:var(--gold);flex-shrink:0;
   box-shadow:0 0 6px var(--gold);
 }
@@ -134,7 +137,7 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.15}
   justify-content:center;gap:5px;transition:border-color .2s;
 }
 #nav-toggle:hover{border-color:var(--gold)}
-#nav-toggle span{display:block;width:17px;height:1.5px;background:var(--paper);border-radius:1px;transition:all .3s}
+#nav-toggle span{display:block;width:16px;height:1.5px;background:var(--paper);border-radius:1px;transition:all .3s}
 
 /* ================================================================
    SIDEBAR
@@ -148,52 +151,49 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.15}
   overflow-y:auto;overflow-x:hidden;
 }
 
-/* avatar */
 .sb-avatar{
-  width:64px;height:64px;border-radius:50%;
+  width:60px;height:60px;border-radius:50%;
   background:linear-gradient(135deg,var(--ink4),var(--ink5));
   border:2px solid var(--border2);
   display:flex;align-items:center;justify-content:center;
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.4rem;font-weight:600;color:var(--gold);
-  letter-spacing:.03em;
-  position:relative;margin-bottom:1rem;
-  box-shadow:0 0 0 4px var(--ink2), 0 0 0 5px var(--border);
+  font-family:'Playfair Display',serif;
+  font-size:1.2rem;font-weight:700;color:var(--gold);
+  position:relative;margin-bottom:.9rem;
+  box-shadow:0 0 0 4px var(--ink2),0 0 0 5px var(--border);
   flex-shrink:0;
 }
 .sb-avatar::before{
   content:'';position:absolute;inset:-5px;border-radius:50%;
   border:1px solid transparent;
-  background:linear-gradient(135deg,var(--gold),transparent,var(--cyan)) border-box;
+  background:linear-gradient(135deg,var(--gold),transparent 50%,var(--cyan)) border-box;
   -webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
   -webkit-mask-composite:destination-out;mask-composite:exclude;
-  animation:spin-ring 8s linear infinite;
+  animation:spin-ring 10s linear infinite;
 }
 @keyframes spin-ring{to{transform:rotate(360deg)}}
 
 .sb-identity{
-  padding:2rem 1.7rem 1.5rem;
+  padding:2rem 1.6rem 1.5rem;
   border-bottom:1px solid var(--border);
 }
 .sb-name{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.05rem;font-weight:600;color:var(--paper);
-  line-height:1.3;margin-bottom:.25rem;
+  font-family:'Playfair Display',serif;
+  font-size:1rem;font-weight:700;color:var(--paper);
+  line-height:1.3;margin-bottom:.22rem;
 }
 .sb-role{
-  font-family:'Space Mono',monospace;
-  font-size:.53rem;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--gold);line-height:1.8;margin-bottom:.55rem;
+  font-family:'DM Mono',monospace;
+  font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold);line-height:1.9;margin-bottom:.5rem;
 }
-.sb-affil{font-family:'Syne',sans-serif;font-size:.7rem;color:var(--paper3);line-height:1.65;font-style:italic}
+.sb-affil{font-family:'Outfit',sans-serif;font-size:.7rem;color:var(--paper3);line-height:1.7;font-style:italic}
 
-/* nav */
 .sb-nav{padding:.5rem 0;flex:1}
 .sb-nav a{
-  display:flex;align-items:center;gap:.65rem;
-  padding:.5rem 1.7rem;
-  font-family:'Space Mono',monospace;
-  font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;
+  display:flex;align-items:center;gap:.6rem;
+  padding:.48rem 1.6rem;
+  font-family:'DM Mono',monospace;
+  font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;
   color:var(--paper3);transition:all .22s;position:relative;overflow:hidden;
 }
 .sb-nav a::before{
@@ -206,123 +206,36 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.15}
   background:linear-gradient(90deg,var(--gold3),transparent);
   opacity:0;transition:opacity .22s;
 }
-.sb-nav a:hover,
-.sb-nav a.active{color:var(--gold);opacity:1}
-.sb-nav a:hover::before,
-.sb-nav a.active::before{height:60%}
-.sb-nav a:hover::after,
-.sb-nav a.active::after{opacity:1}
-.nnum{
-  font-size:.5rem;color:var(--paper4);
-  min-width:20px;font-family:'Space Mono',monospace;
-  position:relative;z-index:1;
-}
+.sb-nav a:hover,.sb-nav a.active{color:var(--gold);opacity:1}
+.sb-nav a:hover::before,.sb-nav a.active::before{height:60%}
+.sb-nav a:hover::after,.sb-nav a.active::after{opacity:1}
+.nnum{font-size:.48rem;color:var(--paper4);min-width:18px;font-family:'DM Mono',monospace;position:relative;z-index:1;}
 .sb-nav a span:not(.nnum){position:relative;z-index:1}
 
-/* academic icons */
-.sb-acad{padding:1rem 1.7rem 2.5rem;border-top:1px solid var(--border)}
-.sb-acad-lbl{
-  font-family:'Space Mono',monospace;font-size:.5rem;
-  letter-spacing:.18em;text-transform:uppercase;
-  color:var(--paper4);margin-bottom:.7rem;
-}
-.sb-acad-icons{display:flex;flex-wrap:wrap;gap:.45rem}
+.sb-acad{padding:1rem 1.6rem 2.5rem;border-top:1px solid var(--border)}
+.sb-acad-lbl{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;color:var(--paper4);margin-bottom:.65rem;}
+.sb-acad-icons{display:flex;flex-wrap:wrap;gap:.4rem}
 .sb-ico-btn{
-  width:38px;height:38px;border-radius:var(--r-sm);
+  width:36px;height:36px;border-radius:var(--r-sm);
   background:var(--glass);border:1px solid var(--border);
   display:flex;align-items:center;justify-content:center;
   color:var(--paper3);transition:all .25s var(--ease);
   flex-shrink:0;position:relative;
 }
-.sb-ico-btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:all .25s}
-.sb-ico-btn:hover{
-  border-color:var(--gold);color:var(--gold);
-  background:var(--gold3);opacity:1;
-  transform:translateY(-2px);
-  box-shadow:0 4px 14px rgba(200,168,75,.18);
-}
-/* tooltip */
+.sb-ico-btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:all .25s}
+.sb-ico-btn:hover{border-color:var(--gold);color:var(--gold);background:var(--gold3);opacity:1;transform:translateY(-2px);box-shadow:0 4px 14px rgba(212,168,67,.18);}
 .sb-ico-btn::after{
-  content:attr(title);
-  position:absolute;bottom:calc(100% + 7px);left:50%;
+  content:attr(title);position:absolute;bottom:calc(100% + 7px);left:50%;
   transform:translateX(-50%) scale(.9);
-  font-family:'Space Mono',monospace;font-size:.48rem;
-  letter-spacing:.1em;text-transform:uppercase;
-  background:var(--ink3);color:var(--paper2);
-  border:1px solid var(--border2);border-radius:3px;
-  padding:.18rem .5rem;white-space:nowrap;
-  opacity:0;pointer-events:none;
-  transition:opacity .18s,transform .18s;
-  z-index:100;
+  font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--ink3);color:var(--paper2);border:1px solid var(--border2);border-radius:3px;
+  padding:.16rem .48rem;white-space:nowrap;
+  opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:100;
 }
 .sb-ico-btn:hover::after{opacity:1;transform:translateX(-50%) scale(1)}
 
-
 /* ================================================================
-   ABOUT
-================================================================ */
-#about .about-wrap{display:grid;grid-template-columns:285px 1fr;gap:3.5rem;align-items:start}
-.about-card{
-  background:var(--glass);border:1px solid var(--border);
-  border-radius:var(--r);padding:1.8rem;
-  position:sticky;top:2rem;
-}
-.about-av{
-  width:80px;height:80px;border-radius:50%;
-  background:linear-gradient(135deg,var(--ink4),var(--ink5));
-  border:2px solid var(--border2);
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.9rem;font-weight:600;color:var(--gold);
-  margin:0 auto 1.1rem;position:relative;
-  box-shadow:0 0 0 4px var(--ink2),0 0 0 5px var(--border);
-}
-.about-av::before{
-  content:'';position:absolute;inset:-6px;border-radius:50%;
-  border:1px solid transparent;
-  background:linear-gradient(135deg,var(--gold),transparent,var(--cyan)) border-box;
-  -webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
-  -webkit-mask-composite:destination-out;mask-composite:exclude;
-  animation:spin-ring 8s linear infinite;
-}
-.about-cn{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--paper);text-align:center;line-height:1.3;margin-bottom:.2rem;}
-.about-cr{font-family:'Space Mono',monospace;font-size:.52rem;letter-spacing:.11em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.8;margin-bottom:1.3rem;}
-.about-div{height:1px;background:var(--border);margin:.9rem 0}
-.about-facts{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.2rem}
-.af{display:grid;grid-template-columns:.85fr 1fr;gap:.3rem;align-items:baseline}
-.af-k{font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);}
-.af-v{font-family:'Syne',sans-serif;font-size:.75rem;color:var(--paper2);font-weight:500}
-.about-int-lbl{font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);margin-bottom:.55rem;}
-.about-int-tags{display:flex;flex-wrap:wrap;gap:.32rem}
-.ait{font-family:'Space Mono',monospace;font-size:.53rem;letter-spacing:.05em;padding:.17rem .46rem;border-radius:3px;background:var(--gold3);border:1px solid var(--border2);color:var(--gold);}
-.about-bio{}
-.about-lede{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.38rem;font-weight:500;color:var(--paper);
-  line-height:1.58;margin-bottom:1.6rem;
-  border-left:3px solid var(--gold);padding-left:1.2rem;
-  font-style:italic;
-}
-.about-body{font-family:'Syne',sans-serif;font-size:.88rem;color:var(--paper2);line-height:1.88;}
-.about-body p{margin-bottom:1.05rem}
-.about-body p:last-child{margin-bottom:0}
-.about-body strong{color:var(--paper);font-weight:600}
-.about-kws{
-  display:flex;flex-wrap:wrap;gap:.4rem;
-  margin-top:1.8rem;padding-top:1.5rem;border-top:1px solid var(--border);
-}
-.akw{
-  font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.07em;
-  padding:.26rem .66rem;border-radius:3px;
-  background:var(--glass2);border:1px solid var(--border);
-  color:var(--paper3);transition:all .22s;cursor:default;
-}
-.akw:hover{border-color:var(--gold);color:var(--gold)}
-@media(max-width:1150px){#about .about-wrap{grid-template-columns:1fr}}
-@media(max-width:780px){.about-card{position:static}.about-lede{font-size:1.12rem}}
-
-/* ================================================================
-   MAIN
+   MAIN LAYOUT
 ================================================================ */
 #main{margin-left:var(--nav-w)}
 section{
@@ -332,25 +245,19 @@ section{
 }
 section:nth-child(even){background:var(--ink2)}
 
-/* section eyebrow */
-.sec-eye{
-  display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;
-}
+.sec-eye{display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;}
 .sec-num{
-  font-family:'Space Mono',monospace;
-  font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--gold);border:1px solid var(--border2);
-  border-radius:3px;padding:.15rem .5rem;
+  font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);border:1px solid var(--border2);border-radius:3px;padding:.14rem .48rem;
 }
-.sec-line{flex:0 0 36px;height:1px;background:var(--border2)}
+.sec-line{flex:0 0 32px;height:1px;background:var(--border2)}
 .sec-h{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(2.1rem,3.2vw,3rem);font-weight:600;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2rem,3.2vw,2.9rem);font-weight:700;
   color:var(--paper);line-height:1.1;margin-bottom:.5rem;
 }
 .sec-sub{
-  font-family:'Syne',sans-serif;
-  font-size:.88rem;color:var(--paper3);font-style:italic;
+  font-family:'Outfit',sans-serif;font-size:.88rem;color:var(--paper3);font-style:italic;
   max-width:560px;margin-bottom:3rem;line-height:1.75;
 }
 
@@ -359,128 +266,272 @@ section:nth-child(even){background:var(--ink2)}
 ================================================================ */
 #hero{
   min-height:101vh;display:flex;align-items:center;
-  position:relative;overflow:hidden;
-  padding:0 5rem;border-bottom:1px solid var(--border);
-  background:var(--ink);
+  position:relative;overflow:hidden;padding:0 5rem;
+  border-bottom:1px solid var(--border);background:var(--ink);
 }
-[data-theme="light"] #hero{
-  background:linear-gradient(135deg,#f0ede4 0%,#f5f4ef 60%,#e8edf5 100%);
-}
-#hero-canvas{
-  position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.6;
-}
-[data-theme="light"] #hero-canvas{opacity:.35}
+[data-theme="light"] #hero{background:linear-gradient(135deg,#ede9e0 0%,#f4f3ee 60%,#eaedf6 100%);}
+#hero-canvas{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.55;}
+[data-theme="light"] #hero-canvas{opacity:.3}
 
-.hero-inner{position:relative;z-index:2;max-width:1000px}
+/* Subtle grid texture */
+#hero::before{
+  content:'';position:absolute;inset:0;z-index:0;
+  background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(212,168,67,.03) 60px),
+                   repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(212,168,67,.03) 60px);
+  pointer-events:none;
+}
+
+.hero-inner{position:relative;z-index:2;max-width:950px}
 [data-theme="light"] .hero-inner{
-  background:rgba(245,244,239,.7);backdrop-filter:blur(8px);
+  background:rgba(244,243,238,.75);backdrop-filter:blur(10px);
   border-radius:var(--r);padding:2.5rem 2.2rem;
-  border:1px solid rgba(138,96,16,.12);
+  border:1px solid rgba(154,108,14,.14);
 }
 
-.h-eyebrow{display:flex;align-items:center;gap:.8rem;margin-bottom:1.5rem;}
-.h-eline{width:32px;height:1px;background:var(--gold)}
-.h-elbl{
-  font-family:'Space Mono',monospace;
-  font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);
-}
+.h-eyebrow{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem;}
+.h-eline{width:28px;height:1px;background:var(--gold)}
+.h-elbl{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);}
 .h-status{
-  display:flex;align-items:center;gap:.35rem;
-  font-family:'Space Mono',monospace;
-  font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;
+  display:flex;align-items:center;gap:.32rem;
+  font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;
   color:var(--teal);margin-left:auto;
 }
-.h-status-dot{
-  width:5px;height:5px;border-radius:50%;background:var(--teal);
-  box-shadow:0 0 6px var(--teal);animation:blink 2s ease-in-out infinite;
-}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.h-status-dot{width:5px;height:5px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px var(--teal);animation:blink 2.2s ease-in-out infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 
 .hero-h{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(3.2rem,6vw,5.5rem);
-  font-weight:700;line-height:1.02;
-  color:var(--paper);margin-bottom:.6rem;letter-spacing:-.015em;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(3rem,5.8vw,5.2rem);font-weight:900;
+  line-height:1.0;color:var(--paper);margin-bottom:.7rem;letter-spacing:-.02em;
 }
-[data-theme="light"] .hero-h{color:#0f0e1c}
-.hero-h em{font-style:italic;color:var(--gold)}
+[data-theme="light"] .hero-h{color:#0e0d20}
+.hero-h em{font-style:italic;color:var(--gold);font-weight:400;}
 
 .hero-role{
-  font-family:'Space Mono',monospace;
-  font-size:.73rem;letter-spacing:.06em;color:var(--paper3);
-  margin-bottom:.35rem;line-height:1.7;
+  font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.05em;
+  color:var(--paper3);margin-bottom:.4rem;line-height:1.8;
 }
-.hero-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:2.4rem}
+.hero-chips{display:flex;flex-wrap:wrap;gap:.38rem;margin-bottom:2.4rem}
 .hchip{
-  font-family:'Space Mono',monospace;
-  font-size:.57rem;letter-spacing:.08em;text-transform:uppercase;
-  padding:.28rem .68rem;border-radius:3px;
-  border:1px solid var(--border2);background:var(--gold3);color:var(--paper3);
+  font-family:'DM Mono',monospace;font-size:.54rem;letter-spacing:.06em;text-transform:uppercase;
+  padding:.26rem .65rem;border-radius:4px;
+  border:1px solid var(--border2);background:var(--gold4);color:var(--paper3);
   transition:all .22s;
 }
-.hchip:hover{border-color:var(--gold);color:var(--gold);background:rgba(200,168,75,.18);transform:translateY(-1px);}
+.hchip:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,168,67,.15);transform:translateY(-1px);}
 
-.hero-btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:2.5rem}
+.hero-btns{display:flex;flex-wrap:wrap;gap:.65rem;margin-bottom:2.5rem}
 .btn{
-  display:inline-flex;align-items:center;gap:.45rem;
-  padding:.65rem 1.5rem;border-radius:var(--r-sm);
-  font-family:'Space Mono',monospace;
-  font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;
+  display:inline-flex;align-items:center;gap:.42rem;
+  padding:.62rem 1.45rem;border-radius:var(--r-sm);
+  font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
   cursor:pointer;border:1.5px solid transparent;
   transition:all .25s var(--ease);position:relative;overflow:hidden;
 }
 .btn::before{
   content:'';position:absolute;inset:0;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent);
   transform:translateX(-100%);transition:transform .5s;
 }
 .btn:hover::before{transform:translateX(100%)}
 .btn-gold{
-  background:linear-gradient(135deg,var(--gold),#a87a28);
+  background:linear-gradient(135deg,var(--gold),#a87828);
   color:var(--ink);border-color:transparent;
-  box-shadow:0 4px 20px rgba(200,168,75,.3);
+  box-shadow:0 4px 22px rgba(212,168,67,.3);
 }
-.btn-gold:hover{box-shadow:0 6px 28px rgba(200,168,75,.5);transform:translateY(-1px);opacity:1;color:var(--ink);}
+.btn-gold:hover{box-shadow:0 6px 30px rgba(212,168,67,.5);transform:translateY(-1px);opacity:1;color:var(--ink);}
 .btn-outline{background:transparent;color:var(--paper3);border-color:var(--border);}
 .btn-outline:hover{border-color:var(--gold);color:var(--gold);background:var(--gold3);opacity:1;transform:translateY(-1px);}
 
-.hero-acad{display:flex;flex-wrap:wrap;gap:1.3rem;padding-top:1.6rem;border-top:1px solid var(--border);}
+.hero-acad{display:flex;flex-wrap:wrap;gap:1.2rem;padding-top:1.6rem;border-top:1px solid var(--border);}
 .ha-link{
-  display:flex;align-items:center;gap:.38rem;
-  font-family:'Space Mono',monospace;
-  font-size:.62rem;letter-spacing:.06em;color:var(--paper3);transition:color .2s,gap .2s;
+  display:flex;align-items:center;gap:.36rem;
+  font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.06em;color:var(--paper3);transition:color .2s,gap .2s;
 }
-.ha-link:hover{color:var(--gold);gap:.52rem;opacity:1}
+.ha-link:hover{color:var(--gold);gap:.5rem;opacity:1}
 .ha-link svg{width:10px;height:10px;flex-shrink:0}
 
 .scroll-cue{
   position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);
-  display:flex;align-items:center;gap:.7rem;
-  color:var(--gold);font-family:'Space Mono',monospace;
-  font-size:.54rem;letter-spacing:.15em;text-transform:uppercase;
+  display:flex;align-items:center;gap:.65rem;
+  color:var(--gold);font-family:'DM Mono',monospace;
+  font-size:.52rem;letter-spacing:.15em;text-transform:uppercase;
 }
-.scline{width:36px;height:1px;background:linear-gradient(to right,var(--gold),transparent);}
+.scline{width:32px;height:1px;background:linear-gradient(to right,var(--gold),transparent);}
 .scroll-cue .arr{animation:nudge 2.5s ease-in-out infinite;display:inline-block;}
 @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+
+/* ================================================================
+   ABOUT — Horizontal scroller persona cards
+   Each facet of the researcher shown as a wide horizontal strip
+   with a bold label on the left and content flowing right.
+   No nested boxes — uses whitespace, rules & type hierarchy only.
+================================================================ */
+#about{
+  padding:6rem 0 0;
+  background:var(--ink2);
+  position:relative;overflow:hidden;
+}
+.about-header{
+  padding:0 5rem 3.5rem;
+  display:flex;align-items:flex-end;justify-content:space-between;
+  flex-wrap:wrap;gap:2rem;
+  border-bottom:1px solid var(--border);
+}
+.about-header-right{
+  display:flex;align-items:center;gap:3rem;flex-wrap:wrap;
+}
+.about-gpa-display{
+  text-align:right;
+}
+.agpa-num{
+  font-family:'Playfair Display',serif;font-size:3.8rem;font-weight:900;
+  color:var(--paper);line-height:1;letter-spacing:-.04em;
+}
+.agpa-num em{font-size:1.5rem;color:var(--gold);font-style:normal;margin-left:.15rem;}
+.agpa-lbl{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--paper4);margin-top:.2rem;}
+.about-pulse{
+  display:flex;align-items:center;gap:.5rem;
+  font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);
+}
+.about-pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px var(--teal);animation:blink 2s ease-in-out infinite;}
+
+/* ── Strip layout ── */
+.about-strips{display:flex;flex-direction:column;}
+
+.about-strip{
+  display:grid;
+  grid-template-columns:200px 1fr;
+  border-bottom:1px solid var(--border);
+  transition:background .25s;
+}
+.about-strip:last-child{border-bottom:none}
+.about-strip:hover{background:rgba(212,168,67,.022);}
+
+.as-label{
+  padding:2.8rem 2rem 2.8rem 5rem;
+  display:flex;flex-direction:column;justify-content:flex-start;
+  border-right:1px solid var(--border);
+  position:relative;
+}
+.as-label::after{
+  content:'';position:absolute;right:-1px;top:50%;transform:translateY(-50%);
+  width:1px;height:0;background:var(--gold);
+  transition:height .35s var(--ease);
+}
+.about-strip:hover .as-label::after{height:60%;}
+.as-num{font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.2em;text-transform:uppercase;color:var(--paper4);margin-bottom:.5rem;}
+.as-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--paper);line-height:1.25;}
+
+.as-content{
+  padding:2.8rem 5rem 2.8rem 3rem;
+}
+
+/* Strip: Identity */
+.as-identity{
+  display:flex;align-items:center;gap:2.2rem;
+  flex-wrap:wrap;
+}
+.about-av{
+  width:72px;height:72px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--ink4),var(--ink5));
+  border:2px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--gold);
+  position:relative;
+  box-shadow:0 0 0 4px var(--ink2),0 0 0 5px var(--border),0 0 22px rgba(212,168,67,.13);
+}
+.about-av::before{
+  content:'';position:absolute;inset:-6px;border-radius:50%;
+  border:1px solid transparent;
+  background:linear-gradient(135deg,var(--gold),transparent 50%,var(--cyan)) border-box;
+  -webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:destination-out;mask-composite:exclude;
+  animation:spin-ring 10s linear infinite;
+}
+.asi-text{}
+.asi-name{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--paper);line-height:1.2;margin-bottom:.22rem;}
+.asi-role{font-family:'DM Mono',monospace;font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);line-height:2;}
+.asi-affil{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper3);font-style:italic;}
+.asi-divider{width:1px;height:52px;background:var(--border);flex-shrink:0;}
+.asi-facts{display:flex;flex-wrap:wrap;gap:.6rem 2.5rem;}
+.asif{display:flex;flex-direction:column;gap:.1rem;}
+.asif-k{font-family:'DM Mono',monospace;font-size:.44rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper4);}
+.asif-v{font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:500;color:var(--paper2);}
+
+/* Strip: About / Bio */
+.as-bio-text{
+  font-family:'Outfit',sans-serif;font-size:.9rem;color:var(--paper2);
+  line-height:1.92;max-width:780px;
+}
+.as-bio-text p{margin-bottom:.9rem}
+.as-bio-text p:last-child{margin-bottom:0}
+.as-bio-text strong{color:var(--paper);font-weight:600;}
+
+/* Strip: Quote */
+.as-quote{
+  border-left:3px solid var(--gold);
+  padding-left:1.5rem;
+  max-width:680px;
+}
+.as-quote p{
+  font-family:'Playfair Display',serif;
+  font-size:1.28rem;font-style:italic;font-weight:400;
+  color:var(--paper);line-height:1.65;
+}
+
+/* Strip: Research interests */
+.as-interests{display:flex;flex-wrap:wrap;gap:.4rem;align-items:flex-start;}
+.ait{
+  font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.04em;
+  padding:.25rem .62rem;border-radius:3px;
+  background:var(--gold3);border:1px solid var(--border2);color:var(--gold);
+  transition:all .18s;cursor:default;
+}
+.ait:hover{background:rgba(212,168,67,.2);transform:translateY(-2px)}
+
+/* Strip: Links */
+.as-links{display:flex;flex-wrap:wrap;gap:1.2rem 3rem;}
+.asl{
+  display:flex;align-items:center;gap:.5rem;
+  font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.06em;
+  color:var(--paper3);transition:color .2s,gap .2s;
+}
+.asl:hover{color:var(--gold);gap:.7rem;opacity:1}
+.asl-arrow{font-size:.55rem;opacity:.5;transition:opacity .2s;}
+.asl:hover .asl-arrow{opacity:1}
+
+/* Responsive */
+@media(max-width:900px){
+  .about-strips .about-strip{grid-template-columns:1fr;}
+  .as-label{padding:1.8rem 1.5rem 0.6rem;border-right:none;border-bottom:1px solid var(--border);}
+  .as-label::after{display:none}
+  .as-content{padding:1.5rem 1.5rem 2rem;}
+}
+@media(max-width:780px){
+  #about{padding:4.5rem 0 0;}
+  .about-header{padding:0 1.5rem 2.5rem;}
+  .agpa-num{font-size:2.6rem;}
+}
 
 /* ================================================================
    NEWS
 ================================================================ */
 #news .news-list{display:flex;flex-direction:column;gap:0}
 .ni{
-  display:grid;grid-template-columns:100px 1fr;
+  display:grid;grid-template-columns:96px 1fr;
   gap:1.8rem;padding:1.1rem 1rem;
   border-bottom:1px solid var(--border);border-radius:var(--r-sm);
   transition:all .22s;margin:0 -1rem;
 }
 .ni:first-child{border-top:1px solid var(--border)}
 .ni:hover{background:var(--glass);padding-left:1.5rem}
-.ni-date{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.1em;color:var(--paper4);text-transform:uppercase;padding-top:.15rem;line-height:1.6;}
-.nb{display:inline-block;font-family:'Space Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .45rem;border-radius:var(--r-xs);margin-bottom:.3rem;}
-.nb-pub{background:rgba(200,168,75,.12);color:var(--gold);border:1px solid rgba(200,168,75,.3)}
-.nb-pos{background:rgba(56,200,232,.1);color:var(--cyan);border:1px solid rgba(56,200,232,.28)}
-.nb-edu{background:rgba(45,212,191,.1);color:var(--teal);border:1px solid rgba(45,212,191,.28)}
-.ni-text{font-family:'Syne',sans-serif;font-size:.84rem;color:var(--paper2);line-height:1.7}
+.ni-date{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;color:var(--paper4);text-transform:uppercase;padding-top:.18rem;line-height:1.65;}
+.nb{display:inline-block;font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;padding:.09rem .44rem;border-radius:3px;margin-bottom:.3rem;}
+.nb-pub{background:rgba(212,168,67,.12);color:var(--gold);border:1px solid rgba(212,168,67,.3)}
+.nb-pos{background:rgba(79,205,232,.1);color:var(--cyan);border:1px solid rgba(79,205,232,.28)}
+.nb-edu{background:rgba(52,211,153,.1);color:var(--teal);border:1px solid rgba(52,211,153,.28)}
+.ni-text{font-family:'Outfit',sans-serif;font-size:.85rem;color:var(--paper2);line-height:1.75}
 .ni-text strong{color:var(--paper);font-weight:600}
 .ni-text em{color:var(--paper3)}
 .ni-text a{color:var(--gold);font-size:.8rem}
@@ -493,38 +544,38 @@ section:nth-child(even){background:var(--ink2)}
   border:1px solid var(--border);border-radius:var(--r);
   overflow:hidden;margin-bottom:3rem;background:var(--glass);
 }
-.stat-cell{flex:1;min-width:100px;padding:1.5rem 1rem;border-right:1px solid var(--border);text-align:center;transition:background .22s;}
+.stat-cell{flex:1;min-width:90px;padding:1.5rem 1rem;border-right:1px solid var(--border);text-align:center;transition:background .22s;}
 .stat-cell:last-child{border-right:none}
 .stat-cell:hover{background:var(--glass2)}
-.stat-n{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:var(--paper);line-height:1;}
-.stat-n sup{font-size:.85rem;color:var(--gold);vertical-align:super}
-.stat-l{font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--paper4);margin-top:.3rem;}
+.stat-n{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--paper);line-height:1;}
+.stat-n sup{font-size:.8rem;color:var(--gold);vertical-align:super}
+.stat-l{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.15em;text-transform:uppercase;color:var(--paper4);margin-top:.3rem;}
 
 .ra-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 .ra-card{
   background:var(--glass);border:1px solid var(--border);
-  border-radius:var(--r);padding:1.8rem;
+  border-radius:var(--r);padding:1.75rem;
   transition:all .3s var(--ease);position:relative;overflow:hidden;cursor:default;
 }
-.ra-card::before{content:'';position:absolute;top:-60px;right:-60px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,var(--gold3),transparent);transition:transform .4s var(--ease),opacity .4s;opacity:0;}
+.ra-card::before{content:'';position:absolute;top:-50px;right:-50px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,var(--gold3),transparent);transition:transform .4s var(--ease),opacity .4s;opacity:0;}
 .ra-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--gold),var(--cyan),transparent);transform:scaleX(0);transform-origin:center;transition:transform .4s var(--ease);}
 .ra-card:hover::before{opacity:1;transform:scale(1.3)}
 .ra-card:hover::after{transform:scaleX(1)}
 .ra-card:hover{background:var(--glass2);border-color:var(--border2);transform:translateY(-4px);box-shadow:var(--shadow-sm),var(--glow-g);}
-.ra-ico{width:42px;height:42px;border-radius:10px;background:var(--ink3);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:1.1rem;flex-shrink:0;position:relative;z-index:1;}
-.ra-name{font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-weight:600;color:var(--paper);margin-bottom:.45rem;line-height:1.3;position:relative;z-index:1;}
-.ra-desc{font-family:'Syne',sans-serif;font-size:.79rem;color:var(--paper3);line-height:1.72;margin-bottom:.9rem;position:relative;z-index:1;}
-.ra-tags{display:flex;flex-wrap:wrap;gap:.3rem;position:relative;z-index:1}
-.ratag{font-family:'Space Mono',monospace;font-size:.53rem;letter-spacing:.06em;padding:.12rem .42rem;border-radius:3px;background:var(--ink3);border:1px solid var(--border);color:var(--paper4);transition:all .2s;}
+.ra-ico{width:40px;height:40px;border-radius:10px;background:var(--ink3);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:1.15rem;margin-bottom:1rem;flex-shrink:0;position:relative;z-index:1;}
+.ra-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--paper);margin-bottom:.42rem;line-height:1.3;position:relative;z-index:1;}
+.ra-desc{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.75;margin-bottom:.85rem;position:relative;z-index:1;}
+.ra-tags{display:flex;flex-wrap:wrap;gap:.28rem;position:relative;z-index:1}
+.ratag{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.05em;padding:.11rem .4rem;border-radius:3px;background:var(--ink3);border:1px solid var(--border);color:var(--paper4);transition:all .2s;}
 .ra-card:hover .ratag{border-color:var(--border2);color:var(--paper3)}
 
 /* ================================================================
    PUBLICATIONS
 ================================================================ */
-.pub-frow{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
-.flbl{font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);margin-right:.2rem;}
-.fc{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;padding:.28rem .72rem;border-radius:4px;border:1px solid var(--border);background:var(--glass);color:var(--paper3);cursor:pointer;transition:all .22s;}
-.fc:hover,.fc.active{background:var(--gold);color:var(--ink);border-color:var(--gold);box-shadow:0 2px 12px rgba(200,168,75,.3);}
+.pub-frow{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin-bottom:2rem}
+.flbl{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);margin-right:.18rem;}
+.fc{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;padding:.26rem .7rem;border-radius:4px;border:1px solid var(--border);background:var(--glass);color:var(--paper3);cursor:pointer;transition:all .22s;}
+.fc:hover,.fc.active{background:var(--gold);color:var(--ink);border-color:var(--gold);box-shadow:0 2px 12px rgba(212,168,67,.3);}
 
 .pub-list{display:flex;flex-direction:column;gap:1rem}
 .pub-entry{background:var(--glass);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:all .3s var(--ease);}
@@ -532,36 +583,48 @@ section:nth-child(even){background:var(--ink2)}
 .pub-entry[data-ps="pub"]{border-left:2px solid var(--gold)}
 .pub-main{padding:1.6rem 1.8rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start;}
 .pmeta{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;margin-bottom:.7rem}
-.ptag{font-family:'Space Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .42rem;border-radius:3px;}
-.pt-j{background:rgba(200,168,75,.1);color:var(--gold);border:1px solid rgba(200,168,75,.25)}
-.pt-c{background:rgba(56,200,232,.1);color:var(--cyan);border:1px solid rgba(56,200,232,.25)}
-.pvenue{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--paper3);letter-spacing:.04em;}
-.pyear{font-family:'Space Mono',monospace;font-size:.55rem;color:var(--paper4)}
-.ptitle{font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:600;color:var(--paper);line-height:1.42;margin-bottom:.55rem;}
-.pauthors{font-family:'Syne',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;margin-bottom:.6rem;line-height:1.5;}
+.ptag{font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .4rem;border-radius:3px;}
+.pt-j{background:rgba(212,168,67,.1);color:var(--gold);border:1px solid rgba(212,168,67,.25)}
+.pt-c{background:rgba(79,205,232,.1);color:var(--cyan);border:1px solid rgba(79,205,232,.25)}
+.pvenue{font-family:'DM Mono',monospace;font-size:.58rem;color:var(--paper3);letter-spacing:.04em;}
+.pyear{font-family:'DM Mono',monospace;font-size:.54rem;color:var(--paper4)}
+.ptitle{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:600;color:var(--paper);line-height:1.42;margin-bottom:.52rem;}
+.pauthors{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;margin-bottom:.6rem;line-height:1.55;}
 .pauthors .me{color:var(--gold);font-style:normal;font-weight:600;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;}
-.pabstract{font-family:'Syne',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.75;border-left:2px solid var(--border2);padding-left:.9rem;margin-top:.55rem;margin-bottom:.75rem;display:none;font-style:italic;}
+.pabstract{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.78;border-left:2px solid var(--border2);padding-left:.9rem;margin-top:.55rem;margin-bottom:.75rem;display:none;font-style:italic;}
 .pabstract.open{display:block;animation:fadeSlide .3s var(--ease)}
 @keyframes fadeSlide{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
-.plinks{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.65rem}
-.plink{font-family:'Space Mono',monospace;font-size:.57rem;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .6rem;border-radius:var(--r-xs);border:1px solid var(--border);color:var(--paper3);background:var(--ink3);cursor:pointer;transition:all .2s;}
+.plinks{display:flex;gap:.38rem;flex-wrap:wrap;margin-top:.65rem}
+.plink{font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .58rem;border-radius:3px;border:1px solid var(--border);color:var(--paper3);background:var(--ink3);cursor:pointer;transition:all .2s;}
 .plink:hover{border-color:var(--gold);color:var(--gold);opacity:1}
 .plink.live{color:var(--gold);border-color:var(--border2)}
-.plink.plink-acc{color:var(--teal);border-color:rgba(45,212,191,.3);background:rgba(45,212,191,.07);}
-.plink.plink-acc:hover{border-color:var(--teal);background:rgba(45,212,191,.15);color:var(--teal)}
-.pstatus{display:inline-flex;align-items:center;gap:.32rem;font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;padding:.28rem .62rem;border-radius:50px;white-space:nowrap;}
-.ps-pub{background:rgba(45,212,191,.1);color:var(--teal);border:1px solid rgba(45,212,191,.28);box-shadow:0 0 12px rgba(45,212,191,.1);}
-.ps-rev{background:rgba(56,200,232,.08);color:var(--cyan);border:1px solid rgba(56,200,232,.22);}
-.ps-acc{background:rgba(200,168,75,.1);color:var(--gold);border:1px solid rgba(200,168,75,.3);}
-.pnum{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:rgba(255,255,255,.05);line-height:1;margin-top:.3rem;text-align:right;letter-spacing:-.02em;}
-[data-theme="light"] .pnum{color:rgba(0,0,0,.05)}
+.plink.plink-acc{color:var(--teal);border-color:rgba(52,211,153,.3);background:rgba(52,211,153,.06);}
+.plink.plink-acc:hover{border-color:var(--teal);background:rgba(52,211,153,.14);color:var(--teal)}
+.pstatus{display:inline-flex;align-items:center;gap:.3rem;font-family:'DM Mono',monospace;font-size:.53rem;letter-spacing:.08em;text-transform:uppercase;padding:.26rem .6rem;border-radius:50px;white-space:nowrap;}
+.ps-pub{background:rgba(52,211,153,.1);color:var(--teal);border:1px solid rgba(52,211,153,.28);}
+.ps-rev{background:rgba(79,205,232,.08);color:var(--cyan);border:1px solid rgba(79,205,232,.22);}
+.ps-acc{background:rgba(212,168,67,.1);color:var(--gold);border:1px solid rgba(212,168,67,.3);}
+.pnum{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:300;color:rgba(255,255,255,.04);line-height:1;margin-top:.3rem;text-align:right;letter-spacing:-.02em;}
+[data-theme="light"] .pnum{color:rgba(0,0,0,.04)}
 
-/* ================================================================
-   CV
-================================================================ */
+/* Architecture diagram inside publication */
+.pub-arch{
+  margin-top:1rem;
+  border-top:1px solid var(--border);
+  padding-top:1rem;
+}
+.pub-arch-lbl{
+  font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--paper4);margin-bottom:.65rem;
+}
+.pub-arch svg{
+  width:100%;height:auto;display:block;
+  border-radius:var(--r-sm);
+  overflow:visible;
+}
 #cv .cv-cols{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
-.cv-hd{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;display:flex;align-items:center;gap:.55rem;}
-.cv-hd::after{content:'';flex:1;height:1px;background:var(--border2);max-width:50px}
+.cv-hd{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;display:flex;align-items:center;gap:.5rem;}
+.cv-hd::after{content:'';flex:1;height:1px;background:var(--border2);max-width:48px}
 .tl{position:relative}
 .tl::before{content:'';position:absolute;left:5px;top:12px;width:1px;height:calc(100% - 24px);background:linear-gradient(to bottom,var(--border2),transparent);}
 .tlr{display:grid;grid-template-columns:14px 1fr;gap:1.2rem;padding-bottom:2.2rem}
@@ -569,30 +632,30 @@ section:nth-child(even){background:var(--ink2)}
 .tldot::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:1px solid var(--gold);opacity:0;transition:opacity .25s;}
 .tlr:hover .tldot{border-color:var(--gold);background:var(--gold)}
 .tlr:hover .tldot::after{opacity:.4}
-.tlyr{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.1em;color:var(--cyan);text-transform:uppercase;margin-bottom:.3rem;}
-.tltitle{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--paper);margin-bottom:.18rem;}
-.tlorg{font-family:'Syne',sans-serif;font-size:.78rem;color:var(--gold);font-style:italic;margin-bottom:.45rem;}
-.tlbody{font-family:'Syne',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.72;}
+.tlyr{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;color:var(--cyan);text-transform:uppercase;margin-bottom:.3rem;}
+.tltitle{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--paper);margin-bottom:.18rem;}
+.tlorg{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--gold);font-style:italic;margin-bottom:.4rem;}
+.tlbody{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.75;}
 .tlbody ul{padding-left:1.1rem}
-.tlbody ul li{list-style:disc;margin-bottom:.22rem;color:var(--paper3)}
-.tlchip{display:inline-block;margin-top:.5rem;font-family:'Space Mono',monospace;font-size:.52rem;letter-spacing:.08em;text-transform:uppercase;padding:.12rem .5rem;border-radius:3px;background:rgba(200,168,75,.1);border:1px solid rgba(200,168,75,.22);color:var(--gold);}
+.tlbody ul li{list-style:disc;margin-bottom:.2rem;color:var(--paper3)}
+.tlchip{display:inline-block;margin-top:.48rem;font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;padding:.11rem .48rem;border-radius:3px;background:rgba(212,168,67,.1);border:1px solid rgba(212,168,67,.22);color:var(--gold);}
 
 /* ================================================================
    SKILLS
 ================================================================ */
 #skills .sk-cats{display:flex;flex-direction:column;gap:1.8rem;margin-bottom:3rem}
-.sk-cat-hd{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--paper4);margin-bottom:.75rem;display:flex;align-items:center;gap:.55rem;}
+.sk-cat-hd{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--paper4);margin-bottom:.72rem;display:flex;align-items:center;gap:.5rem;}
 .sk-cat-hd::after{content:'';flex:1;height:1px;background:var(--border)}
-.sk-tags{display:flex;flex-wrap:wrap;gap:.45rem}
-.skt{font-family:'Space Mono',monospace;font-size:.64rem;letter-spacing:.04em;padding:.3rem .75rem;border-radius:var(--r-sm);border:1px solid var(--border);color:var(--paper3);background:var(--glass);transition:all .22s;cursor:default;}
+.sk-tags{display:flex;flex-wrap:wrap;gap:.42rem}
+.skt{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.04em;padding:.28rem .72rem;border-radius:var(--r-sm);border:1px solid var(--border);color:var(--paper3);background:var(--glass);transition:all .22s;cursor:default;}
 .skt:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-1px)}
-.skt.hl{border-color:var(--border2);color:var(--paper);background:var(--glass2);font-weight:700;}
+.skt.hl{border-color:var(--border2);color:var(--paper);background:var(--glass2);font-weight:500;}
 .skt.hl:hover{border-color:var(--gold);color:var(--gold)}
 
 .prof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem 3rem}
 .prof-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.4rem}
-.prof-name{font-family:'Syne',sans-serif;font-size:.84rem;color:var(--paper);font-weight:500;}
-.prof-pct{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--gold);letter-spacing:.06em;}
+.prof-name{font-family:'Outfit',sans-serif;font-size:.84rem;color:var(--paper);font-weight:500;}
+.prof-pct{font-family:'DM Mono',monospace;font-size:.58rem;color:var(--gold);letter-spacing:.06em;}
 .prof-track{height:2px;background:var(--border);border-radius:2px;overflow:visible;position:relative;}
 .prof-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;border-radius:2px;transition:width 1.6s cubic-bezier(.25,1,.5,1);position:relative;}
 .prof-fill::after{content:'';position:absolute;right:-1px;top:50%;transform:translateY(-50%);width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold);opacity:0;transition:opacity .3s 1.4s;}
@@ -607,67 +670,49 @@ section:nth-child(even){background:var(--ink2)}
 .proj-card:hover::before{opacity:1}
 .proj-card:hover{border-color:var(--border2);background:var(--glass2);transform:translateY(-5px);box-shadow:var(--shadow-sm);}
 .proj-card.hidden{display:none}
-.proj-cat{font-family:'Space Mono',monospace;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);margin-bottom:.6rem;position:relative;z-index:1;}
-.proj-title{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--paper);margin-bottom:.4rem;line-height:1.4;position:relative;z-index:1;}
-.proj-desc{font-family:'Syne',sans-serif;font-size:.78rem;color:var(--paper3);line-height:1.68;margin-bottom:.9rem;position:relative;z-index:1;}
-.proj-ft{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:.75rem;position:relative;z-index:1;}
-.proj-gh{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--gold);display:flex;align-items:center;gap:.3rem;transition:gap .2s;}
-.proj-gh:hover{gap:.5rem;opacity:1;color:var(--gold2)}
-.proj-tech{display:flex;flex-wrap:wrap;gap:.28rem}
-.ptb{font-family:'Space Mono',monospace;font-size:.52rem;letter-spacing:.04em;padding:.1rem .38rem;border-radius:3px;background:var(--ink3);border:1px solid var(--border);color:var(--paper4);}
-.pf-row{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.proj-cat{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);margin-bottom:.55rem;position:relative;z-index:1;}
+.proj-title{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--paper);margin-bottom:.38rem;line-height:1.4;position:relative;z-index:1;}
+.proj-desc{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--paper3);line-height:1.7;margin-bottom:.88rem;position:relative;z-index:1;}
+.proj-ft{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:.72rem;position:relative;z-index:1;}
+.proj-gh{font-family:'DM Mono',monospace;font-size:.58rem;color:var(--gold);display:flex;align-items:center;gap:.28rem;transition:gap .2s;}
+.proj-gh:hover{gap:.46rem;opacity:1;color:var(--gold2)}
+.proj-tech{display:flex;flex-wrap:wrap;gap:.26rem}
+.ptb{font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.04em;padding:.1rem .36rem;border-radius:3px;background:var(--ink3);border:1px solid var(--border);color:var(--paper4);}
+.pf-row{display:flex;gap:.48rem;flex-wrap:wrap;margin-bottom:2rem}
 
 /* ================================================================
-   CERTIFICATES  — with click-to-view
+   CERTIFICATES
 ================================================================ */
 #certificates .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
 .cert-card{
   background:var(--glass);border:1px solid var(--border);
   border-radius:var(--r);padding:1.65rem;
-  display:grid;grid-template-columns:50px 1fr;gap:1.2rem;
-  transition:all .3s;
-  cursor:pointer;   /* clickable */
-  position:relative;
-  overflow:hidden;
+  display:grid;grid-template-columns:48px 1fr;gap:1.15rem;
+  transition:all .3s;cursor:pointer;position:relative;overflow:hidden;
 }
-/* shine sweep on hover */
 .cert-card::before{
-  content:'';position:absolute;top:0;left:-100%;
-  width:60%;height:100%;
-  background:linear-gradient(90deg,transparent,rgba(200,168,75,.07),transparent);
+  content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(212,168,67,.07),transparent);
   transition:left .55s var(--ease);pointer-events:none;
 }
 .cert-card:hover::before{left:150%}
-.cert-card:hover{
-  border-color:var(--border2);background:var(--glass2);
-  transform:translateY(-3px);
-  box-shadow:var(--shadow-sm),var(--glow-g);
-}
-/* "View" badge that appears on hover */
+.cert-card:hover{border-color:var(--border2);background:var(--glass2);transform:translateY(-3px);box-shadow:var(--shadow-sm),var(--glow-g);}
 .cert-view-badge{
-  position:absolute;top:.85rem;right:.85rem;
-  font-family:'Space Mono',monospace;font-size:.5rem;
-  letter-spacing:.12em;text-transform:uppercase;
-  background:var(--gold);color:var(--ink);
-  padding:.15rem .5rem;border-radius:3px;
-  opacity:0;transform:translateY(-4px);
-  transition:opacity .22s,transform .22s;
-  pointer-events:none;
-  font-weight:700;
+  position:absolute;top:.8rem;right:.8rem;
+  font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.12em;text-transform:uppercase;
+  background:var(--gold);color:var(--ink);padding:.13rem .48rem;border-radius:3px;
+  opacity:0;transform:translateY(-4px);transition:opacity .22s,transform .22s;pointer-events:none;font-weight:700;
 }
 .cert-card:hover .cert-view-badge{opacity:1;transform:translateY(0)}
-
 .cert-ico{
-  width:50px;height:50px;border-radius:10px;
-  background:var(--ink3);border:1px solid var(--border2);
-  display:flex;align-items:center;justify-content:center;
-  font-size:1.35rem;flex-shrink:0;
+  width:48px;height:48px;border-radius:10px;background:var(--ink3);border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;
   transition:transform .3s var(--spring);
 }
 .cert-card:hover .cert-ico{transform:scale(1.08) rotate(-3deg)}
-.cert-issuer{font-family:'Space Mono',monospace;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.25rem;}
-.cert-name{font-family:'Cormorant Garamond',serif;font-size:.98rem;font-weight:600;color:var(--paper);margin-bottom:.4rem;line-height:1.35;}
-.cert-desc{font-family:'Syne',sans-serif;font-size:.76rem;color:var(--paper3);line-height:1.67;}
+.cert-issuer{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.22rem;}
+.cert-name{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:600;color:var(--paper);margin-bottom:.38rem;line-height:1.35;}
+.cert-desc{font-family:'Outfit',sans-serif;font-size:.76rem;color:var(--paper3);line-height:1.68;}
 
 /* ================================================================
    CERTIFICATE MODAL
@@ -675,168 +720,91 @@ section:nth-child(even){background:var(--ink2)}
 #cert-modal{
   position:fixed;inset:0;z-index:8000;
   display:flex;align-items:center;justify-content:center;
-  padding:1.5rem;
-  opacity:0;pointer-events:none;
-  transition:opacity .35s var(--ease);
+  padding:1.5rem;opacity:0;pointer-events:none;transition:opacity .35s var(--ease);
 }
 #cert-modal.open{opacity:1;pointer-events:auto}
-
-/* backdrop */
 #cert-modal-backdrop{
-  position:absolute;inset:0;
-  background:rgba(2,3,10,.88);
-  backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px);
+  position:absolute;inset:0;background:rgba(2,3,10,.9);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
 }
-[data-theme="light"] #cert-modal-backdrop{background:rgba(20,18,40,.78)}
-
-/* panel */
+[data-theme="light"] #cert-modal-backdrop{background:rgba(20,18,40,.8)}
 #cert-modal-panel{
-  position:relative;z-index:1;
-  width:100%;max-width:820px;
-  background:var(--ink2);
-  border:1px solid var(--border2);
-  border-radius:calc(var(--r) + 4px);
-  overflow:hidden;
-  box-shadow:0 28px 80px rgba(0,0,0,.9), var(--glow-g);
-  transform:scale(.92) translateY(16px);
-  transition:transform .38s var(--spring);
+  position:relative;z-index:1;width:100%;max-width:820px;
+  background:var(--ink2);border:1px solid var(--border2);
+  border-radius:calc(var(--r) + 4px);overflow:hidden;
+  box-shadow:0 28px 80px rgba(0,0,0,.9),var(--glow-g);
+  transform:scale(.92) translateY(16px);transition:transform .38s var(--spring);
 }
 #cert-modal.open #cert-modal-panel{transform:scale(1) translateY(0)}
-
-/* top bar */
 #cert-modal-header{
   display:flex;align-items:center;justify-content:space-between;
-  padding:1.1rem 1.5rem;
-  border-bottom:1px solid var(--border);
-  background:var(--ink3);
+  padding:1.1rem 1.5rem;border-bottom:1px solid var(--border);background:var(--ink3);
 }
-#cert-modal-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.05rem;font-weight:600;color:var(--paper);line-height:1.3;
-}
-#cert-modal-issuer{
-  font-family:'Space Mono',monospace;
-  font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--gold);margin-top:.18rem;
-}
+#cert-modal-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--paper);line-height:1.3;}
+#cert-modal-issuer{font-family:'DM Mono',monospace;font-size:.53rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:.16rem;}
 #cert-modal-close{
   width:32px;height:32px;border-radius:50%;
   background:var(--glass2);border:1px solid var(--border);
   display:flex;align-items:center;justify-content:center;
-  cursor:pointer;color:var(--paper3);font-size:1rem;line-height:1;
-  transition:all .2s;flex-shrink:0;
+  cursor:pointer;color:var(--paper3);font-size:1rem;line-height:1;transition:all .2s;flex-shrink:0;
 }
 #cert-modal-close:hover{background:var(--rose);border-color:var(--rose);color:#fff;transform:rotate(90deg)}
-
-/* image zone */
 #cert-modal-body{
-  padding:1.5rem;
-  display:flex;flex-direction:column;align-items:center;gap:1.2rem;
-  min-height:280px;
+  padding:1.5rem;display:flex;flex-direction:column;align-items:center;gap:1.2rem;min-height:280px;
 }
 #cert-modal-img-wrap{
   width:100%;border-radius:var(--r-sm);overflow:hidden;
-  border:1px solid var(--border);
-  background:var(--ink3);
-  position:relative;
-  min-height:220px;
-  display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--border);background:var(--ink3);
+  position:relative;min-height:220px;display:flex;align-items:center;justify-content:center;
 }
-#cert-modal-img{
-  width:100%;max-height:500px;object-fit:contain;
-  display:block;
-  transition:opacity .3s;
-}
-/* placeholder shown when no real image */
+#cert-modal-img{width:100%;max-height:500px;object-fit:contain;display:block;transition:opacity .3s;}
 #cert-modal-placeholder{
   display:flex;flex-direction:column;align-items:center;gap:.9rem;
-  padding:3rem 2rem;
-  text-align:center;
-  width:100%;
+  padding:3rem 2rem;text-align:center;width:100%;
 }
 .cm-ph-icon{font-size:3rem;opacity:.4}
-.cm-ph-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.1rem;font-weight:600;color:var(--paper3);
-}
-.cm-ph-hint{
-  font-family:'Space Mono',monospace;
-  font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--paper4);line-height:1.7;
-  max-width:340px;
-}
-.cm-ph-input-row{
-  display:flex;gap:.6rem;width:100%;max-width:420px;margin-top:.3rem;
-}
+.cm-ph-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--paper3);}
+.cm-ph-hint{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper4);line-height:1.7;max-width:340px;}
+.cm-ph-input-row{display:flex;gap:.6rem;width:100%;max-width:420px;margin-top:.3rem;}
 .cm-ph-input{
   flex:1;background:var(--glass);border:1px solid var(--border);
   border-radius:var(--r-sm);padding:.55rem .8rem;
-  font-family:'Syne',sans-serif;font-size:.8rem;color:var(--paper);
-  outline:none;transition:border-color .2s;
+  font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper);outline:none;transition:border-color .2s;
 }
 .cm-ph-input:focus{border-color:var(--gold)}
 .cm-ph-input::placeholder{color:var(--paper4);font-style:italic}
 .cm-ph-btn{
   background:var(--gold);color:var(--ink);border:none;
   border-radius:var(--r-sm);padding:.55rem 1rem;
-  font-family:'Space Mono',monospace;font-size:.6rem;
-  letter-spacing:.08em;text-transform:uppercase;cursor:pointer;
-  transition:all .2s;white-space:nowrap;
-  box-shadow:0 2px 10px rgba(200,168,75,.3);
+  font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;
+  cursor:pointer;transition:all .2s;white-space:nowrap;box-shadow:0 2px 10px rgba(212,168,67,.3);
 }
 .cm-ph-btn:hover{background:var(--gold2);transform:translateY(-1px)}
-
-/* footer of modal */
 #cert-modal-footer{
-  display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:.7rem;
-  padding:.9rem 1.5rem;
-  border-top:1px solid var(--border);
-  background:var(--ink3);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.7rem;
+  padding:.9rem 1.5rem;border-top:1px solid var(--border);background:var(--ink3);
 }
-.cm-desc{font-family:'Syne',sans-serif;font-size:.78rem;color:var(--paper3);line-height:1.6;}
+.cm-desc{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--paper3);line-height:1.6;}
 #cert-modal-dl{
-  display:inline-flex;align-items:center;gap:.4rem;
-  font-family:'Space Mono',monospace;font-size:.58rem;
-  letter-spacing:.08em;text-transform:uppercase;
-  padding:.35rem .8rem;border-radius:var(--r-sm);
+  display:inline-flex;align-items:center;gap:.38rem;
+  font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:.33rem .78rem;border-radius:var(--r-sm);
   border:1px solid var(--border2);color:var(--gold);
-  cursor:pointer;transition:all .2s;background:var(--gold3);
-  text-decoration:none;white-space:nowrap;
+  cursor:pointer;transition:all .2s;background:var(--gold3);text-decoration:none;white-space:nowrap;
 }
 #cert-modal-dl:hover{background:var(--gold);color:var(--ink);opacity:1}
 #cert-modal-dl.hidden{display:none}
-
-/* nav arrows */
-.cm-nav{
-  display:flex;gap:.5rem;align-items:center;
-}
+.cm-nav{display:flex;gap:.48rem;align-items:center;}
 .cm-arrow{
   width:30px;height:30px;border-radius:50%;
   background:var(--glass2);border:1px solid var(--border);
   display:flex;align-items:center;justify-content:center;
-  cursor:pointer;color:var(--paper3);font-size:.8rem;
-  transition:all .2s;
+  cursor:pointer;color:var(--paper3);font-size:.8rem;transition:all .2s;
 }
 .cm-arrow:hover{border-color:var(--gold);color:var(--gold)}
-.cm-counter{
-  font-family:'Space Mono',monospace;font-size:.58rem;
-  letter-spacing:.1em;color:var(--paper4);
-}
-
-/* keyboard hint */
-.cm-kbd-hint{
-  font-family:'Space Mono',monospace;font-size:.5rem;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--paper4);
-  text-align:center;padding-bottom:.75rem;
-}
-.cm-kbd-hint kbd{
-  display:inline-block;padding:.05rem .3rem;
-  border:1px solid var(--border2);border-radius:3px;
-  background:var(--ink3);color:var(--paper3);
-  font-family:'Space Mono',monospace;font-size:.55rem;
-}
+.cm-counter{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;color:var(--paper4);}
+.cm-kbd-hint{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper4);text-align:center;padding-bottom:.75rem;}
+.cm-kbd-hint kbd{display:inline-block;padding:.04rem .28rem;border:1px solid var(--border2);border-radius:3px;background:var(--ink3);color:var(--paper3);font-family:'DM Mono',monospace;font-size:.52rem;}
 
 /* ================================================================
    CONTACT
@@ -845,23 +813,28 @@ section:nth-child(even){background:var(--ink2)}
 .c-card{background:var(--glass);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
 .c-card-top{background:var(--ink3);padding:1.7rem 1.8rem;border-bottom:1px solid var(--border);position:relative;overflow:hidden;}
 .c-card-top::before{content:'';position:absolute;top:-30px;right:-30px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle,var(--gold3),transparent);}
-.c-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--paper);margin-bottom:.22rem;position:relative;z-index:1;}
-.c-role{font-family:'Syne',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;position:relative;z-index:1;}
+.c-name{font-family:'Playfair Display',serif;font-size:1.28rem;font-weight:700;color:var(--paper);margin-bottom:.2rem;position:relative;z-index:1;}
+.c-role{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;position:relative;z-index:1;}
 .c-info{padding:1.5rem 1.8rem;display:flex;flex-direction:column;gap:1rem}
-.ci{display:flex;align-items:flex-start;gap:.8rem}
-.ci-ico{width:34px;height:34px;border-radius:var(--r-sm);flex-shrink:0;background:var(--ink3);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--gold);font-family:'Space Mono',monospace;font-weight:700;}
-.ci-lbl{font-family:'Space Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);margin-bottom:.14rem;}
-.ci-val{font-family:'Syne',sans-serif;font-size:.82rem;color:var(--paper3);}
+.ci{display:flex;align-items:flex-start;gap:.75rem}
+.ci-ico{width:32px;height:32px;border-radius:var(--r-sm);flex-shrink:0;background:var(--ink3);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--gold);font-family:'DM Mono',monospace;font-weight:700;}
+.ci-lbl{font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);margin-bottom:.12rem;}
+.ci-val{font-family:'Outfit',sans-serif;font-size:.82rem;color:var(--paper3);}
 .ci-val a{color:var(--paper3);transition:color .2s}
 .ci-val a:hover{color:var(--gold)}
-.c-form{display:flex;flex-direction:column;gap:.9rem}
-.cfl{font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);display:block;margin-bottom:.35rem;}
-.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
-.cf-f input,.cf-f textarea{width:100%;background:var(--glass);border:1px solid var(--border);border-radius:var(--r-sm);padding:.75rem 1rem;font-size:.85rem;color:var(--paper);font-family:'Syne',sans-serif;outline:none;transition:border-color .22s,box-shadow .22s;}
-.cf-f input:focus,.cf-f textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,168,75,.12);}
+.c-form{display:flex;flex-direction:column;gap:.88rem}
+.cfl{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);display:block;margin-bottom:.33rem;}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:.88rem}
+.cf-f input,.cf-f textarea{
+  width:100%;background:var(--glass);border:1px solid var(--border);
+  border-radius:var(--r-sm);padding:.72rem 1rem;font-size:.85rem;
+  color:var(--paper);font-family:'Outfit',sans-serif;outline:none;
+  transition:border-color .22s,box-shadow .22s;
+}
+.cf-f input:focus,.cf-f textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,168,67,.1);}
 .cf-f input::placeholder,.cf-f textarea::placeholder{color:var(--paper4);font-style:italic;}
 .cf-f textarea{resize:vertical;min-height:130px}
-.form-note{font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.07em;color:var(--paper4);margin-top:-.2rem;}
+.form-note{font-family:'DM Mono',monospace;font-size:.53rem;letter-spacing:.07em;color:var(--paper4);margin-top:-.18rem;}
 
 /* ================================================================
    FOOTER
@@ -871,32 +844,32 @@ footer{
   padding:2.2rem 5rem;display:flex;align-items:center;justify-content:space-between;
   flex-wrap:wrap;gap:1rem;transition:background .45s;
 }
-.f-l .f-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:var(--paper);margin-bottom:.2rem;}
-.f-l .f-sub{font-family:'Syne',sans-serif;font-size:.75rem;color:var(--paper3);font-style:italic;}
-.f-links{display:flex;flex-wrap:wrap;gap:.45rem}
-.f-links a{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;padding:.26rem .62rem;border-radius:4px;border:1px solid var(--border);color:var(--paper3);transition:all .22s;}
+.f-l .f-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--paper);margin-bottom:.18rem;}
+.f-l .f-sub{font-family:'Outfit',sans-serif;font-size:.75rem;color:var(--paper3);font-style:italic;}
+.f-links{display:flex;flex-wrap:wrap;gap:.42rem}
+.f-links a{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;padding:.24rem .6rem;border-radius:4px;border:1px solid var(--border);color:var(--paper3);transition:all .22s;}
 .f-links a:hover{border-color:var(--gold);color:var(--gold);opacity:1}
-.f-copy{font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.07em;color:var(--paper4);text-align:right;line-height:1.7;}
+.f-copy{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.07em;color:var(--paper4);text-align:right;line-height:1.7;}
 
 #back-top{
   position:fixed;bottom:2rem;right:1.5rem;z-index:2000;
-  width:38px;height:38px;border-radius:50%;
+  width:36px;height:36px;border-radius:50%;
   background:var(--ink3);border:1px solid var(--border2);
   display:flex;align-items:center;justify-content:center;
   cursor:pointer;transition:all .25s;opacity:0;pointer-events:none;
   font-size:.8rem;color:var(--gold);
 }
 #back-top.show{opacity:1;pointer-events:auto}
-#back-top:hover{background:var(--gold);color:var(--ink);box-shadow:0 4px 16px rgba(200,168,75,.4)}
+#back-top:hover{background:var(--gold);color:var(--ink);box-shadow:0 4px 16px rgba(212,168,67,.4)}
 
 /* ================================================================
    SCROLL REVEAL
 ================================================================ */
-.rev{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
 .rev.vis{opacity:1;transform:none}
-.rev-l{opacity:0;transform:translateX(-20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rev-l{opacity:0;transform:translateX(-22px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
 .rev-l.vis{opacity:1;transform:none}
-.rev-r{opacity:0;transform:translateX(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rev-r{opacity:0;transform:translateX(22px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
 .rev-r.vis{opacity:1;transform:none}
 
 /* ================================================================
@@ -928,13 +901,13 @@ footer{
   .prof-grid{grid-template-columns:1fr}
   .stats-strip{flex-direction:column}
   .stat-cell{border-right:none;border-bottom:1px solid var(--border)}
-  [data-theme="light"] .hero-inner{padding:1.8rem 1.2rem}
   .scroll-cue{left:1.5rem;transform:none}
-  .hero-h{font-size:clamp(2.5rem,10vw,3.8rem)}
+  .hero-h{font-size:clamp(2.4rem,10vw,3.6rem)}
   #back-top{bottom:1.2rem;right:1rem}
   #cert-modal-panel{max-width:100%}
   .cm-ph-input-row{flex-direction:column}
   #cert-modal-footer{flex-direction:column;align-items:flex-start}
+  [data-theme="light"] .hero-inner{padding:1.8rem 1.2rem}
 }
 </style>
 </head>
@@ -947,7 +920,6 @@ footer{
   <span class="tdot"></span>
   <span id="tlbl">Light</span>
 </button>
-
 <button id="nav-toggle" aria-label="Toggle navigation">
   <span></span><span></span><span></span>
 </button>
@@ -958,7 +930,6 @@ footer{
 <div id="cert-modal" role="dialog" aria-modal="true" aria-label="Certificate viewer">
   <div id="cert-modal-backdrop" onclick="closeCertModal()"></div>
   <div id="cert-modal-panel">
-
     <div id="cert-modal-header">
       <div>
         <div id="cert-modal-title">Certificate</div>
@@ -973,17 +944,13 @@ footer{
         <div id="cert-modal-close" onclick="closeCertModal()" title="Close (Esc)">✕</div>
       </div>
     </div>
-
     <div id="cert-modal-body">
       <div id="cert-modal-img-wrap">
         <img id="cert-modal-img" src="" alt="Certificate" style="display:none"/>
         <div id="cert-modal-placeholder">
           <div class="cm-ph-icon">🎓</div>
           <div class="cm-ph-title" id="cm-ph-cert-name">Certificate Name</div>
-          <div class="cm-ph-hint">
-            Paste an image URL below to display your certificate,<br>
-            or drop an image file onto this area.
-          </div>
+          <div class="cm-ph-hint">Paste an image URL below to display your certificate,<br>or drop an image file onto this area.</div>
           <div class="cm-ph-input-row">
             <input class="cm-ph-input" id="cm-url-input" type="url" placeholder="https://…/certificate.jpg"/>
             <button class="cm-ph-btn" onclick="loadCertFromInput()">Load Image</button>
@@ -991,17 +958,13 @@ footer{
         </div>
       </div>
     </div>
-
     <div id="cert-modal-footer">
       <div class="cm-desc" id="cert-modal-desc">Description text goes here.</div>
       <div style="display:flex;align-items:center;gap:.7rem;flex-wrap:wrap">
         <a id="cert-modal-dl" class="hidden" download target="_blank">↓ Download</a>
-        <div class="cm-kbd-hint">
-          <kbd>←</kbd> <kbd>→</kbd> Navigate &nbsp; <kbd>Esc</kbd> Close
-        </div>
+        <div class="cm-kbd-hint"><kbd>←</kbd> <kbd>→</kbd> Navigate &nbsp; <kbd>Esc</kbd> Close</div>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -1015,7 +978,6 @@ footer{
     <div class="sb-role">Senior Research Assistant<br>Quantum ML &amp; AI Researcher</div>
     <div class="sb-affil">ELITE Research Lab, New York<br>Jagannath University, Dhaka</div>
   </div>
-
   <nav class="sb-nav">
     <a href="#hero"           class="sn active"><span class="nnum">00</span><span>Overview</span></a>
     <a href="#about"          class="sn"><span class="nnum">01</span><span>About</span></a>
@@ -1028,43 +990,31 @@ footer{
     <a href="#certificates"   class="sn"><span class="nnum">08</span><span>Certificates</span></a>
     <a href="#contact"        class="sn"><span class="nnum">09</span><span>Contact</span></a>
   </nav>
-
   <div class="sb-acad">
     <div class="sb-acad-lbl">Academic Profiles</div>
     <div class="sb-acad-icons">
-
-      <!-- Google Scholar -->
       <a href="https://scholar.google.com/citations?user=6t-c6IsAAAAJ&hl=en" target="_blank" class="sb-ico-btn" title="Google Scholar">
         <svg viewBox="0 0 24 24"><polygon points="12 3 21 8.5 12 14 3 8.5 12 3"/><path d="M7.5 11V16.5c0 2.5 2.02 4 4.5 4s4.5-1.5 4.5-4V11"/><line x1="21" y1="8.5" x2="21" y2="13.5"/></svg>
       </a>
-
-      <!-- ORCID -->
       <a href="https://orcid.org/0009-0009-1492-7935" target="_blank" class="sb-ico-btn" title="ORCID">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><line x1="9" y1="8" x2="9" y2="16"/><path d="M13 8c1.66 0 3 1.34 3 4s-1.34 4-3 4h-2.5V8H13z"/></svg>
       </a>
-
-      <!-- ResearchGate -->
       <a href="https://www.researchgate.net/profile/Najnin-Sultana-Shirin" target="_blank" class="sb-ico-btn" title="ResearchGate">
         <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 16V8h4c1.1 0 2 .9 2 2s-.9 2-2 2H8"/><line x1="12" y1="12" x2="16" y2="16"/></svg>
       </a>
-
-      <!-- GitHub -->
       <a href="https://github.com/najnin26" target="_blank" class="sb-ico-btn" title="GitHub">
         <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
       </a>
-
-      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/najnin-shirin-a909262a6" target="_blank" class="sb-ico-btn" title="LinkedIn">
         <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
       </a>
-
     </div>
   </div>
 </aside>
 
 <main id="main">
 
-<!-- HERO -->
+<!-- ================================================================ HERO ================================================================ -->
 <section id="hero">
   <canvas id="hero-canvas"></canvas>
   <div class="hero-inner">
@@ -1093,103 +1043,135 @@ footer{
       <a href="mailto:b190305031@cse.jnu.ac.bd" class="btn btn-outline">Get in Touch</a>
     </div>
     <div class="hero-acad">
-      <a href="https://scholar.google.com/citations?user=6t-c6IsAAAAJ&hl=en" target="_blank" class="ha-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Scholar
-      </a>
-      <a href="https://orcid.org/0009-0009-1492-7935" target="_blank" class="ha-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12h6M12 8v8"/></svg>ORCID
-      </a>
-      <a href="https://www.researchgate.net/profile/Najnin-Sultana-Shirin" target="_blank" class="ha-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M8 8h5M8 16h8"/></svg>ResearchGate
-      </a>
-      <a href="mailto:b190305031@cse.jnu.ac.bd" class="ha-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email
-      </a>
-      <a href="https://github.com/najnin26" target="_blank" class="ha-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/najnin-shirin-a909262a6" target="_blank" class="ha-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
-      </a>
+      <a href="https://scholar.google.com/citations?user=6t-c6IsAAAAJ&hl=en" target="_blank" class="ha-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Scholar</a>
+      <a href="https://orcid.org/0009-0009-1492-7935" target="_blank" class="ha-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12h6M12 8v8"/></svg>ORCID</a>
+      <a href="https://www.researchgate.net/profile/Najnin-Sultana-Shirin" target="_blank" class="ha-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M8 8h5M8 16h8"/></svg>ResearchGate</a>
+      <a href="mailto:b190305031@cse.jnu.ac.bd" class="ha-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email</a>
+      <a href="https://github.com/najnin26" target="_blank" class="ha-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+      <a href="https://www.linkedin.com/in/najnin-shirin-a909262a6" target="_blank" class="ha-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
     </div>
   </div>
   <div class="scroll-cue">
-    <div class="scline"></div>
-    <span>Scroll to explore</span>
-    <span class="arr">→</span>
+    <div class="scline"></div><span>Scroll to explore</span><span class="arr">→</span>
   </div>
 </section>
 
-
-<!-- ABOUT -->
+<!-- ================================================================ ABOUT ================================================================ -->
 <section id="about">
-  <div class="sec-eye"><span class="sec-num">01</span><span class="sec-line"></span></div>
-  <h2 class="sec-h">About Me</h2>
-  <p class="sec-sub">Researcher at the intersection of Artificial Intelligence and Quantum Computing.</p>
 
-  <div class="about-wrap">
-
-    <!-- Left: identity card -->
-    <div class="about-card rev-l">
-      <div class="about-av">NS</div>
-      <div class="about-cn">Najnin Sultana Shirin</div>
-      <div class="about-cr">Senior Research Assistant<br>Quantum ML &amp; AI Researcher</div>
-      <div class="about-div"></div>
-      <div class="about-facts">
-        <div class="af"><span class="af-k">Affiliation</span><span class="af-v">ELITE Research Lab, NY</span></div>
-        <div class="af"><span class="af-k">Degree</span><span class="af-v">M.Sc. CSE Candidate</span></div>
-        <div class="af"><span class="af-k">University</span><span class="af-v">Jagannath University</span></div>
-        <div class="af"><span class="af-k">Location</span><span class="af-v">Dhaka, Bangladesh</span></div>
-        <div class="af"><span class="af-k">B.Sc. CGPA</span><span class="af-v">3.81 / 4.00 — First Class</span></div>
-      </div>
-      <div class="about-div"></div>
-      <div class="about-int-lbl">Research Interests</div>
-      <div class="about-int-tags">
-        <span class="ait">Quantum NN</span>
-        <span class="ait">VQC</span>
-        <span class="ait">Quantum NLP</span>
-        <span class="ait">Hybrid AI</span>
-        <span class="ait">LLMs</span>
-        <span class="ait">Healthcare AI</span>
-        <span class="ait">Graph SP</span>
-        <span class="ait">Computer Vision</span>
-      </div>
+  <!-- Header -->
+  <div class="about-header rev">
+    <div>
+      <div class="sec-eye"><span class="sec-num">01</span><span class="sec-line"></span></div>
+      <h2 class="sec-h">About Me</h2>
     </div>
-
-    <!-- Right: bio -->
-    <div class="about-bio rev-r">
-      <div class="about-lede">Working at the intersection of Artificial Intelligence and Quantum Computing — designing learning systems that extend beyond the capabilities of classical architectures.</div>
-
-      <div class="about-body">
-        <p>I am a <strong>Senior Research Assistant at ELITE Research Lab</strong>, where my research focuses on <strong>Quantum Neural Networks</strong>, <strong>Variational Quantum Circuits (VQCs)</strong>, and <strong>Quantum Natural Language Processing (NLP)</strong>, leveraging principles such as superposition, entanglement, and interference to design learning systems that go beyond the capabilities of classical architectures.</p>
-
-        <p>My work spans the full AI stack: from building parameterized quantum circuits for classification and optimization, to applying quantum-inspired models in NLP and Computer Vision. I am particularly interested in how <strong>hybrid classical–quantum systems</strong> can unlock new efficiencies and representations in machine learning.</p>
-
-        <p>I have contributed to <strong>published research</strong> in this domain and continue to explore open problems that define the next generation of Quantum Machine Learning.</p>
-
-        <p>My broader interests include <strong>Large Language Models</strong>, <strong>Graph Signal Processing</strong>, and <strong>Data Science</strong>, which complement my quantum research and enable me to think across multiple layers of the AI ecosystem.</p>
-
-        <p>I am always open to connecting with researchers, practitioners, and innovators working on quantum AI, hybrid systems, or next-generation NLP. <strong>Let's collaborate and shape the future of intelligent systems together.</strong></p>
+    <div class="about-header-right">
+      <div class="about-gpa-display">
+        <div class="agpa-num">3.81<em>/4</em></div>
+        <div class="agpa-lbl">B.Sc. CGPA · First Class</div>
       </div>
-
-      <div class="about-kws">
-        <span class="akw">Quantum Neural Networks</span>
-        <span class="akw">Variational Quantum Circuits</span>
-        <span class="akw">Quantum NLP</span>
-        <span class="akw">NISQ Algorithms</span>
-        <span class="akw">Hybrid Classical–Quantum</span>
-        <span class="akw">Superposition &amp; Entanglement</span>
-        <span class="akw">Large Language Models</span>
-        <span class="akw">Graph Signal Processing</span>
-        <span class="akw">Healthcare AI</span>
-        <span class="akw">Computer Vision</span>
-      </div>
+      <div class="about-pulse"><span class="about-pulse-dot"></span>Open to Collaborate</div>
     </div>
-
   </div>
+
+  <div class="about-strips">
+
+    <!-- Strip 1 : Identity -->
+    <div class="about-strip rev">
+      <div class="as-label">
+        <span class="as-num">01</span>
+        <span class="as-title">Identity</span>
+      </div>
+      <div class="as-content">
+        <div class="as-identity">
+          <div class="about-av">NS</div>
+          <div class="asi-text">
+            <div class="asi-name">Najnin Sultana Shirin</div>
+            <div class="asi-role">Senior Research Assistant · Quantum ML &amp; AI</div>
+            <div class="asi-affil">ELITE Research Lab, New York &nbsp;·&nbsp; Jagannath University, Dhaka</div>
+          </div>
+          <div class="asi-divider"></div>
+          <div class="asi-facts">
+            <div class="asif"><span class="asif-k">Degree</span><span class="asif-v">M.Sc. CSE (Ongoing)</span></div>
+            <div class="asif"><span class="asif-k">Location</span><span class="asif-v">Dhaka, Bangladesh</span></div>
+            <div class="asif"><span class="asif-k">HSC GPA</span><span class="asif-v">5.00 / 5.00</span></div>
+            <div class="asif"><span class="asif-k">SSC GPA</span><span class="asif-v">5.00 / 5.00</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strip 2 : Vision / Quote -->
+    <div class="about-strip rev" style="transition-delay:.08s">
+      <div class="as-label">
+        <span class="as-num">02</span>
+        <span class="as-title">Vision</span>
+      </div>
+      <div class="as-content">
+        <div class="as-quote">
+          <p>Working at the intersection of Artificial Intelligence and Quantum Computing — designing learning systems that extend beyond the capabilities of classical architectures.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strip 3 : Bio -->
+    <div class="about-strip rev" style="transition-delay:.16s">
+      <div class="as-label">
+        <span class="as-num">03</span>
+        <span class="as-title">Biography</span>
+      </div>
+      <div class="as-content">
+        <div class="as-bio-text">
+          <p>I am a <strong>Senior Research Assistant at ELITE Research Lab</strong>, where my research focuses on <strong>Quantum Neural Networks</strong>, <strong>Variational Quantum Circuits (VQCs)</strong>, and <strong>Quantum NLP</strong>, leveraging superposition, entanglement, and interference to design learning systems that exceed classical limits.</p>
+          <p>My work spans the full AI stack — from parameterized quantum circuits for classification and optimization, to quantum-inspired models in NLP and Computer Vision. I am particularly interested in how <strong>hybrid classical–quantum systems</strong> can unlock new efficiencies in machine learning. My broader interests include <strong>Large Language Models</strong>, <strong>Graph Signal Processing</strong>, and <strong>Data Science</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strip 4 : Research Interests -->
+    <div class="about-strip rev" style="transition-delay:.24s">
+      <div class="as-label">
+        <span class="as-num">04</span>
+        <span class="as-title">Research Interests</span>
+      </div>
+      <div class="as-content">
+        <div class="as-interests">
+          <span class="ait">Quantum Neural Networks</span>
+          <span class="ait">Variational Quantum Circuits</span>
+          <span class="ait">Quantum NLP</span>
+          <span class="ait">NISQ Algorithms</span>
+          <span class="ait">Hybrid Classical–Quantum</span>
+          <span class="ait">LLMs</span>
+          <span class="ait">Healthcare AI</span>
+          <span class="ait">Graph Signal Processing</span>
+          <span class="ait">Computer Vision</span>
+          <span class="ait">Transfer Learning</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strip 5 : Profiles -->
+    <div class="about-strip rev" style="transition-delay:.32s">
+      <div class="as-label">
+        <span class="as-num">05</span>
+        <span class="as-title">Academic Profiles</span>
+      </div>
+      <div class="as-content">
+        <div class="as-links">
+          <a href="https://scholar.google.com/citations?user=6t-c6IsAAAAJ&hl=en" target="_blank" class="asl">Google Scholar <span class="asl-arrow">↗</span></a>
+          <a href="https://orcid.org/0009-0009-1492-7935" target="_blank" class="asl">ORCID <span class="asl-arrow">↗</span></a>
+          <a href="https://www.researchgate.net/profile/Najnin-Sultana-Shirin" target="_blank" class="asl">ResearchGate <span class="asl-arrow">↗</span></a>
+          <a href="https://github.com/najnin26" target="_blank" class="asl">GitHub <span class="asl-arrow">↗</span></a>
+          <a href="https://www.linkedin.com/in/najnin-shirin-a909262a6" target="_blank" class="asl">LinkedIn <span class="asl-arrow">↗</span></a>
+          <a href="mailto:b190305031@cse.jnu.ac.bd" class="asl">Email <span class="asl-arrow">↗</span></a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /strips -->
 </section>
 
-<!-- NEWS -->
+<!-- ================================================================ NEWS ================================================================ -->
 <section id="news">
   <div class="sec-eye"><span class="sec-num">02</span><span class="sec-line"></span></div>
   <h2 class="sec-h">News &amp; Updates</h2>
@@ -1204,7 +1186,7 @@ footer{
   </div>
 </section>
 
-<!-- RESEARCH AREAS -->
+<!-- ================================================================ RESEARCH AREAS ================================================================ -->
 <section id="research-areas">
   <div class="sec-eye"><span class="sec-num">03</span><span class="sec-line"></span></div>
   <h2 class="sec-h">Research Areas</h2>
@@ -1227,7 +1209,7 @@ footer{
   </div>
 </section>
 
-<!-- PUBLICATIONS -->
+<!-- ================================================================ PUBLICATIONS ================================================================ -->
 <section id="publications">
   <div class="sec-eye"><span class="sec-num">04</span><span class="sec-line"></span></div>
   <h2 class="sec-h">Publications</h2>
@@ -1242,64 +1224,271 @@ footer{
     <button class="fc" data-f="review">Under Review</button>
   </div>
   <div class="pub-list">
+
+    <!-- Paper 1 -->
     <article class="pub-entry rev" data-pt="journal" data-ps="pub">
-      <div class="pub-main"><div>
-        <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">Intelligence-Based Medicine — Elsevier</span><span class="pyear">2026</span></div>
-        <div class="ptitle">Quantum Computing in Medical Diagnostics and Treatment: A Systematic Review of Trends, Challenges and Future Directions</div>
-        <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Mehedi Hasan, Md Kishor Morol, Nafiz Fahad, Md Tanzib Hossain, Md Jakir Hossen, Dip Nandi</div>
-        <div class="pabstract" id="a1">This systematic review comprehensively surveys the intersection of quantum computing and medical diagnostics, covering quantum algorithms for imaging analysis, drug discovery, genomic data processing, and treatment optimization. Key trends include variational quantum eigensolvers, quantum kernel methods for disease classification, and hybrid quantum-classical pipelines for clinical decision support.</div>
-        <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank" class="plink live">↗ Full Paper</a><a href="https://github.com/najnin26/Review-Paper-1" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a1',this)">Abstract ▾</button></div>
-      </div><div style="text-align:right"><div class="pstatus ps-pub">● Published</div><div class="pnum">01</div></div></div>
+      <div class="pub-main">
+        <div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">Intelligence-Based Medicine — Elsevier</span><span class="pyear">2026</span></div>
+          <div class="ptitle">Quantum Computing in Medical Diagnostics and Treatment: A Systematic Review of Trends, Challenges and Future Directions</div>
+          <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Mehedi Hasan, Md Kishor Morol, Nafiz Fahad, Md Tanzib Hossain, Md Jakir Hossen, Dip Nandi</div>
+          <div class="pub-arch">
+            <div class="pub-arch-lbl">Review Scope &amp; Pipeline</div>
+            <svg viewBox="0 0 700 112" xmlns="http://www.w3.org/2000/svg" style="max-height:112px">
+              <defs><marker id="a1r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="32" width="100" height="48" rx="6" fill="rgba(79,205,232,.07)" stroke="#4fcde8" stroke-width="1" stroke-opacity=".4"/>
+              <text x="56" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4fcde8">Medical</text>
+              <text x="56" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4fcde8">Literature</text>
+              <rect x="138" y="14" width="100" height="36" rx="5" fill="rgba(212,168,67,.08)" stroke="#d4a843" stroke-width="1" stroke-opacity=".4"/>
+              <text x="188" y="29" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843">Imaging &amp;</text>
+              <text x="188" y="42" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843">Diagnostics</text>
+              <rect x="138" y="62" width="100" height="36" rx="5" fill="rgba(167,139,250,.08)" stroke="#a78bfa" stroke-width="1" stroke-opacity=".4"/>
+              <text x="188" y="77" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#a78bfa">Drug</text>
+              <text x="188" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#a78bfa">Discovery</text>
+              <rect x="272" y="32" width="106" height="48" rx="6" fill="rgba(212,168,67,.1)" stroke="#d4a843" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="325" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Quantum</text>
+              <text x="325" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Algorithms</text>
+              <rect x="412" y="14" width="100" height="36" rx="5" fill="rgba(52,211,153,.07)" stroke="#34d399" stroke-width="1" stroke-opacity=".4"/>
+              <text x="462" y="29" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399">VQE / QAOA</text>
+              <text x="462" y="42" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399">Kernels</text>
+              <rect x="412" y="62" width="100" height="36" rx="5" fill="rgba(251,191,36,.07)" stroke="#fbbf24" stroke-width="1" stroke-opacity=".4"/>
+              <text x="462" y="77" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#fbbf24">Hybrid</text>
+              <text x="462" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#fbbf24">Pipelines</text>
+              <rect x="546" y="32" width="108" height="48" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="600" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Systematic</text>
+              <text x="600" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Review</text>
+              <line x1="106" y1="56" x2="138" y2="32" stroke="#4fcde8" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="106" y1="56" x2="138" y2="80" stroke="#4fcde8" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="238" y1="32" x2="272" y2="50" stroke="#d4a843" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="238" y1="80" x2="272" y2="62" stroke="#a78bfa" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="378" y1="50" x2="412" y2="32" stroke="#d4a843" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="378" y1="62" x2="412" y2="80" stroke="#d4a843" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="512" y1="32" x2="546" y2="50" stroke="#34d399" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="512" y1="80" x2="546" y2="62" stroke="#fbbf24" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+            </svg>
+          </div>
+          <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank" class="plink live">↗ Full Paper</a><a href="https://github.com/najnin26/Review-Paper-1" target="_blank" class="plink">↗ GitHub</a></div>
+        </div>
+        <div style="text-align:right"><div class="pstatus ps-pub">● Published</div><div class="pnum">01</div></div>
+      </div>
     </article>
+
+    <!-- Paper 2 -->
     <article class="pub-entry rev" data-pt="conf" data-ps="acc" style="transition-delay:.07s">
-      <div class="pub-main"><div>
-        <div class="pmeta"><span class="ptag pt-c">Conference Paper</span><span class="pvenue">MECON 2026 — Malaysia</span><span class="pyear">2026</span></div>
-        <div class="ptitle">ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification</div>
-        <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Shabikun Nahar</div>
-        <div class="pabstract" id="a2">We introduce ACAM-MobileNetV2, integrating channel-wise and spatial attention modules with a supervised contrastive loss into MobileNetV2 for multi-class viral skin lesion classification. ACAM-MobileNetV2 outperforms vanilla MobileNetV2 and attention-augmented baselines in macro-F1 and per-class accuracy.</div>
-        <div class="plinks"><button class="plink plink-acc" onclick="event.preventDefault();openCertModal(4)">🎓 Acceptance Cert</button><a href="https://github.com/najnin26/ACAM-MobileNetV2" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a2',this)">Abstract ▾</button></div>
-      </div><div style="text-align:right"><div class="pstatus ps-acc">◆ Accepted</div><div class="pnum">02</div></div></div>
+      <div class="pub-main">
+        <div>
+          <div class="pmeta"><span class="ptag pt-c">Conference Paper</span><span class="pvenue">MECON 2026 — Malaysia</span><span class="pyear">2026</span></div>
+          <div class="ptitle">ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification</div>
+          <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Shabikun Nahar</div>
+          <div class="pub-arch">
+            <div class="pub-arch-lbl">ACAM-MobileNetV2 Architecture</div>
+            <svg viewBox="0 0 700 104" xmlns="http://www.w3.org/2000/svg" style="max-height:104px">
+              <defs><marker id="a2r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="30" width="82" height="44" rx="6" fill="rgba(79,205,232,.07)" stroke="#4fcde8" stroke-width="1" stroke-opacity=".4"/>
+              <text x="47" y="50" text-anchor="middle" font-family="monospace" font-size="8" fill="#4fcde8">Skin</text>
+              <text x="47" y="63" text-anchor="middle" font-family="monospace" font-size="8" fill="#4fcde8">Image</text>
+              <rect x="114" y="18" width="120" height="68" rx="6" fill="rgba(212,168,67,.09)" stroke="#d4a843" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="174" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#d4a843">MobileNetV2</text>
+              <text x="174" y="58" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843" fill-opacity=".7">Backbone</text>
+              <text x="174" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843" fill-opacity=".5">Feature Maps</text>
+              <rect x="262" y="18" width="98" height="30" rx="5" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5"/>
+              <text x="311" y="36" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa">Channel Attn</text>
+              <rect x="262" y="56" width="98" height="30" rx="5" fill="rgba(244,114,182,.09)" stroke="#f472b6" stroke-width="1" stroke-opacity=".5"/>
+              <text x="311" y="75" text-anchor="middle" font-family="monospace" font-size="8" fill="#f472b6">Spatial Attn</text>
+              <rect x="390" y="30" width="110" height="44" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="445" y="50" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#34d399">SupCon</text>
+              <text x="445" y="63" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#34d399">Loss</text>
+              <rect x="532" y="30" width="110" height="44" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="587" y="50" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Multi-Class</text>
+              <text x="587" y="63" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Output</text>
+              <line x1="88" y1="52" x2="114" y2="52" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a2r)"/>
+              <line x1="234" y1="44" x2="262" y2="33" stroke="#d4a843" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
+              <line x1="234" y1="60" x2="262" y2="71" stroke="#d4a843" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
+              <line x1="360" y1="33" x2="390" y2="47" stroke="#a78bfa" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
+              <line x1="360" y1="71" x2="390" y2="57" stroke="#f472b6" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
+              <line x1="500" y1="52" x2="532" y2="52" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a2r)"/>
+            </svg>
+          </div>
+          <div class="plinks"><button class="plink plink-acc" onclick="event.preventDefault();openCertModal(4)">🎓 Acceptance Cert</button><a href="https://github.com/najnin26/ACAM-MobileNetV2" target="_blank" class="plink">↗ GitHub</a></div>
+        </div>
+        <div style="text-align:right"><div class="pstatus ps-acc">◆ Accepted</div><div class="pnum">02</div></div>
+      </div>
     </article>
+
+    <!-- Paper 3 -->
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.14s">
-      <div class="pub-main"><div>
-        <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">IEEE Transactions on Quantum Engineering</span><span class="pyear">2025</span></div>
-        <div class="ptitle">Q-EmotionNet: A Quantum Convolutional Neural Network for Facial Emotion Recognition via Variational Quantum Circuits</div>
-        <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Kishor Morol, Tze Hui Liew, Dip Nandi</div>
-        <div class="pabstract" id="a3">We propose Q-EmotionNet, a quantum convolutional neural network that encodes facial feature maps into parameterized quantum states and processes them through variational quantum circuits. The model achieves competitive emotion classification accuracy with favorable parameter efficiency compared to classical CNNs.</div>
-        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/Q-EmotionNet" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a3',this)">Abstract ▾</button></div>
-      </div><div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">03</div></div></div>
+      <div class="pub-main">
+        <div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">IEEE Transactions on Quantum Engineering</span><span class="pyear">2025</span></div>
+          <div class="ptitle">Q-EmotionNet: A Quantum Convolutional Neural Network for Facial Emotion Recognition via Variational Quantum Circuits</div>
+          <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Kishor Morol, Tze Hui Liew, Dip Nandi</div>
+          <div class="pub-arch">
+            <div class="pub-arch-lbl">Q-EmotionNet Architecture</div>
+            <svg viewBox="0 0 700 108" xmlns="http://www.w3.org/2000/svg" style="max-height:108px">
+              <defs><marker id="a3r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="30" width="86" height="48" rx="6" fill="rgba(79,205,232,.07)" stroke="#4fcde8" stroke-width="1" stroke-opacity=".4"/>
+              <text x="49" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#4fcde8">Face</text>
+              <text x="49" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#4fcde8">Image</text>
+              <rect x="120" y="22" width="108" height="64" rx="6" fill="rgba(212,168,67,.08)" stroke="#d4a843" stroke-width="1" stroke-opacity=".4"/>
+              <text x="174" y="47" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Classical</text>
+              <text x="174" y="60" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">CNN</text>
+              <text x="174" y="73" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843" fill-opacity=".6">Feature Maps</text>
+              <rect x="260" y="30" width="108" height="48" rx="6" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5"/>
+              <text x="314" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa">Amplitude</text>
+              <text x="314" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa">Encoding</text>
+              <rect x="400" y="16" width="122" height="76" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.4" stroke-opacity=".6"/>
+              <text x="461" y="41" text-anchor="middle" font-family="monospace" font-size="9" fill="#34d399">VQC Layer</text>
+              <text x="461" y="55" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".8">RX · RY · CNOT</text>
+              <text x="461" y="69" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".8">Entanglement</text>
+              <text x="461" y="82" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".6">Measurement</text>
+              <rect x="558" y="30" width="104" height="48" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="610" y="51" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Emotion</text>
+              <text x="610" y="64" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Class ×7</text>
+              <line x1="92" y1="54" x2="120" y2="54" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
+              <line x1="228" y1="54" x2="260" y2="54" stroke="#d4a843" stroke-width="1" stroke-opacity=".4" marker-end="url(#a3r)"/>
+              <line x1="368" y1="54" x2="400" y2="54" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
+              <line x1="522" y1="54" x2="558" y2="54" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
+            </svg>
+          </div>
+          <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/Q-EmotionNet" target="_blank" class="plink">↗ GitHub</a></div>
+        </div>
+        <div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">03</div></div>
+      </div>
     </article>
+
+    <!-- Paper 4 -->
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.21s">
-      <div class="pub-main"><div>
-        <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">Quantum Machine Intelligence — Springer Nature</span><span class="pyear">2025</span></div>
-        <div class="ptitle">Hybrid Quantum–Classical Transfer Learning Using Vision Transformer Features for Breast Cancer Histopathology</div>
-        <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Kishor Morol, Tze Hui Liew, Dip Nandi</div>
-        <div class="pabstract" id="a4">A hybrid quantum-classical transfer learning framework for breast cancer histopathology classification. Visual features extracted via a pre-trained Vision Transformer (ViT) are encoded into quantum states and classified through variational quantum circuits. Benchmarked on the BreakHis dataset across multiple magnification levels.</div>
-        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/quantum-vit-breast-cancer" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a4',this)">Abstract ▾</button></div>
-      </div><div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">04</div></div></div>
+      <div class="pub-main">
+        <div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">Quantum Machine Intelligence — Springer Nature</span><span class="pyear">2025</span></div>
+          <div class="ptitle">Hybrid Quantum–Classical Transfer Learning Using Vision Transformer Features for Breast Cancer Histopathology</div>
+          <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md Kishor Morol, Tze Hui Liew, Dip Nandi</div>
+          <div class="pub-arch">
+            <div class="pub-arch-lbl">Hybrid Transfer Learning Pipeline</div>
+            <svg viewBox="0 0 700 112" xmlns="http://www.w3.org/2000/svg" style="max-height:112px">
+              <defs><marker id="a4r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="28" width="92" height="56" rx="6" fill="rgba(244,114,182,.07)" stroke="#f472b6" stroke-width="1" stroke-opacity=".4"/>
+              <text x="52" y="50" text-anchor="middle" font-family="monospace" font-size="8" fill="#f472b6">Histopath.</text>
+              <text x="52" y="63" text-anchor="middle" font-family="monospace" font-size="8" fill="#f472b6">Patch</text>
+              <text x="52" y="76" text-anchor="middle" font-family="monospace" font-size="7" fill="#f472b6" fill-opacity=".6">BreakHis</text>
+              <rect x="128" y="20" width="120" height="72" rx="6" fill="rgba(79,205,232,.09)" stroke="#4fcde8" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="188" y="46" text-anchor="middle" font-family="monospace" font-size="9" fill="#4fcde8">ViT-B/16</text>
+              <text x="188" y="60" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".8">Pre-trained</text>
+              <text x="188" y="74" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".6">768-d CLS token</text>
+              <rect x="130" y="96" width="116" height="14" rx="3" fill="rgba(79,205,232,.05)" stroke="#4fcde8" stroke-width=".6" stroke-opacity=".3"/>
+              <text x="188" y="106" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#4fcde8" fill-opacity=".6">Frozen weights</text>
+              <rect x="284" y="28" width="110" height="56" rx="6" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5"/>
+              <text x="339" y="52" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#a78bfa">Angle</text>
+              <text x="339" y="65" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#a78bfa">Encoding</text>
+              <rect x="432" y="14" width="122" height="84" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.4" stroke-opacity=".6"/>
+              <text x="493" y="40" text-anchor="middle" font-family="monospace" font-size="9" fill="#34d399">Variational</text>
+              <text x="493" y="54" text-anchor="middle" font-family="monospace" font-size="8" fill="#34d399" fill-opacity=".8">Quantum</text>
+              <text x="493" y="68" text-anchor="middle" font-family="monospace" font-size="8" fill="#34d399" fill-opacity=".8">Circuit</text>
+              <text x="493" y="82" text-anchor="middle" font-family="monospace" font-size="7" fill="#34d399" fill-opacity=".6">n=4 qubits</text>
+              <rect x="592" y="28" width="102" height="56" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="643" y="52" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Malignant /</text>
+              <text x="643" y="65" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Benign</text>
+              <line x1="98" y1="56" x2="128" y2="56" stroke="#f472b6" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
+              <line x1="248" y1="56" x2="284" y2="56" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
+              <line x1="394" y1="56" x2="432" y2="56" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
+              <line x1="554" y1="56" x2="592" y2="56" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
+            </svg>
+          </div>
+          <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/quantum-vit-breast-cancer" target="_blank" class="plink">↗ GitHub</a></div>
+        </div>
+        <div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">04</div></div>
+      </div>
     </article>
+
+    <!-- Paper 5 -->
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.28s">
-      <div class="pub-main"><div>
-        <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">IEEE Open Access</span><span class="pyear">2025</span></div>
-        <div class="ptitle">QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping</div>
-        <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md. Aminul Islam, Maria Akter Abin, Mahmoud Abouyoussef</div>
-        <div class="pabstract" id="a5">QBERT-LSTM is a novel quantum-classical hybrid for real-time mental health detection from social media text. Combining quantum-enhanced BERT representations with a classical LSTM model, results demonstrate improvements in precision and recall over classical baselines, particularly for minority-class detection.</div>
-        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/QBERT-LSTM" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a5',this)">Abstract ▾</button></div>
-      </div><div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">05</div></div></div>
+      <div class="pub-main">
+        <div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">IEEE Open Access</span><span class="pyear">2025</span></div>
+          <div class="ptitle">QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping</div>
+          <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md. Aminul Islam, Maria Akter Abin, Mahmoud Abouyoussef</div>
+          <div class="pub-arch">
+            <div class="pub-arch-lbl">QBERT-LSTM Architecture</div>
+            <svg viewBox="0 0 700 104" xmlns="http://www.w3.org/2000/svg" style="max-height:104px">
+              <defs><marker id="a5r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="28" width="96" height="48" rx="6" fill="rgba(251,191,36,.07)" stroke="#fbbf24" stroke-width="1" stroke-opacity=".4"/>
+              <text x="54" y="49" text-anchor="middle" font-family="monospace" font-size="8" fill="#fbbf24">Social Media</text>
+              <text x="54" y="62" text-anchor="middle" font-family="monospace" font-size="8" fill="#fbbf24">Text</text>
+              <rect x="134" y="18" width="120" height="68" rx="6" fill="rgba(79,205,232,.09)" stroke="#4fcde8" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="194" y="46" text-anchor="middle" font-family="monospace" font-size="9" fill="#4fcde8">BERT</text>
+              <text x="194" y="60" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".8">Contextual</text>
+              <text x="194" y="74" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".6">Embeddings</text>
+              <rect x="290" y="18" width="120" height="68" rx="6" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1.4" stroke-opacity=".6"/>
+              <text x="350" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#a78bfa">QBERT</text>
+              <text x="350" y="58" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa" fill-opacity=".8">Quantum</text>
+              <text x="350" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#a78bfa" fill-opacity=".6">VQC Encoder</text>
+              <rect x="448" y="18" width="120" height="68" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="508" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#34d399">BiLSTM</text>
+              <text x="508" y="58" text-anchor="middle" font-family="monospace" font-size="8" fill="#34d399" fill-opacity=".8">Sequence</text>
+              <text x="508" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".6">Modelling</text>
+              <rect x="596" y="28" width="98" height="48" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="645" y="49" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Mental</text>
+              <text x="645" y="62" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Health Class</text>
+              <line x1="102" y1="52" x2="134" y2="52" stroke="#fbbf24" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
+              <line x1="254" y1="52" x2="290" y2="52" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
+              <line x1="410" y1="52" x2="448" y2="52" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
+              <line x1="568" y1="52" x2="596" y2="52" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
+            </svg>
+          </div>
+          <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/QBERT-LSTM" target="_blank" class="plink">↗ GitHub</a></div>
+        </div>
+        <div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">05</div></div>
+      </div>
     </article>
+
+    <!-- Paper 6 -->
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.35s">
-      <div class="pub-main"><div>
-        <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</span><span class="pyear">2025</span></div>
-        <div class="ptitle">SPARK — Signal Processing with Adaptive Reconstruction via Knowledge-aware GNNs</div>
-        <div class="pauthors">Fahim Hasan, <span class="me">Najnin Sultana Shirin</span>, Sajeeb Saha, Selina Sharmin, Tanvir Ahammed</div>
-        <div class="pabstract" id="a6">SPARK is a novel framework for signal processing with adaptive reconstruction using knowledge-aware Graph Neural Networks. The approach leverages domain-specific knowledge to enhance learning of graph structures from raw signal data, showing significant improvements in reconstruction accuracy and computational efficiency.</div>
-        <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/SPARK-GNN" target="_blank" class="plink">↗ GitHub</a><button class="plink" onclick="toggleAbs('a6',this)">Abstract ▾</button></div>
-      </div><div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">06</div></div></div>
+      <div class="pub-main">
+        <div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</span><span class="pyear">2025</span></div>
+          <div class="ptitle">SPARK — Signal Processing with Adaptive Reconstruction via Knowledge-aware GNNs</div>
+          <div class="pauthors">Fahim Hasan, <span class="me">Najnin Sultana Shirin</span>, Sajeeb Saha, Selina Sharmin, Tanvir Ahammed</div>
+          <div class="pub-arch">
+            <div class="pub-arch-lbl">SPARK Framework</div>
+            <svg viewBox="0 0 700 108" xmlns="http://www.w3.org/2000/svg" style="max-height:108px">
+              <defs><marker id="a6r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="28" width="96" height="52" rx="6" fill="rgba(251,191,36,.07)" stroke="#fbbf24" stroke-width="1" stroke-opacity=".4"/>
+              <text x="54" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#fbbf24">Raw</text>
+              <text x="54" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#fbbf24">Signal</text>
+              <rect x="136" y="18" width="120" height="72" rx="6" fill="rgba(79,205,232,.09)" stroke="#4fcde8" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="196" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4fcde8">Graph</text>
+              <text x="196" y="57" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4fcde8">Construction</text>
+              <text x="196" y="73" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".6">G=(V, E, W)</text>
+              <rect x="136" y="94" width="120" height="13" rx="3" fill="rgba(251,191,36,.06)" stroke="#fbbf24" stroke-width=".6" stroke-opacity=".3"/>
+              <text x="196" y="104" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#fbbf24" fill-opacity=".6">Domain Knowledge</text>
+              <rect x="296" y="18" width="120" height="72" rx="6" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1.4" stroke-opacity=".6"/>
+              <text x="356" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#a78bfa">K-Aware</text>
+              <text x="356" y="58" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#a78bfa">GNN</text>
+              <text x="356" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#a78bfa" fill-opacity=".7">Message Pass</text>
+              <rect x="462" y="18" width="120" height="72" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="522" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#34d399">Adaptive</text>
+              <text x="522" y="58" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#34d399">Reconstruct</text>
+              <text x="522" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".7">Spectral</text>
+              <rect x="600" y="28" width="94" height="52" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="647" y="51" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Restored</text>
+              <text x="647" y="64" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Signal</text>
+              <line x1="102" y1="54" x2="136" y2="54" stroke="#fbbf24" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
+              <line x1="256" y1="54" x2="296" y2="54" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
+              <line x1="416" y1="54" x2="462" y2="54" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
+              <line x1="582" y1="54" x2="600" y2="54" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
+            </svg>
+          </div>
+          <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/SPARK-GNN" target="_blank" class="plink">↗ GitHub</a></div>
+        </div>
+        <div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">06</div></div>
+      </div>
     </article>
+
+  </div>
   </div>
 </section>
 
-<!-- CV -->
+<!-- ================================================================ CV ================================================================ -->
 <section id="cv">
   <div class="sec-eye"><span class="sec-num">05</span><span class="sec-line"></span></div>
   <h2 class="sec-h">Curriculum Vitae</h2>
@@ -1325,7 +1514,7 @@ footer{
   </div>
 </section>
 
-<!-- SKILLS -->
+<!-- ================================================================ SKILLS ================================================================ -->
 <section id="skills">
   <div class="sec-eye"><span class="sec-num">06</span><span class="sec-line"></span></div>
   <h2 class="sec-h">Technical Skills</h2>
@@ -1348,7 +1537,7 @@ footer{
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- ================================================================ PROJECTS ================================================================ -->
 <section id="projects">
   <div class="sec-eye"><span class="sec-num">07</span><span class="sec-line"></span></div>
   <h2 class="sec-h">Research Projects</h2>
@@ -1373,61 +1562,36 @@ footer{
   </div>
 </section>
 
-<!-- ====================================================  CERTIFICATES  ==================================================== -->
+<!-- ================================================================ CERTIFICATES ================================================================ -->
 <section id="certificates">
   <div class="sec-eye"><span class="sec-num">08</span><span class="sec-line"></span></div>
   <h2 class="sec-h">Certificates &amp; Training</h2>
   <p class="sec-sub">Formal certifications in quantum computing, data science, and programming. <em>Click any card to view the certificate.</em></p>
   <div class="cert-grid">
-
-    <!-- cert 0 -->
     <div class="cert-card rev" data-cert-index="0">
       <span class="cert-view-badge">View ↗</span>
       <div class="cert-ico">⚛</div>
-      <div>
-        <div class="cert-issuer">Quantum School Bangladesh</div>
-        <div class="cert-name">Quantum Computing Bootcamp</div>
-        <div class="cert-desc">Quantum Information, Computation, Cryptography, Secure Communication, Error &amp; Noise Models, Mathematical Foundations, and hands-on lab sessions.</div>
-      </div>
+      <div><div class="cert-issuer">Quantum School Bangladesh</div><div class="cert-name">Quantum Computing Bootcamp</div><div class="cert-desc">Quantum Information, Computation, Cryptography, Secure Communication, Error &amp; Noise Models, Mathematical Foundations, and hands-on lab sessions.</div></div>
     </div>
-
-    <!-- cert 1 -->
     <div class="cert-card rev" style="transition-delay:.08s" data-cert-index="1">
       <span class="cert-view-badge">View ↗</span>
-      <div class="cert-ico" style="font-family:'Space Mono',monospace;font-size:.9rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
-      <div>
-        <div class="cert-issuer">IBM · CognitiveClass.ai</div>
-        <div class="cert-name">Data Science Tools (DS0105EN)</div>
-        <div class="cert-desc">Comprehensive coverage of data science toolkits — Jupyter, RStudio, GitHub, and Watson Studio through IBM's Developer Skills Network.</div>
-      </div>
+      <div class="cert-ico" style="font-family:'DM Mono',monospace;font-size:.88rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
+      <div><div class="cert-issuer">IBM · CognitiveClass.ai</div><div class="cert-name">Data Science Tools (DS0105EN)</div><div class="cert-desc">Comprehensive coverage of data science toolkits — Jupyter, RStudio, GitHub, and Watson Studio through IBM's Developer Skills Network.</div></div>
     </div>
-
-    <!-- cert 2 -->
     <div class="cert-card rev" style="transition-delay:.16s" data-cert-index="2">
       <span class="cert-view-badge">View ↗</span>
-      <div class="cert-ico" style="font-family:'Space Mono',monospace;font-size:.9rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
-      <div>
-        <div class="cert-issuer">IBM · CognitiveClass.ai</div>
-        <div class="cert-name">Data Analysis with Python (DA0101EN)</div>
-        <div class="cert-desc">Hands-on data analysis covering wrangling, exploratory analysis, model development, and evaluation using real-world datasets.</div>
-      </div>
+      <div class="cert-ico" style="font-family:'DM Mono',monospace;font-size:.88rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
+      <div><div class="cert-issuer">IBM · CognitiveClass.ai</div><div class="cert-name">Data Analysis with Python (DA0101EN)</div><div class="cert-desc">Hands-on data analysis covering wrangling, exploratory analysis, model development, and evaluation using real-world datasets.</div></div>
     </div>
-
-    <!-- cert 3 -->
     <div class="cert-card rev" style="transition-delay:.24s" data-cert-index="3">
       <span class="cert-view-badge">View ↗</span>
       <div class="cert-ico">🐍</div>
-      <div>
-        <div class="cert-issuer">Sololearn · Jan 2024</div>
-        <div class="cert-name">Python Data Structures</div>
-        <div class="cert-desc">Certification covering Python data structures — lists, dictionaries, tuples, sets — and algorithmic complexity, demonstrating solid theoretical and practical foundations.</div>
-      </div>
+      <div><div class="cert-issuer">Sololearn · Jan 2024</div><div class="cert-name">Python Data Structures</div><div class="cert-desc">Certification covering Python data structures — lists, dictionaries, tuples, sets — and algorithmic complexity, demonstrating solid theoretical and practical foundations.</div></div>
     </div>
-
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ================================================================ CONTACT ================================================================ -->
 <section id="contact">
   <div class="sec-eye"><span class="sec-num">09</span><span class="sec-line"></span></div>
   <h2 class="sec-h">Contact</h2>
@@ -1481,141 +1645,59 @@ footer{
 </footer>
 </main>
 
-<!-- ================================================================
-     JAVASCRIPT
-================================================================ -->
+<!-- ================================================================ JAVASCRIPT ================================================================ -->
 <script>
-/* ================================================================
-   CERTIFICATE DATA
-   ↓ To add your real certificate images, update the `image` field
-     with a URL or a relative file path, e.g.:
-       image: './certs/quantum-bootcamp.jpg'
-     or a hosted URL:
-       image: 'https://example.com/cert.png'
-================================================================ */
 const CERTS = [
-  {
-    name:    'Quantum Computing Bootcamp',
-    issuer:  'Quantum School Bangladesh',
-    desc:    'Quantum Information, Computation, Cryptography, Secure Communication, Error & Noise Models, Mathematical Foundations, and hands-on lab sessions.',
-    image:   'assets/img/Najnin Sultana Shirin_page-0001.jpg', // ← paste your image URL here
-  },
-  {
-    name:    'Data Science Tools (DS0105EN)',
-    issuer:  'IBM · CognitiveClass.ai',
-    desc:    'Comprehensive coverage of data science toolkits — Jupyter, RStudio, GitHub, and Watson Studio through IBM\'s Developer Skills Network.',
-    image:   'assets/img/IBM DS0105EN Certificate _ Cognitive Class_page-0001.jpg', // ← paste your image URL here
-  },
-  {
-    name:    'Data Analysis with Python (DA0101EN)',
-    issuer:  'IBM · CognitiveClass.ai',
-    desc:    'Hands-on data analysis covering wrangling, exploratory analysis, model development, and evaluation using real-world datasets.',
-    image:   'assets/img/IBM DA0101EN Certificate _ Cognitive Class_page-0001.jpg', // ← paste your image URL here
-  },
-  {
-    name:    'Python Data Structures',
-    issuer:  'Sololearn · Jan 2024',
-    desc:    'Certification covering Python data structures — lists, dictionaries, tuples, sets — and algorithmic complexity.',
-    image:   'assets/img/4859601a-f05c-450e-9311-3f292831f56a.png', // ← paste your image URL here
-  },
-  {
-    name:    'Paper Acceptance — MECON 2026',
-    issuer:  'MECON Conference · Malaysia',
-    desc:    'Official acceptance certificate for "ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification".',
-    image:   'assets/img/Cert_Author 80.JPG', // ← paste your acceptance image path here
-  },
+  { name:'Quantum Computing Bootcamp', issuer:'Quantum School Bangladesh', desc:'Quantum Information, Computation, Cryptography, Secure Communication, Error & Noise Models, Mathematical Foundations, and hands-on lab sessions.', image:'assets/img/Najnin Sultana Shirin_page-0001.jpg' },
+  { name:'Data Science Tools (DS0105EN)', issuer:'IBM · CognitiveClass.ai', desc:"Comprehensive coverage of data science toolkits — Jupyter, RStudio, GitHub, and Watson Studio through IBM's Developer Skills Network.", image:'assets/img/IBM DS0105EN Certificate _ Cognitive Class_page-0001.jpg' },
+  { name:'Data Analysis with Python (DA0101EN)', issuer:'IBM · CognitiveClass.ai', desc:'Hands-on data analysis covering wrangling, exploratory analysis, model development, and evaluation using real-world datasets.', image:'assets/img/IBM DA0101EN Certificate _ Cognitive Class_page-0001.jpg' },
+  { name:'Python Data Structures', issuer:'Sololearn · Jan 2024', desc:'Certification covering Python data structures — lists, dictionaries, tuples, sets — and algorithmic complexity.', image:'assets/img/4859601a-f05c-450e-9311-3f292831f56a.png' },
+  { name:'Paper Acceptance — MECON 2026', issuer:'MECON Conference · Malaysia', desc:'Official acceptance certificate for "ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification".', image:'assets/img/Cert_Author 80.JPG' },
 ];
 
-/* ---- Modal state ---- */
 let currentCertIdx = 0;
-
-function openCertModal(idx) {
-  currentCertIdx = idx;
-  renderCertModal();
-  document.getElementById('cert-modal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-  document.getElementById('cert-modal-close').focus();
+function openCertModal(idx){ currentCertIdx=idx; renderCertModal(); document.getElementById('cert-modal').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeCertModal(){ document.getElementById('cert-modal').classList.remove('open'); document.body.style.overflow=''; }
+function stepCert(dir){ currentCertIdx=(currentCertIdx+dir+CERTS.length)%CERTS.length; renderCertModal(); }
+function renderCertModal(){
+  const c=CERTS[currentCertIdx];
+  const img=document.getElementById('cert-modal-img');
+  const ph=document.getElementById('cert-modal-placeholder');
+  const dl=document.getElementById('cert-modal-dl');
+  document.getElementById('cert-modal-title').textContent=c.name;
+  document.getElementById('cert-modal-issuer').textContent=c.issuer;
+  document.getElementById('cert-modal-desc').textContent=c.desc;
+  document.getElementById('cm-counter').textContent=`${currentCertIdx+1} / ${CERTS.length}`;
+  document.getElementById('cm-ph-cert-name').textContent=c.name;
+  document.getElementById('cm-url-input').value=c.image||'';
+  if(c.image){ img.src=c.image; img.style.display='block'; ph.style.display='none'; dl.href=c.image; dl.classList.remove('hidden'); }
+  else{ img.style.display='none'; ph.style.display='flex'; dl.classList.add('hidden'); }
 }
+function loadCertFromInput(){ const url=document.getElementById('cm-url-input').value.trim(); if(!url)return; CERTS[currentCertIdx].image=url; renderCertModal(); }
 
-function closeCertModal() {
-  document.getElementById('cert-modal').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-function stepCert(dir) {
-  currentCertIdx = (currentCertIdx + dir + CERTS.length) % CERTS.length;
-  renderCertModal();
-}
-
-function renderCertModal() {
-  const c   = CERTS[currentCertIdx];
-  const img = document.getElementById('cert-modal-img');
-  const ph  = document.getElementById('cert-modal-placeholder');
-  const dl  = document.getElementById('cert-modal-dl');
-
-  document.getElementById('cert-modal-title').textContent  = c.name;
-  document.getElementById('cert-modal-issuer').textContent = c.issuer;
-  document.getElementById('cert-modal-desc').textContent   = c.desc;
-  document.getElementById('cm-counter').textContent        = `${currentCertIdx + 1} / ${CERTS.length}`;
-  document.getElementById('cm-ph-cert-name').textContent   = c.name;
-  document.getElementById('cm-url-input').value            = c.image || '';
-
-  if (c.image) {
-    img.src             = c.image;
-    img.style.display   = 'block';
-    ph.style.display    = 'none';
-    dl.href             = c.image;
-    dl.classList.remove('hidden');
-  } else {
-    img.style.display   = 'none';
-    ph.style.display    = 'flex';
-    dl.classList.add('hidden');
-  }
-}
-
-function loadCertFromInput() {
-  const url = document.getElementById('cm-url-input').value.trim();
-  if (!url) return;
-  CERTS[currentCertIdx].image = url;
-  renderCertModal();
-}
-
-/* Allow dragging image files onto the placeholder */
-const imgWrap = document.getElementById('cert-modal-img-wrap');
-imgWrap.addEventListener('dragover', e => { e.preventDefault(); imgWrap.style.borderColor = 'var(--gold)'; });
-imgWrap.addEventListener('dragleave', () => { imgWrap.style.borderColor = ''; });
-imgWrap.addEventListener('drop', e => {
-  e.preventDefault();
-  imgWrap.style.borderColor = '';
-  const file = e.dataTransfer.files[0];
-  if (!file || !file.type.startsWith('image/')) return;
-  const reader = new FileReader();
-  reader.onload = ev => {
-    CERTS[currentCertIdx].image = ev.target.result;
-    renderCertModal();
-  };
+const imgWrap=document.getElementById('cert-modal-img-wrap');
+imgWrap.addEventListener('dragover',e=>{e.preventDefault();imgWrap.style.borderColor='var(--gold)';});
+imgWrap.addEventListener('dragleave',()=>{imgWrap.style.borderColor='';});
+imgWrap.addEventListener('drop',e=>{
+  e.preventDefault();imgWrap.style.borderColor='';
+  const file=e.dataTransfer.files[0];
+  if(!file||!file.type.startsWith('image/'))return;
+  const reader=new FileReader();
+  reader.onload=ev=>{CERTS[currentCertIdx].image=ev.target.result; renderCertModal();};
   reader.readAsDataURL(file);
 });
-
-/* Keyboard nav */
-document.addEventListener('keydown', e => {
-  if (!document.getElementById('cert-modal').classList.contains('open')) return;
-  if (e.key === 'Escape')     closeCertModal();
-  if (e.key === 'ArrowLeft')  stepCert(-1);
-  if (e.key === 'ArrowRight') stepCert(1);
+document.addEventListener('keydown',e=>{
+  if(!document.getElementById('cert-modal').classList.contains('open'))return;
+  if(e.key==='Escape')closeCertModal();
+  if(e.key==='ArrowLeft')stepCert(-1);
+  if(e.key==='ArrowRight')stepCert(1);
+});
+document.querySelectorAll('.cert-card').forEach(card=>{
+  card.addEventListener('click',()=>openCertModal(+card.dataset.certIndex));
+  card.setAttribute('role','button'); card.setAttribute('tabindex','0');
+  card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openCertModal(+card.dataset.certIndex);}});
 });
 
-/* Wire cert cards */
-document.querySelectorAll('.cert-card').forEach(card => {
-  card.addEventListener('click', () => openCertModal(+card.dataset.certIndex));
-  card.setAttribute('role', 'button');
-  card.setAttribute('tabindex', '0');
-  card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCertModal(+card.dataset.certIndex); } });
-});
-
-/* ================================================================
-   REST OF SITE JS
-================================================================ */
 function toggleTheme(){
   const h=document.documentElement,dark=h.getAttribute('data-theme')==='dark';
   h.setAttribute('data-theme',dark?'light':'dark');
@@ -1645,12 +1727,12 @@ secs.forEach(s=>{
         if(a)a.classList.add('active');
       }
     });
-  },{threshold:.3}).observe(s);
+  },{threshold:.25}).observe(s);
 });
 
 const ro=new IntersectionObserver(es=>es.forEach(e=>{
   if(e.isIntersecting){e.target.classList.add('vis');ro.unobserve(e.target)}
-}),{threshold:.08});
+}),{threshold:.07});
 document.querySelectorAll('.rev,.rev-l,.rev-r').forEach(el=>ro.observe(el));
 
 let bt=false;
@@ -1662,7 +1744,7 @@ new IntersectionObserver(([e])=>{
       setTimeout(()=>b.classList.add('filled'),1500);
     });
   }
-},{threshold:.3}).observe(document.getElementById('skills'));
+},{threshold:.25}).observe(document.getElementById('skills'));
 
 document.querySelectorAll('.pub-frow .fc').forEach(c=>{
   c.addEventListener('click',function(){
@@ -1709,7 +1791,7 @@ function handleForm(e){
   setTimeout(()=>{msg.textContent='';e.target.reset()},4000);
 }
 
-/* ---- Hero canvas ---- */
+/* Hero canvas */
 let canvas,ctx,particles=[],animId;
 function initCanvas(){
   canvas=document.getElementById('hero-canvas');
@@ -1718,10 +1800,12 @@ function initCanvas(){
   resize();
   particles=[];
   const isDark=document.documentElement.getAttribute('data-theme')==='dark';
-  const gold=isDark?'200,168,75':'138,96,16';
-  const cyan=isDark?'56,200,232':'14,116,144';
-  for(let i=0;i<55;i++){
-    particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*1.8+.6,color:Math.random()>.5?gold:cyan,alpha:Math.random()*.5+.1});
+  const gold=isDark?'212,168,67':'154,108,14';
+  const cyan=isDark?'79,205,232':'14,135,160';
+  const violet=isDark?'167,139,250':'109,40,217';
+  for(let i=0;i<60;i++){
+    const colors=[gold,cyan,violet];
+    particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,vx:(Math.random()-.5)*.38,vy:(Math.random()-.5)*.38,r:Math.random()*1.7+.5,color:colors[Math.floor(Math.random()*colors.length)],alpha:Math.random()*.45+.1});
   }
   if(animId)cancelAnimationFrame(animId);
   animate();
@@ -1734,13 +1818,13 @@ function animate(){
     for(let j=i+1;j<particles.length;j++){
       const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
       const dist=Math.sqrt(dx*dx+dy*dy);
-      if(dist<130){ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(200,168,75,${(.22*(1-dist/130)).toFixed(3)})`;ctx.lineWidth=.5;ctx.stroke();}
+      if(dist<120){ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(212,168,67,${(.2*(1-dist/120)).toFixed(3)})`;ctx.lineWidth=.45;ctx.stroke();}
     }
   }
   particles.forEach(p=>{
     ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
     ctx.fillStyle=`rgba(${p.color},${p.alpha})`;
-    ctx.shadowBlur=p.r*4;ctx.shadowColor=`rgba(${p.color},.5)`;
+    ctx.shadowBlur=p.r*4.5;ctx.shadowColor=`rgba(${p.color},.55)`;
     ctx.fill();ctx.shadowBlur=0;
     p.x+=p.vx;p.y+=p.vy;
     if(p.x<0||p.x>canvas.width)p.vx*=-1;
