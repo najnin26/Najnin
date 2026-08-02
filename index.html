@@ -6,36 +6,36 @@
 <title>Najnin Sultana Shirin — Quantum AI Researcher</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 /* ================================================================
    DESIGN TOKENS — Refined dark academic palette
 ================================================================ */
 :root {
-  --ink:         #06070f;
-  --ink2:        #0b0d1c;
-  --ink3:        #111428;
-  --ink4:        #181c35;
-  --ink5:        #1f2440;
-  --paper:       #f0effc;
-  --paper2:      #bec3e8;
-  --paper3:      #7880b0;
-  --paper4:      #434a72;
-  --gold:        #d4a843;
-  --gold2:       #f0cc70;
-  --gold3:       rgba(212,168,67,.1);
-  --gold4:       rgba(212,168,67,.05);
-  --cyan:        #4fcde8;
-  --violet:      #a78bfa;
-  --rose:        #f472b6;
-  --teal:        #34d399;
-  --amber:       #fbbf24;
-  --border:      rgba(212,168,67,.09);
-  --border2:     rgba(212,168,67,.22);
+  --ink:         #080b14;
+  --ink2:        #0d111c;
+  --ink3:        #131828;
+  --ink4:        #1a2036;
+  --ink5:        #232a46;
+  --paper:       #e8ecf7;
+  --paper2:      #aab4d6;
+  --paper3:      #7783a8;
+  --paper4:      #454e6e;
+  --gold:        #2dd4a7;
+  --gold2:       #5fe8c4;
+  --gold3:       rgba(45,212,167,.1);
+  --gold4:       rgba(45,212,167,.05);
+  --cyan:        #4d8dff;
+  --violet:      #8b7ff5;
+  --rose:        #f5578b;
+  --teal:        #2dd4a7;
+  --amber:       #f5b942;
+  --border:      rgba(45,212,167,.09);
+  --border2:     rgba(45,212,167,.22);
   --glass:       rgba(255,255,255,.025);
   --glass2:      rgba(255,255,255,.05);
-  --glow-g:      0 0 60px rgba(212,168,67,.1);
-  --glow-c:      0 0 60px rgba(79,205,232,.08);
+  --glow-g:      0 0 60px rgba(45,212,167,.1);
+  --glow-c:      0 0 60px rgba(77,141,255,.08);
   --shadow:      0 24px 64px rgba(0,0,0,.85);
   --shadow-sm:   0 8px 28px rgba(0,0,0,.6);
   --nav-w:       270px;
@@ -46,30 +46,30 @@
   --r-xs:        5px;
 }
 [data-theme="light"] {
-  --ink:         #f4f3ee;
-  --ink2:        #ece9e0;
-  --ink3:        #e2ddd2;
-  --ink4:        #d6d0c4;
-  --ink5:        #c8c1b4;
-  --paper:       #1a1730;
-  --paper2:      #3b3860;
-  --paper3:      #6e6a9a;
-  --paper4:      #9e9bbf;
-  --gold:        #9a6c0e;
-  --gold2:       #7a5208;
-  --gold3:       rgba(154,108,14,.1);
-  --gold4:       rgba(154,108,14,.05);
-  --cyan:        #0e87a0;
-  --violet:      #6d28d9;
-  --rose:        #db2777;
-  --teal:        #059669;
-  --amber:       #d97706;
-  --border:      rgba(154,108,14,.13);
-  --border2:     rgba(154,108,14,.28);
+  --ink:         #eef1fa;
+  --ink2:        #e2e8f5;
+  --ink3:        #d5deef;
+  --ink4:        #c4d0e8;
+  --ink5:        #b3c1de;
+  --paper:       #0f1526;
+  --paper2:      #2c3550;
+  --paper3:      #556082;
+  --paper4:      #8590b3;
+  --gold:        #0d9c78;
+  --gold2:       #087a5c;
+  --gold3:       rgba(13,156,120,.1);
+  --gold4:       rgba(13,156,120,.05);
+  --cyan:        #2563eb;
+  --violet:      #6552d0;
+  --rose:        #d43668;
+  --teal:        #0d9c78;
+  --amber:       #b5790a;
+  --border:      rgba(13,156,120,.13);
+  --border2:     rgba(13,156,120,.28);
   --glass:       rgba(255,255,255,.55);
   --glass2:      rgba(255,255,255,.8);
-  --glow-g:      0 0 40px rgba(154,108,14,.07);
-  --glow-c:      0 0 40px rgba(14,135,160,.06);
+  --glow-g:      0 0 40px rgba(13,156,120,.07);
+  --glow-c:      0 0 40px rgba(37,99,235,.06);
   --shadow:      0 24px 64px rgba(0,0,0,.14);
   --shadow-sm:   0 8px 28px rgba(0,0,0,.1);
 }
@@ -80,7 +80,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:'Outfit',system-ui,sans-serif;
+  font-family:'Inter',system-ui,sans-serif;
   background:var(--ink);color:var(--paper);
   line-height:1.7;font-size:16px;
   transition:background .45s var(--ease),color .45s var(--ease);
@@ -90,7 +90,7 @@ a{color:var(--gold);text-decoration:none;transition:color .2s,opacity .2s}
 a:hover{color:var(--gold2);opacity:1}
 img{max-width:100%;display:block}
 ul{list-style:none}
-h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
+h1,h2,h3,h4{font-family:'Sora',Georgia,serif;line-height:1.15}
 ::-webkit-scrollbar{width:3px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
@@ -117,7 +117,7 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
   display:flex;align-items:center;gap:.45rem;
   background:var(--ink3);border:1px solid var(--border2);
   border-radius:50px;padding:.32rem .85rem;
-  cursor:pointer;font-family:'DM Mono',monospace;
+  cursor:pointer;font-family:'JetBrains Mono',monospace;
   font-size:.53rem;letter-spacing:.15em;text-transform:uppercase;
   color:var(--paper3);transition:all .3s;white-space:nowrap;
 }
@@ -156,7 +156,7 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
   background:linear-gradient(135deg,var(--ink4),var(--ink5));
   border:2px solid var(--border2);
   display:flex;align-items:center;justify-content:center;
-  font-family:'Playfair Display',serif;
+  font-family:'Sora',serif;
   font-size:1.2rem;font-weight:700;color:var(--gold);
   position:relative;margin-bottom:.9rem;
   box-shadow:0 0 0 4px var(--ink2),0 0 0 5px var(--border);
@@ -177,22 +177,22 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
   border-bottom:1px solid var(--border);
 }
 .sb-name{
-  font-family:'Playfair Display',serif;
+  font-family:'Sora',serif;
   font-size:1rem;font-weight:700;color:var(--paper);
   line-height:1.3;margin-bottom:.22rem;
 }
 .sb-role{
-  font-family:'DM Mono',monospace;
+  font-family:'JetBrains Mono',monospace;
   font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;
   color:var(--gold);line-height:1.9;margin-bottom:.5rem;
 }
-.sb-affil{font-family:'Outfit',sans-serif;font-size:.7rem;color:var(--paper3);line-height:1.7;font-style:italic}
+.sb-affil{font-family:'Inter',sans-serif;font-size:.7rem;color:var(--paper3);line-height:1.7;font-style:italic}
 
 .sb-nav{padding:.5rem 0;flex:1}
 .sb-nav a{
   display:flex;align-items:center;gap:.6rem;
   padding:.48rem 1.6rem;
-  font-family:'DM Mono',monospace;
+  font-family:'JetBrains Mono',monospace;
   font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;
   color:var(--paper3);transition:all .22s;position:relative;overflow:hidden;
 }
@@ -209,11 +209,11 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
 .sb-nav a:hover,.sb-nav a.active{color:var(--gold);opacity:1}
 .sb-nav a:hover::before,.sb-nav a.active::before{height:60%}
 .sb-nav a:hover::after,.sb-nav a.active::after{opacity:1}
-.nnum{font-size:.48rem;color:var(--paper4);min-width:18px;font-family:'DM Mono',monospace;position:relative;z-index:1;}
+.nnum{font-size:.48rem;color:var(--paper4);min-width:18px;font-family:'JetBrains Mono',monospace;position:relative;z-index:1;}
 .sb-nav a span:not(.nnum){position:relative;z-index:1}
 
 .sb-acad{padding:1rem 1.6rem 2.5rem;border-top:1px solid var(--border)}
-.sb-acad-lbl{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;color:var(--paper4);margin-bottom:.65rem;}
+.sb-acad-lbl{font-family:'JetBrains Mono',monospace;font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;color:var(--paper4);margin-bottom:.65rem;}
 .sb-acad-icons{display:flex;flex-wrap:wrap;gap:.4rem}
 .sb-ico-btn{
   width:36px;height:36px;border-radius:var(--r-sm);
@@ -223,11 +223,11 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
   flex-shrink:0;position:relative;
 }
 .sb-ico-btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:all .25s}
-.sb-ico-btn:hover{border-color:var(--gold);color:var(--gold);background:var(--gold3);opacity:1;transform:translateY(-2px);box-shadow:0 4px 14px rgba(212,168,67,.18);}
+.sb-ico-btn:hover{border-color:var(--gold);color:var(--gold);background:var(--gold3);opacity:1;transform:translateY(-2px);box-shadow:0 4px 14px rgba(45,212,167,.18);}
 .sb-ico-btn::after{
   content:attr(title);position:absolute;bottom:calc(100% + 7px);left:50%;
   transform:translateX(-50%) scale(.9);
-  font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;
+  font-family:'JetBrains Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;
   background:var(--ink3);color:var(--paper2);border:1px solid var(--border2);border-radius:3px;
   padding:.16rem .48rem;white-space:nowrap;
   opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:100;
@@ -247,17 +247,17 @@ section:nth-child(even){background:var(--ink2)}
 
 .sec-eye{display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;}
 .sec-num{
-  font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;
+  font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;
   color:var(--gold);border:1px solid var(--border2);border-radius:3px;padding:.14rem .48rem;
 }
 .sec-line{flex:0 0 32px;height:1px;background:var(--border2)}
 .sec-h{
-  font-family:'Playfair Display',serif;
+  font-family:'Sora',serif;
   font-size:clamp(2rem,3.2vw,2.9rem);font-weight:700;
   color:var(--paper);line-height:1.1;margin-bottom:.5rem;
 }
 .sec-sub{
-  font-family:'Outfit',sans-serif;font-size:.88rem;color:var(--paper3);font-style:italic;
+  font-family:'Inter',sans-serif;font-size:.88rem;color:var(--paper3);font-style:italic;
   max-width:560px;margin-bottom:3rem;line-height:1.75;
 }
 
@@ -269,15 +269,15 @@ section:nth-child(even){background:var(--ink2)}
   position:relative;overflow:hidden;padding:0 5rem;
   border-bottom:1px solid var(--border);background:var(--ink);
 }
-[data-theme="light"] #hero{background:linear-gradient(135deg,#ede9e0 0%,#f4f3ee 60%,#eaedf6 100%);}
+[data-theme="light"] #hero{background:linear-gradient(135deg,#e2e8f5 0%,#eef1fa 60%,#dde5f7 100%);}
 #hero-canvas{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.55;}
 [data-theme="light"] #hero-canvas{opacity:.3}
 
 /* Subtle grid texture */
 #hero::before{
   content:'';position:absolute;inset:0;z-index:0;
-  background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(212,168,67,.03) 60px),
-                   repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(212,168,67,.03) 60px);
+  background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(45,212,167,.03) 60px),
+                   repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(45,212,167,.03) 60px);
   pointer-events:none;
 }
 
@@ -285,46 +285,46 @@ section:nth-child(even){background:var(--ink2)}
 [data-theme="light"] .hero-inner{
   background:rgba(244,243,238,.75);backdrop-filter:blur(10px);
   border-radius:var(--r);padding:2.5rem 2.2rem;
-  border:1px solid rgba(154,108,14,.14);
+  border:1px solid rgba(13,156,120,.14);
 }
 
 .h-eyebrow{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem;}
 .h-eline{width:28px;height:1px;background:var(--gold)}
-.h-elbl{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);}
+.h-elbl{font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);}
 .h-status{
   display:flex;align-items:center;gap:.32rem;
-  font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;
+  font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;
   color:var(--teal);margin-left:auto;
 }
 .h-status-dot{width:5px;height:5px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px var(--teal);animation:blink 2.2s ease-in-out infinite;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 
 .hero-h{
-  font-family:'Playfair Display',serif;
+  font-family:'Sora',serif;
   font-size:clamp(3rem,5.8vw,5.2rem);font-weight:900;
   line-height:1.0;color:var(--paper);margin-bottom:.7rem;letter-spacing:-.02em;
 }
-[data-theme="light"] .hero-h{color:#0e0d20}
+[data-theme="light"] .hero-h{color:#0a0e1c}
 .hero-h em{font-style:italic;color:var(--gold);font-weight:400;}
 
 .hero-role{
-  font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.05em;
+  font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.05em;
   color:var(--paper3);margin-bottom:.4rem;line-height:1.8;
 }
 .hero-chips{display:flex;flex-wrap:wrap;gap:.38rem;margin-bottom:2.4rem}
 .hchip{
-  font-family:'DM Mono',monospace;font-size:.54rem;letter-spacing:.06em;text-transform:uppercase;
+  font-family:'JetBrains Mono',monospace;font-size:.54rem;letter-spacing:.06em;text-transform:uppercase;
   padding:.26rem .65rem;border-radius:4px;
   border:1px solid var(--border2);background:var(--gold4);color:var(--paper3);
   transition:all .22s;
 }
-.hchip:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,168,67,.15);transform:translateY(-1px);}
+.hchip:hover{border-color:var(--gold);color:var(--gold);background:rgba(45,212,167,.15);transform:translateY(-1px);}
 
 .hero-btns{display:flex;flex-wrap:wrap;gap:.65rem;margin-bottom:2.5rem}
 .btn{
   display:inline-flex;align-items:center;gap:.42rem;
   padding:.62rem 1.45rem;border-radius:var(--r-sm);
-  font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
+  font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
   cursor:pointer;border:1.5px solid transparent;
   transition:all .25s var(--ease);position:relative;overflow:hidden;
 }
@@ -335,18 +335,18 @@ section:nth-child(even){background:var(--ink2)}
 }
 .btn:hover::before{transform:translateX(100%)}
 .btn-gold{
-  background:linear-gradient(135deg,var(--gold),#a87828);
+  background:linear-gradient(135deg,var(--gold),#0d7a5c);
   color:var(--ink);border-color:transparent;
-  box-shadow:0 4px 22px rgba(212,168,67,.3);
+  box-shadow:0 4px 22px rgba(45,212,167,.3);
 }
-.btn-gold:hover{box-shadow:0 6px 30px rgba(212,168,67,.5);transform:translateY(-1px);opacity:1;color:var(--ink);}
+.btn-gold:hover{box-shadow:0 6px 30px rgba(45,212,167,.5);transform:translateY(-1px);opacity:1;color:var(--ink);}
 .btn-outline{background:transparent;color:var(--paper3);border-color:var(--border);}
 .btn-outline:hover{border-color:var(--gold);color:var(--gold);background:var(--gold3);opacity:1;transform:translateY(-1px);}
 
 .hero-acad{display:flex;flex-wrap:wrap;gap:1.2rem;padding-top:1.6rem;border-top:1px solid var(--border);}
 .ha-link{
   display:flex;align-items:center;gap:.36rem;
-  font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.06em;color:var(--paper3);transition:color .2s,gap .2s;
+  font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.06em;color:var(--paper3);transition:color .2s,gap .2s;
 }
 .ha-link:hover{color:var(--gold);gap:.5rem;opacity:1}
 .ha-link svg{width:10px;height:10px;flex-shrink:0}
@@ -354,7 +354,7 @@ section:nth-child(even){background:var(--ink2)}
 .scroll-cue{
   position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);
   display:flex;align-items:center;gap:.65rem;
-  color:var(--gold);font-family:'DM Mono',monospace;
+  color:var(--gold);font-family:'JetBrains Mono',monospace;
   font-size:.52rem;letter-spacing:.15em;text-transform:uppercase;
 }
 .scline{width:32px;height:1px;background:linear-gradient(to right,var(--gold),transparent);}
@@ -385,14 +385,14 @@ section:nth-child(even){background:var(--ink2)}
   text-align:right;
 }
 .agpa-num{
-  font-family:'Playfair Display',serif;font-size:3.8rem;font-weight:900;
+  font-family:'Sora',serif;font-size:3.8rem;font-weight:900;
   color:var(--paper);line-height:1;letter-spacing:-.04em;
 }
 .agpa-num em{font-size:1.5rem;color:var(--gold);font-style:normal;margin-left:.15rem;}
-.agpa-lbl{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--paper4);margin-top:.2rem;}
+.agpa-lbl{font-family:'JetBrains Mono',monospace;font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--paper4);margin-top:.2rem;}
 .about-pulse{
   display:flex;align-items:center;gap:.5rem;
-  font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);
+  font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);
 }
 .about-pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px var(--teal);animation:blink 2s ease-in-out infinite;}
 
@@ -406,7 +406,7 @@ section:nth-child(even){background:var(--ink2)}
   transition:background .25s;
 }
 .about-strip:last-child{border-bottom:none}
-.about-strip:hover{background:rgba(212,168,67,.022);}
+.about-strip:hover{background:rgba(45,212,167,.022);}
 
 .as-label{
   padding:2.8rem 2rem 2.8rem 5rem;
@@ -420,8 +420,8 @@ section:nth-child(even){background:var(--ink2)}
   transition:height .35s var(--ease);
 }
 .about-strip:hover .as-label::after{height:60%;}
-.as-num{font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.2em;text-transform:uppercase;color:var(--paper4);margin-bottom:.5rem;}
-.as-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--paper);line-height:1.25;}
+.as-num{font-family:'JetBrains Mono',monospace;font-size:.46rem;letter-spacing:.2em;text-transform:uppercase;color:var(--paper4);margin-bottom:.5rem;}
+.as-title{font-family:'Sora',serif;font-size:1.1rem;font-weight:600;color:var(--paper);line-height:1.25;}
 
 .as-content{
   padding:2.8rem 5rem 2.8rem 3rem;
@@ -437,9 +437,9 @@ section:nth-child(even){background:var(--ink2)}
   background:linear-gradient(135deg,var(--ink4),var(--ink5));
   border:2px solid var(--border2);
   display:flex;align-items:center;justify-content:center;
-  font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--gold);
+  font-family:'Sora',serif;font-size:1.55rem;font-weight:700;color:var(--gold);
   position:relative;
-  box-shadow:0 0 0 4px var(--ink2),0 0 0 5px var(--border),0 0 22px rgba(212,168,67,.13);
+  box-shadow:0 0 0 4px var(--ink2),0 0 0 5px var(--border),0 0 22px rgba(45,212,167,.13);
 }
 .about-av::before{
   content:'';position:absolute;inset:-6px;border-radius:50%;
@@ -450,18 +450,18 @@ section:nth-child(even){background:var(--ink2)}
   animation:spin-ring 10s linear infinite;
 }
 .asi-text{}
-.asi-name{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--paper);line-height:1.2;margin-bottom:.22rem;}
-.asi-role{font-family:'DM Mono',monospace;font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);line-height:2;}
-.asi-affil{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper3);font-style:italic;}
+.asi-name{font-family:'Sora',serif;font-size:1.35rem;font-weight:700;color:var(--paper);line-height:1.2;margin-bottom:.22rem;}
+.asi-role{font-family:'JetBrains Mono',monospace;font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);line-height:2;}
+.asi-affil{font-family:'Inter',sans-serif;font-size:.8rem;color:var(--paper3);font-style:italic;}
 .asi-divider{width:1px;height:52px;background:var(--border);flex-shrink:0;}
 .asi-facts{display:flex;flex-wrap:wrap;gap:.6rem 2.5rem;}
 .asif{display:flex;flex-direction:column;gap:.1rem;}
-.asif-k{font-family:'DM Mono',monospace;font-size:.44rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper4);}
-.asif-v{font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:500;color:var(--paper2);}
+.asif-k{font-family:'JetBrains Mono',monospace;font-size:.44rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper4);}
+.asif-v{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:500;color:var(--paper2);}
 
 /* Strip: About / Bio */
 .as-bio-text{
-  font-family:'Outfit',sans-serif;font-size:.9rem;color:var(--paper2);
+  font-family:'Inter',sans-serif;font-size:.9rem;color:var(--paper2);
   line-height:1.92;max-width:780px;
 }
 .as-bio-text p{margin-bottom:.9rem}
@@ -475,7 +475,7 @@ section:nth-child(even){background:var(--ink2)}
   max-width:680px;
 }
 .as-quote p{
-  font-family:'Playfair Display',serif;
+  font-family:'Sora',serif;
   font-size:1.28rem;font-style:italic;font-weight:400;
   color:var(--paper);line-height:1.65;
 }
@@ -483,18 +483,18 @@ section:nth-child(even){background:var(--ink2)}
 /* Strip: Research interests */
 .as-interests{display:flex;flex-wrap:wrap;gap:.4rem;align-items:flex-start;}
 .ait{
-  font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.04em;
+  font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.04em;
   padding:.25rem .62rem;border-radius:3px;
   background:var(--gold3);border:1px solid var(--border2);color:var(--gold);
   transition:all .18s;cursor:default;
 }
-.ait:hover{background:rgba(212,168,67,.2);transform:translateY(-2px)}
+.ait:hover{background:rgba(45,212,167,.2);transform:translateY(-2px)}
 
 /* Strip: Links */
 .as-links{display:flex;flex-wrap:wrap;gap:1.2rem 3rem;}
 .asl{
   display:flex;align-items:center;gap:.5rem;
-  font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.06em;
+  font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.06em;
   color:var(--paper3);transition:color .2s,gap .2s;
 }
 .asl:hover{color:var(--gold);gap:.7rem;opacity:1}
@@ -526,12 +526,12 @@ section:nth-child(even){background:var(--ink2)}
 }
 .ni:first-child{border-top:1px solid var(--border)}
 .ni:hover{background:var(--glass);padding-left:1.5rem}
-.ni-date{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;color:var(--paper4);text-transform:uppercase;padding-top:.18rem;line-height:1.65;}
-.nb{display:inline-block;font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;padding:.09rem .44rem;border-radius:3px;margin-bottom:.3rem;}
-.nb-pub{background:rgba(212,168,67,.12);color:var(--gold);border:1px solid rgba(212,168,67,.3)}
-.nb-pos{background:rgba(79,205,232,.1);color:var(--cyan);border:1px solid rgba(79,205,232,.28)}
-.nb-edu{background:rgba(52,211,153,.1);color:var(--teal);border:1px solid rgba(52,211,153,.28)}
-.ni-text{font-family:'Outfit',sans-serif;font-size:.85rem;color:var(--paper2);line-height:1.75}
+.ni-date{font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.1em;color:var(--paper4);text-transform:uppercase;padding-top:.18rem;line-height:1.65;}
+.nb{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;padding:.09rem .44rem;border-radius:3px;margin-bottom:.3rem;}
+.nb-pub{background:rgba(45,212,167,.12);color:var(--gold);border:1px solid rgba(45,212,167,.3)}
+.nb-pos{background:rgba(77,141,255,.1);color:var(--cyan);border:1px solid rgba(77,141,255,.28)}
+.nb-edu{background:rgba(45,212,167,.1);color:var(--teal);border:1px solid rgba(45,212,167,.28)}
+.ni-text{font-family:'Inter',sans-serif;font-size:.85rem;color:var(--paper2);line-height:1.75}
 .ni-text strong{color:var(--paper);font-weight:600}
 .ni-text em{color:var(--paper3)}
 .ni-text a{color:var(--gold);font-size:.8rem}
@@ -547,9 +547,9 @@ section:nth-child(even){background:var(--ink2)}
 .stat-cell{flex:1;min-width:90px;padding:1.5rem 1rem;border-right:1px solid var(--border);text-align:center;transition:background .22s;}
 .stat-cell:last-child{border-right:none}
 .stat-cell:hover{background:var(--glass2)}
-.stat-n{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--paper);line-height:1;}
+.stat-n{font-family:'Sora',serif;font-size:2.2rem;font-weight:700;color:var(--paper);line-height:1;}
 .stat-n sup{font-size:.8rem;color:var(--gold);vertical-align:super}
-.stat-l{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.15em;text-transform:uppercase;color:var(--paper4);margin-top:.3rem;}
+.stat-l{font-family:'JetBrains Mono',monospace;font-size:.48rem;letter-spacing:.15em;text-transform:uppercase;color:var(--paper4);margin-top:.3rem;}
 
 .ra-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 .ra-card{
@@ -563,19 +563,19 @@ section:nth-child(even){background:var(--ink2)}
 .ra-card:hover::after{transform:scaleX(1)}
 .ra-card:hover{background:var(--glass2);border-color:var(--border2);transform:translateY(-4px);box-shadow:var(--shadow-sm),var(--glow-g);}
 .ra-ico{width:40px;height:40px;border-radius:10px;background:var(--ink3);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:1.15rem;margin-bottom:1rem;flex-shrink:0;position:relative;z-index:1;}
-.ra-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--paper);margin-bottom:.42rem;line-height:1.3;position:relative;z-index:1;}
-.ra-desc{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.75;margin-bottom:.85rem;position:relative;z-index:1;}
+.ra-name{font-family:'Sora',serif;font-size:1.05rem;font-weight:600;color:var(--paper);margin-bottom:.42rem;line-height:1.3;position:relative;z-index:1;}
+.ra-desc{font-family:'Inter',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.75;margin-bottom:.85rem;position:relative;z-index:1;}
 .ra-tags{display:flex;flex-wrap:wrap;gap:.28rem;position:relative;z-index:1}
-.ratag{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.05em;padding:.11rem .4rem;border-radius:3px;background:var(--ink3);border:1px solid var(--border);color:var(--paper4);transition:all .2s;}
+.ratag{font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.05em;padding:.11rem .4rem;border-radius:3px;background:var(--ink3);border:1px solid var(--border);color:var(--paper4);transition:all .2s;}
 .ra-card:hover .ratag{border-color:var(--border2);color:var(--paper3)}
 
 /* ================================================================
    PUBLICATIONS
 ================================================================ */
 .pub-frow{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin-bottom:2rem}
-.flbl{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);margin-right:.18rem;}
-.fc{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;padding:.26rem .7rem;border-radius:4px;border:1px solid var(--border);background:var(--glass);color:var(--paper3);cursor:pointer;transition:all .22s;}
-.fc:hover,.fc.active{background:var(--gold);color:var(--ink);border-color:var(--gold);box-shadow:0 2px 12px rgba(212,168,67,.3);}
+.flbl{font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);margin-right:.18rem;}
+.fc{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;padding:.26rem .7rem;border-radius:4px;border:1px solid var(--border);background:var(--glass);color:var(--paper3);cursor:pointer;transition:all .22s;}
+.fc:hover,.fc.active{background:var(--gold);color:var(--ink);border-color:var(--gold);box-shadow:0 2px 12px rgba(45,212,167,.3);}
 
 .pub-list{display:flex;flex-direction:column;gap:1rem}
 .pub-entry{background:var(--glass);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:all .3s var(--ease);}
@@ -583,28 +583,28 @@ section:nth-child(even){background:var(--ink2)}
 .pub-entry[data-ps="pub"]{border-left:2px solid var(--gold)}
 .pub-main{padding:1.6rem 1.8rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start;}
 .pmeta{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;margin-bottom:.7rem}
-.ptag{font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .4rem;border-radius:3px;}
-.pt-j{background:rgba(212,168,67,.1);color:var(--gold);border:1px solid rgba(212,168,67,.25)}
-.pt-c{background:rgba(79,205,232,.1);color:var(--cyan);border:1px solid rgba(79,205,232,.25)}
-.pvenue{font-family:'DM Mono',monospace;font-size:.58rem;color:var(--paper3);letter-spacing:.04em;}
-.pyear{font-family:'DM Mono',monospace;font-size:.54rem;color:var(--paper4)}
-.ptitle{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:600;color:var(--paper);line-height:1.42;margin-bottom:.52rem;}
-.pauthors{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;margin-bottom:.6rem;line-height:1.55;}
+.ptag{font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .4rem;border-radius:3px;}
+.pt-j{background:rgba(45,212,167,.1);color:var(--gold);border:1px solid rgba(45,212,167,.25)}
+.pt-c{background:rgba(77,141,255,.1);color:var(--cyan);border:1px solid rgba(77,141,255,.25)}
+.pvenue{font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--paper3);letter-spacing:.04em;}
+.pyear{font-family:'JetBrains Mono',monospace;font-size:.54rem;color:var(--paper4)}
+.ptitle{font-family:'Sora',serif;font-size:1.08rem;font-weight:600;color:var(--paper);line-height:1.42;margin-bottom:.52rem;}
+.pauthors{font-family:'Inter',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;margin-bottom:.6rem;line-height:1.55;}
 .pauthors .me{color:var(--gold);font-style:normal;font-weight:600;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;}
-.pabstract{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.78;border-left:2px solid var(--border2);padding-left:.9rem;margin-top:.55rem;margin-bottom:.75rem;display:none;font-style:italic;}
+.pabstract{font-family:'Inter',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.78;border-left:2px solid var(--border2);padding-left:.9rem;margin-top:.55rem;margin-bottom:.75rem;display:none;font-style:italic;}
 .pabstract.open{display:block;animation:fadeSlide .3s var(--ease)}
 @keyframes fadeSlide{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 .plinks{display:flex;gap:.38rem;flex-wrap:wrap;margin-top:.65rem}
-.plink{font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .58rem;border-radius:3px;border:1px solid var(--border);color:var(--paper3);background:var(--ink3);cursor:pointer;transition:all .2s;}
+.plink{font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .58rem;border-radius:3px;border:1px solid var(--border);color:var(--paper3);background:var(--ink3);cursor:pointer;transition:all .2s;}
 .plink:hover{border-color:var(--gold);color:var(--gold);opacity:1}
 .plink.live{color:var(--gold);border-color:var(--border2)}
-.plink.plink-acc{color:var(--teal);border-color:rgba(52,211,153,.3);background:rgba(52,211,153,.06);}
-.plink.plink-acc:hover{border-color:var(--teal);background:rgba(52,211,153,.14);color:var(--teal)}
-.pstatus{display:inline-flex;align-items:center;gap:.3rem;font-family:'DM Mono',monospace;font-size:.53rem;letter-spacing:.08em;text-transform:uppercase;padding:.26rem .6rem;border-radius:50px;white-space:nowrap;}
-.ps-pub{background:rgba(52,211,153,.1);color:var(--teal);border:1px solid rgba(52,211,153,.28);}
-.ps-rev{background:rgba(79,205,232,.08);color:var(--cyan);border:1px solid rgba(79,205,232,.22);}
-.ps-acc{background:rgba(212,168,67,.1);color:var(--gold);border:1px solid rgba(212,168,67,.3);}
-.pnum{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:300;color:rgba(255,255,255,.04);line-height:1;margin-top:.3rem;text-align:right;letter-spacing:-.02em;}
+.plink.plink-acc{color:var(--teal);border-color:rgba(45,212,167,.3);background:rgba(45,212,167,.06);}
+.plink.plink-acc:hover{border-color:var(--teal);background:rgba(45,212,167,.14);color:var(--teal)}
+.pstatus{display:inline-flex;align-items:center;gap:.3rem;font-family:'JetBrains Mono',monospace;font-size:.53rem;letter-spacing:.08em;text-transform:uppercase;padding:.26rem .6rem;border-radius:50px;white-space:nowrap;}
+.ps-pub{background:rgba(45,212,167,.1);color:var(--teal);border:1px solid rgba(45,212,167,.28);}
+.ps-rev{background:rgba(77,141,255,.08);color:var(--cyan);border:1px solid rgba(77,141,255,.22);}
+.ps-acc{background:rgba(45,212,167,.1);color:var(--gold);border:1px solid rgba(45,212,167,.3);}
+.pnum{font-family:'Sora',serif;font-size:2.6rem;font-weight:300;color:rgba(255,255,255,.04);line-height:1;margin-top:.3rem;text-align:right;letter-spacing:-.02em;}
 [data-theme="light"] .pnum{color:rgba(0,0,0,.04)}
 
 /* Architecture diagram inside publication */
@@ -614,7 +614,7 @@ section:nth-child(even){background:var(--ink2)}
   padding-top:1rem;
 }
 .pub-arch-lbl{
-  font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.18em;
+  font-family:'JetBrains Mono',monospace;font-size:.48rem;letter-spacing:.18em;
   text-transform:uppercase;color:var(--paper4);margin-bottom:.65rem;
 }
 .pub-arch svg{
@@ -623,7 +623,7 @@ section:nth-child(even){background:var(--ink2)}
   overflow:visible;
 }
 #cv .cv-cols{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
-.cv-hd{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;display:flex;align-items:center;gap:.5rem;}
+.cv-hd{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;display:flex;align-items:center;gap:.5rem;}
 .cv-hd::after{content:'';flex:1;height:1px;background:var(--border2);max-width:48px}
 .tl{position:relative}
 .tl::before{content:'';position:absolute;left:5px;top:12px;width:1px;height:calc(100% - 24px);background:linear-gradient(to bottom,var(--border2),transparent);}
@@ -632,30 +632,30 @@ section:nth-child(even){background:var(--ink2)}
 .tldot::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:1px solid var(--gold);opacity:0;transition:opacity .25s;}
 .tlr:hover .tldot{border-color:var(--gold);background:var(--gold)}
 .tlr:hover .tldot::after{opacity:.4}
-.tlyr{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;color:var(--cyan);text-transform:uppercase;margin-bottom:.3rem;}
-.tltitle{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--paper);margin-bottom:.18rem;}
-.tlorg{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--gold);font-style:italic;margin-bottom:.4rem;}
-.tlbody{font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.75;}
+.tlyr{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.1em;color:var(--cyan);text-transform:uppercase;margin-bottom:.3rem;}
+.tltitle{font-family:'Sora',serif;font-size:.98rem;font-weight:600;color:var(--paper);margin-bottom:.18rem;}
+.tlorg{font-family:'Inter',sans-serif;font-size:.78rem;color:var(--gold);font-style:italic;margin-bottom:.4rem;}
+.tlbody{font-family:'Inter',sans-serif;font-size:.8rem;color:var(--paper3);line-height:1.75;}
 .tlbody ul{padding-left:1.1rem}
 .tlbody ul li{list-style:disc;margin-bottom:.2rem;color:var(--paper3)}
-.tlchip{display:inline-block;margin-top:.48rem;font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;padding:.11rem .48rem;border-radius:3px;background:rgba(212,168,67,.1);border:1px solid rgba(212,168,67,.22);color:var(--gold);}
+.tlchip{display:inline-block;margin-top:.48rem;font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;padding:.11rem .48rem;border-radius:3px;background:rgba(45,212,167,.1);border:1px solid rgba(45,212,167,.22);color:var(--gold);}
 
 /* ================================================================
    SKILLS
 ================================================================ */
 #skills .sk-cats{display:flex;flex-direction:column;gap:1.8rem;margin-bottom:3rem}
-.sk-cat-hd{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--paper4);margin-bottom:.72rem;display:flex;align-items:center;gap:.5rem;}
+.sk-cat-hd{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--paper4);margin-bottom:.72rem;display:flex;align-items:center;gap:.5rem;}
 .sk-cat-hd::after{content:'';flex:1;height:1px;background:var(--border)}
 .sk-tags{display:flex;flex-wrap:wrap;gap:.42rem}
-.skt{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.04em;padding:.28rem .72rem;border-radius:var(--r-sm);border:1px solid var(--border);color:var(--paper3);background:var(--glass);transition:all .22s;cursor:default;}
+.skt{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.04em;padding:.28rem .72rem;border-radius:var(--r-sm);border:1px solid var(--border);color:var(--paper3);background:var(--glass);transition:all .22s;cursor:default;}
 .skt:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-1px)}
 .skt.hl{border-color:var(--border2);color:var(--paper);background:var(--glass2);font-weight:500;}
 .skt.hl:hover{border-color:var(--gold);color:var(--gold)}
 
 .prof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem 3rem}
 .prof-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.4rem}
-.prof-name{font-family:'Outfit',sans-serif;font-size:.84rem;color:var(--paper);font-weight:500;}
-.prof-pct{font-family:'DM Mono',monospace;font-size:.58rem;color:var(--gold);letter-spacing:.06em;}
+.prof-name{font-family:'Inter',sans-serif;font-size:.84rem;color:var(--paper);font-weight:500;}
+.prof-pct{font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--gold);letter-spacing:.06em;}
 .prof-track{height:2px;background:var(--border);border-radius:2px;overflow:visible;position:relative;}
 .prof-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--gold));width:0;border-radius:2px;transition:width 1.6s cubic-bezier(.25,1,.5,1);position:relative;}
 .prof-fill::after{content:'';position:absolute;right:-1px;top:50%;transform:translateY(-50%);width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold);opacity:0;transition:opacity .3s 1.4s;}
@@ -670,14 +670,14 @@ section:nth-child(even){background:var(--ink2)}
 .proj-card:hover::before{opacity:1}
 .proj-card:hover{border-color:var(--border2);background:var(--glass2);transform:translateY(-5px);box-shadow:var(--shadow-sm);}
 .proj-card.hidden{display:none}
-.proj-cat{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);margin-bottom:.55rem;position:relative;z-index:1;}
-.proj-title{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--paper);margin-bottom:.38rem;line-height:1.4;position:relative;z-index:1;}
-.proj-desc{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--paper3);line-height:1.7;margin-bottom:.88rem;position:relative;z-index:1;}
+.proj-cat{font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);margin-bottom:.55rem;position:relative;z-index:1;}
+.proj-title{font-family:'Sora',serif;font-size:.98rem;font-weight:600;color:var(--paper);margin-bottom:.38rem;line-height:1.4;position:relative;z-index:1;}
+.proj-desc{font-family:'Inter',sans-serif;font-size:.78rem;color:var(--paper3);line-height:1.7;margin-bottom:.88rem;position:relative;z-index:1;}
 .proj-ft{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:.72rem;position:relative;z-index:1;}
-.proj-gh{font-family:'DM Mono',monospace;font-size:.58rem;color:var(--gold);display:flex;align-items:center;gap:.28rem;transition:gap .2s;}
+.proj-gh{font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--gold);display:flex;align-items:center;gap:.28rem;transition:gap .2s;}
 .proj-gh:hover{gap:.46rem;opacity:1;color:var(--gold2)}
 .proj-tech{display:flex;flex-wrap:wrap;gap:.26rem}
-.ptb{font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.04em;padding:.1rem .36rem;border-radius:3px;background:var(--ink3);border:1px solid var(--border);color:var(--paper4);}
+.ptb{font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.04em;padding:.1rem .36rem;border-radius:3px;background:var(--ink3);border:1px solid var(--border);color:var(--paper4);}
 .pf-row{display:flex;gap:.48rem;flex-wrap:wrap;margin-bottom:2rem}
 
 /* ================================================================
@@ -692,14 +692,14 @@ section:nth-child(even){background:var(--ink2)}
 }
 .cert-card::before{
   content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;
-  background:linear-gradient(90deg,transparent,rgba(212,168,67,.07),transparent);
+  background:linear-gradient(90deg,transparent,rgba(45,212,167,.07),transparent);
   transition:left .55s var(--ease);pointer-events:none;
 }
 .cert-card:hover::before{left:150%}
 .cert-card:hover{border-color:var(--border2);background:var(--glass2);transform:translateY(-3px);box-shadow:var(--shadow-sm),var(--glow-g);}
 .cert-view-badge{
   position:absolute;top:.8rem;right:.8rem;
-  font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.12em;text-transform:uppercase;
+  font-family:'JetBrains Mono',monospace;font-size:.48rem;letter-spacing:.12em;text-transform:uppercase;
   background:var(--gold);color:var(--ink);padding:.13rem .48rem;border-radius:3px;
   opacity:0;transform:translateY(-4px);transition:opacity .22s,transform .22s;pointer-events:none;font-weight:700;
 }
@@ -710,9 +710,9 @@ section:nth-child(even){background:var(--ink2)}
   transition:transform .3s var(--spring);
 }
 .cert-card:hover .cert-ico{transform:scale(1.08) rotate(-3deg)}
-.cert-issuer{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.22rem;}
-.cert-name{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:600;color:var(--paper);margin-bottom:.38rem;line-height:1.35;}
-.cert-desc{font-family:'Outfit',sans-serif;font-size:.76rem;color:var(--paper3);line-height:1.68;}
+.cert-issuer{font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.22rem;}
+.cert-name{font-family:'Sora',serif;font-size:.95rem;font-weight:600;color:var(--paper);margin-bottom:.38rem;line-height:1.35;}
+.cert-desc{font-family:'Inter',sans-serif;font-size:.76rem;color:var(--paper3);line-height:1.68;}
 
 /* ================================================================
    CERTIFICATE MODAL
@@ -740,8 +740,8 @@ section:nth-child(even){background:var(--ink2)}
   display:flex;align-items:center;justify-content:space-between;
   padding:1.1rem 1.5rem;border-bottom:1px solid var(--border);background:var(--ink3);
 }
-#cert-modal-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--paper);line-height:1.3;}
-#cert-modal-issuer{font-family:'DM Mono',monospace;font-size:.53rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:.16rem;}
+#cert-modal-title{font-family:'Sora',serif;font-size:1.05rem;font-weight:600;color:var(--paper);line-height:1.3;}
+#cert-modal-issuer{font-family:'JetBrains Mono',monospace;font-size:.53rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:.16rem;}
 #cert-modal-close{
   width:32px;height:32px;border-radius:50%;
   background:var(--glass2);border:1px solid var(--border);
@@ -763,31 +763,31 @@ section:nth-child(even){background:var(--ink2)}
   padding:3rem 2rem;text-align:center;width:100%;
 }
 .cm-ph-icon{font-size:3rem;opacity:.4}
-.cm-ph-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--paper3);}
-.cm-ph-hint{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper4);line-height:1.7;max-width:340px;}
+.cm-ph-title{font-family:'Sora',serif;font-size:1.1rem;font-weight:600;color:var(--paper3);}
+.cm-ph-hint{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper4);line-height:1.7;max-width:340px;}
 .cm-ph-input-row{display:flex;gap:.6rem;width:100%;max-width:420px;margin-top:.3rem;}
 .cm-ph-input{
   flex:1;background:var(--glass);border:1px solid var(--border);
   border-radius:var(--r-sm);padding:.55rem .8rem;
-  font-family:'Outfit',sans-serif;font-size:.8rem;color:var(--paper);outline:none;transition:border-color .2s;
+  font-family:'Inter',sans-serif;font-size:.8rem;color:var(--paper);outline:none;transition:border-color .2s;
 }
 .cm-ph-input:focus{border-color:var(--gold)}
 .cm-ph-input::placeholder{color:var(--paper4);font-style:italic}
 .cm-ph-btn{
   background:var(--gold);color:var(--ink);border:none;
   border-radius:var(--r-sm);padding:.55rem 1rem;
-  font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;
-  cursor:pointer;transition:all .2s;white-space:nowrap;box-shadow:0 2px 10px rgba(212,168,67,.3);
+  font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;
+  cursor:pointer;transition:all .2s;white-space:nowrap;box-shadow:0 2px 10px rgba(45,212,167,.3);
 }
 .cm-ph-btn:hover{background:var(--gold2);transform:translateY(-1px)}
 #cert-modal-footer{
   display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.7rem;
   padding:.9rem 1.5rem;border-top:1px solid var(--border);background:var(--ink3);
 }
-.cm-desc{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--paper3);line-height:1.6;}
+.cm-desc{font-family:'Inter',sans-serif;font-size:.78rem;color:var(--paper3);line-height:1.6;}
 #cert-modal-dl{
   display:inline-flex;align-items:center;gap:.38rem;
-  font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;
+  font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;
   padding:.33rem .78rem;border-radius:var(--r-sm);
   border:1px solid var(--border2);color:var(--gold);
   cursor:pointer;transition:all .2s;background:var(--gold3);text-decoration:none;white-space:nowrap;
@@ -802,9 +802,9 @@ section:nth-child(even){background:var(--ink2)}
   cursor:pointer;color:var(--paper3);font-size:.8rem;transition:all .2s;
 }
 .cm-arrow:hover{border-color:var(--gold);color:var(--gold)}
-.cm-counter{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;color:var(--paper4);}
-.cm-kbd-hint{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper4);text-align:center;padding-bottom:.75rem;}
-.cm-kbd-hint kbd{display:inline-block;padding:.04rem .28rem;border:1px solid var(--border2);border-radius:3px;background:var(--ink3);color:var(--paper3);font-family:'DM Mono',monospace;font-size:.52rem;}
+.cm-counter{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.1em;color:var(--paper4);}
+.cm-kbd-hint{font-family:'JetBrains Mono',monospace;font-size:.48rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper4);text-align:center;padding-bottom:.75rem;}
+.cm-kbd-hint kbd{display:inline-block;padding:.04rem .28rem;border:1px solid var(--border2);border-radius:3px;background:var(--ink3);color:var(--paper3);font-family:'JetBrains Mono',monospace;font-size:.52rem;}
 
 /* ================================================================
    CONTACT
@@ -813,28 +813,28 @@ section:nth-child(even){background:var(--ink2)}
 .c-card{background:var(--glass);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
 .c-card-top{background:var(--ink3);padding:1.7rem 1.8rem;border-bottom:1px solid var(--border);position:relative;overflow:hidden;}
 .c-card-top::before{content:'';position:absolute;top:-30px;right:-30px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle,var(--gold3),transparent);}
-.c-name{font-family:'Playfair Display',serif;font-size:1.28rem;font-weight:700;color:var(--paper);margin-bottom:.2rem;position:relative;z-index:1;}
-.c-role{font-family:'Outfit',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;position:relative;z-index:1;}
+.c-name{font-family:'Sora',serif;font-size:1.28rem;font-weight:700;color:var(--paper);margin-bottom:.2rem;position:relative;z-index:1;}
+.c-role{font-family:'Inter',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;position:relative;z-index:1;}
 .c-info{padding:1.5rem 1.8rem;display:flex;flex-direction:column;gap:1rem}
 .ci{display:flex;align-items:flex-start;gap:.75rem}
-.ci-ico{width:32px;height:32px;border-radius:var(--r-sm);flex-shrink:0;background:var(--ink3);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--gold);font-family:'DM Mono',monospace;font-weight:700;}
-.ci-lbl{font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);margin-bottom:.12rem;}
-.ci-val{font-family:'Outfit',sans-serif;font-size:.82rem;color:var(--paper3);}
+.ci-ico{width:32px;height:32px;border-radius:var(--r-sm);flex-shrink:0;background:var(--ink3);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700;}
+.ci-lbl{font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4);margin-bottom:.12rem;}
+.ci-val{font-family:'Inter',sans-serif;font-size:.82rem;color:var(--paper3);}
 .ci-val a{color:var(--paper3);transition:color .2s}
 .ci-val a:hover{color:var(--gold)}
 .c-form{display:flex;flex-direction:column;gap:.88rem}
-.cfl{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);display:block;margin-bottom:.33rem;}
+.cfl{font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper4);display:block;margin-bottom:.33rem;}
 .cf-row{display:grid;grid-template-columns:1fr 1fr;gap:.88rem}
 .cf-f input,.cf-f textarea{
   width:100%;background:var(--glass);border:1px solid var(--border);
   border-radius:var(--r-sm);padding:.72rem 1rem;font-size:.85rem;
-  color:var(--paper);font-family:'Outfit',sans-serif;outline:none;
+  color:var(--paper);font-family:'Inter',sans-serif;outline:none;
   transition:border-color .22s,box-shadow .22s;
 }
-.cf-f input:focus,.cf-f textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,168,67,.1);}
+.cf-f input:focus,.cf-f textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(45,212,167,.1);}
 .cf-f input::placeholder,.cf-f textarea::placeholder{color:var(--paper4);font-style:italic;}
 .cf-f textarea{resize:vertical;min-height:130px}
-.form-note{font-family:'DM Mono',monospace;font-size:.53rem;letter-spacing:.07em;color:var(--paper4);margin-top:-.18rem;}
+.form-note{font-family:'JetBrains Mono',monospace;font-size:.53rem;letter-spacing:.07em;color:var(--paper4);margin-top:-.18rem;}
 
 /* ================================================================
    FOOTER
@@ -844,12 +844,12 @@ footer{
   padding:2.2rem 5rem;display:flex;align-items:center;justify-content:space-between;
   flex-wrap:wrap;gap:1rem;transition:background .45s;
 }
-.f-l .f-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--paper);margin-bottom:.18rem;}
-.f-l .f-sub{font-family:'Outfit',sans-serif;font-size:.75rem;color:var(--paper3);font-style:italic;}
+.f-l .f-name{font-family:'Sora',serif;font-size:1.1rem;font-weight:700;color:var(--paper);margin-bottom:.18rem;}
+.f-l .f-sub{font-family:'Inter',sans-serif;font-size:.75rem;color:var(--paper3);font-style:italic;}
 .f-links{display:flex;flex-wrap:wrap;gap:.42rem}
-.f-links a{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;padding:.24rem .6rem;border-radius:4px;border:1px solid var(--border);color:var(--paper3);transition:all .22s;}
+.f-links a{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;padding:.24rem .6rem;border-radius:4px;border:1px solid var(--border);color:var(--paper3);transition:all .22s;}
 .f-links a:hover{border-color:var(--gold);color:var(--gold);opacity:1}
-.f-copy{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.07em;color:var(--paper4);text-align:right;line-height:1.7;}
+.f-copy{font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.07em;color:var(--paper4);text-align:right;line-height:1.7;}
 
 #back-top{
   position:fixed;bottom:2rem;right:1.5rem;z-index:2000;
@@ -860,7 +860,7 @@ footer{
   font-size:.8rem;color:var(--gold);
 }
 #back-top.show{opacity:1;pointer-events:auto}
-#back-top:hover{background:var(--gold);color:var(--ink);box-shadow:0 4px 16px rgba(212,168,67,.4)}
+#back-top:hover{background:var(--gold);color:var(--ink);box-shadow:0 4px 16px rgba(45,212,167,.4)}
 
 /* ================================================================
    SCROLL REVEAL
@@ -1020,12 +1020,12 @@ footer{
   <div class="hero-inner">
     <div class="h-eyebrow">
       <div class="h-eline"></div>
-      <div class="h-elbl">Senior Research Assistant · Quantum AI</div>
+      <div class="h-elbl">Senior Research Assistant · Lecturer · Quantum AI</div>
       <div class="h-status"><span class="h-status-dot"></span>Available to Collaborate</div>
     </div>
     <h1 class="hero-h">Najnin<br><em>Sultana Shirin</em></h1>
     <div class="hero-role">
-      Senior Research Assistant @ ELITE Research Lab, New York, USA<br>
+      Senior Research Assistant @ ELITE Research Lab, New York, USA · Lecturer @ Uttara University<br>
       M.Sc. Candidate · Jagannath University, Dhaka, Bangladesh
     </div>
     <div class="hero-chips">
@@ -1087,8 +1087,8 @@ footer{
           <div class="about-av">NS</div>
           <div class="asi-text">
             <div class="asi-name">Najnin Sultana Shirin</div>
-            <div class="asi-role">Senior Research Assistant · Quantum ML &amp; AI</div>
-            <div class="asi-affil">ELITE Research Lab, New York &nbsp;·&nbsp; Jagannath University, Dhaka</div>
+            <div class="asi-role">Senior Research Assistant · Lecturer · Quantum ML &amp; AI</div>
+            <div class="asi-affil">ELITE Research Lab, New York &nbsp;·&nbsp; Uttara University &nbsp;·&nbsp; Jagannath University, Dhaka</div>
           </div>
           <div class="asi-divider"></div>
           <div class="asi-facts">
@@ -1122,7 +1122,7 @@ footer{
       </div>
       <div class="as-content">
         <div class="as-bio-text">
-          <p>I am a <strong>Senior Research Assistant at ELITE Research Lab</strong>, where my research focuses on <strong>Quantum Neural Networks</strong>, <strong>Variational Quantum Circuits (VQCs)</strong>, and <strong>Quantum NLP</strong>, leveraging superposition, entanglement, and interference to design learning systems that exceed classical limits.</p>
+          <p>I am a <strong>Senior Research Assistant at ELITE Research Lab</strong> and a <strong>Lecturer at Uttara University</strong>, where my research focuses on <strong>Quantum Neural Networks</strong>, <strong>Variational Quantum Circuits (VQCs)</strong>, and <strong>Quantum NLP</strong>, leveraging superposition, entanglement, and interference to design learning systems that exceed classical limits.</p>
           <p>My work spans the full AI stack — from parameterized quantum circuits for classification and optimization, to quantum-inspired models in NLP and Computer Vision. I am particularly interested in how <strong>hybrid classical–quantum systems</strong> can unlock new efficiencies in machine learning. My broader interests include <strong>Large Language Models</strong>, <strong>Graph Signal Processing</strong>, and <strong>Data Science</strong>.</p>
         </div>
       </div>
@@ -1178,6 +1178,7 @@ footer{
   <p class="sec-sub">Recent milestones, publications, and academic activities.</p>
   <div class="news-list rev">
     <div class="ni"><div class="ni-date">May 2026</div><div><div class="nb nb-pos">Promotion</div><div class="ni-text">Promoted to <strong>Senior Research Assistant</strong> at <strong>ELITE Research Lab</strong> (New York, USA), continuing leadership in Quantum ML and healthcare AI research.</div></div></div>
+    <div class="ni"><div class="ni-date">Jul 2026</div><div><div class="nb nb-pos">Appointment</div><div class="ni-text">Joined <strong>Uttara University</strong> as a <strong>Lecturer</strong> on 6 July, expanding teaching and research in quantum AI and healthcare intelligence.</div></div></div>
     <div class="ni"><div class="ni-date">Apr 2026</div><div><div class="nb nb-pub">Acceptance</div><div class="ni-text"><strong>Paper accepted</strong> at <em>MECON 2026</em>, Malaysia: <em>ACAM-MobileNetV2: Attention and Contrastive-Aware MobileNetV2 for Multi-Class Viral Skin Lesion Classification.</em></div></div></div>
     <div class="ni"><div class="ni-date">Mar 2026</div><div><div class="nb nb-pub">Publication</div><div class="ni-text"><strong>Paper published</strong> in <em>Intelligence-Based Medicine</em> (Elsevier). <a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank">→ Read paper</a></div></div></div>
     <div class="ni"><div class="ni-date">Jan 2026</div><div><div class="nb nb-edu">Enrollment</div><div class="ni-text">Started <strong>M.Sc. in CSE</strong> at Jagannath University, focusing on quantum AI, variational quantum circuits, and healthcare intelligence.</div></div></div>
@@ -1194,8 +1195,8 @@ footer{
   <div class="stats-strip rev">
     <div class="stat-cell"><div class="stat-n">6<sup>+</sup></div><div class="stat-l">Research Papers</div></div>
     <div class="stat-cell"><div class="stat-n">1</div><div class="stat-l">Published</div></div>
-    <div class="stat-cell"><div class="stat-n">1</div><div class="stat-l">Accepted</div></div>
-    <div class="stat-cell"><div class="stat-n">4</div><div class="stat-l">Under Review</div></div>
+    <div class="stat-cell"><div class="stat-n">2</div><div class="stat-l">Accepted</div></div>
+    <div class="stat-cell"><div class="stat-n">3</div><div class="stat-l">Under Review</div></div>
     <div class="stat-cell"><div class="stat-n">9<sup>+</sup></div><div class="stat-l">Projects</div></div>
     <div class="stat-cell"><div class="stat-n">3.81</div><div class="stat-l">BSc CGPA</div></div>
   </div>
@@ -1235,36 +1236,36 @@ footer{
           <div class="pub-arch">
             <div class="pub-arch-lbl">Review Scope &amp; Pipeline</div>
             <svg viewBox="0 0 700 112" xmlns="http://www.w3.org/2000/svg" style="max-height:112px">
-              <defs><marker id="a1r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
-              <rect x="6" y="32" width="100" height="48" rx="6" fill="rgba(79,205,232,.07)" stroke="#4fcde8" stroke-width="1" stroke-opacity=".4"/>
-              <text x="56" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4fcde8">Medical</text>
-              <text x="56" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4fcde8">Literature</text>
-              <rect x="138" y="14" width="100" height="36" rx="5" fill="rgba(212,168,67,.08)" stroke="#d4a843" stroke-width="1" stroke-opacity=".4"/>
-              <text x="188" y="29" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843">Imaging &amp;</text>
-              <text x="188" y="42" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843">Diagnostics</text>
-              <rect x="138" y="62" width="100" height="36" rx="5" fill="rgba(167,139,250,.08)" stroke="#a78bfa" stroke-width="1" stroke-opacity=".4"/>
-              <text x="188" y="77" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#a78bfa">Drug</text>
-              <text x="188" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#a78bfa">Discovery</text>
-              <rect x="272" y="32" width="106" height="48" rx="6" fill="rgba(212,168,67,.1)" stroke="#d4a843" stroke-width="1.2" stroke-opacity=".5"/>
-              <text x="325" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Quantum</text>
-              <text x="325" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Algorithms</text>
-              <rect x="412" y="14" width="100" height="36" rx="5" fill="rgba(52,211,153,.07)" stroke="#34d399" stroke-width="1" stroke-opacity=".4"/>
-              <text x="462" y="29" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399">VQE / QAOA</text>
-              <text x="462" y="42" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399">Kernels</text>
-              <rect x="412" y="62" width="100" height="36" rx="5" fill="rgba(251,191,36,.07)" stroke="#fbbf24" stroke-width="1" stroke-opacity=".4"/>
-              <text x="462" y="77" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#fbbf24">Hybrid</text>
-              <text x="462" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#fbbf24">Pipelines</text>
-              <rect x="546" y="32" width="108" height="48" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
-              <text x="600" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Systematic</text>
-              <text x="600" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Review</text>
-              <line x1="106" y1="56" x2="138" y2="32" stroke="#4fcde8" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
-              <line x1="106" y1="56" x2="138" y2="80" stroke="#4fcde8" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
-              <line x1="238" y1="32" x2="272" y2="50" stroke="#d4a843" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
-              <line x1="238" y1="80" x2="272" y2="62" stroke="#a78bfa" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
-              <line x1="378" y1="50" x2="412" y2="32" stroke="#d4a843" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
-              <line x1="378" y1="62" x2="412" y2="80" stroke="#d4a843" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
-              <line x1="512" y1="32" x2="546" y2="50" stroke="#34d399" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
-              <line x1="512" y1="80" x2="546" y2="62" stroke="#fbbf24" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <defs><marker id="a1r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#2dd4a7" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="32" width="100" height="48" rx="6" fill="rgba(77,141,255,.07)" stroke="#4d8dff" stroke-width="1" stroke-opacity=".4"/>
+              <text x="56" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4d8dff">Medical</text>
+              <text x="56" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4d8dff">Literature</text>
+              <rect x="138" y="14" width="100" height="36" rx="5" fill="rgba(45,212,167,.08)" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".4"/>
+              <text x="188" y="29" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7">Imaging &amp;</text>
+              <text x="188" y="42" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7">Diagnostics</text>
+              <rect x="138" y="62" width="100" height="36" rx="5" fill="rgba(139,127,245,.08)" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".4"/>
+              <text x="188" y="77" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#8b7ff5">Drug</text>
+              <text x="188" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#8b7ff5">Discovery</text>
+              <rect x="272" y="32" width="106" height="48" rx="6" fill="rgba(45,212,167,.1)" stroke="#2dd4a7" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="325" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Quantum</text>
+              <text x="325" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Algorithms</text>
+              <rect x="412" y="14" width="100" height="36" rx="5" fill="rgba(45,212,167,.07)" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".4"/>
+              <text x="462" y="29" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7">VQE / QAOA</text>
+              <text x="462" y="42" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7">Kernels</text>
+              <rect x="412" y="62" width="100" height="36" rx="5" fill="rgba(245,185,66,.07)" stroke="#f5b942" stroke-width="1" stroke-opacity=".4"/>
+              <text x="462" y="77" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#f5b942">Hybrid</text>
+              <text x="462" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#f5b942">Pipelines</text>
+              <rect x="546" y="32" width="108" height="48" rx="6" fill="rgba(45,212,167,.13)" stroke="#2dd4a7" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="600" y="53" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Systematic</text>
+              <text x="600" y="68" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Review</text>
+              <line x1="106" y1="56" x2="138" y2="32" stroke="#4d8dff" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="106" y1="56" x2="138" y2="80" stroke="#4d8dff" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="238" y1="32" x2="272" y2="50" stroke="#2dd4a7" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="238" y1="80" x2="272" y2="62" stroke="#8b7ff5" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="378" y1="50" x2="412" y2="32" stroke="#2dd4a7" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="378" y1="62" x2="412" y2="80" stroke="#2dd4a7" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="512" y1="32" x2="546" y2="50" stroke="#2dd4a7" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
+              <line x1="512" y1="80" x2="546" y2="62" stroke="#f5b942" stroke-width=".9" stroke-opacity=".4" marker-end="url(#a1r)"/>
             </svg>
           </div>
           <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank" class="plink live">↗ Full Paper</a><a href="https://github.com/najnin26/Review-Paper-1" target="_blank" class="plink">↗ GitHub</a></div>
@@ -1283,30 +1284,30 @@ footer{
           <div class="pub-arch">
             <div class="pub-arch-lbl">ACAM-MobileNetV2 Architecture</div>
             <svg viewBox="0 0 700 104" xmlns="http://www.w3.org/2000/svg" style="max-height:104px">
-              <defs><marker id="a2r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
-              <rect x="6" y="30" width="82" height="44" rx="6" fill="rgba(79,205,232,.07)" stroke="#4fcde8" stroke-width="1" stroke-opacity=".4"/>
-              <text x="47" y="50" text-anchor="middle" font-family="monospace" font-size="8" fill="#4fcde8">Skin</text>
-              <text x="47" y="63" text-anchor="middle" font-family="monospace" font-size="8" fill="#4fcde8">Image</text>
-              <rect x="114" y="18" width="120" height="68" rx="6" fill="rgba(212,168,67,.09)" stroke="#d4a843" stroke-width="1.2" stroke-opacity=".5"/>
-              <text x="174" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#d4a843">MobileNetV2</text>
-              <text x="174" y="58" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843" fill-opacity=".7">Backbone</text>
-              <text x="174" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843" fill-opacity=".5">Feature Maps</text>
-              <rect x="262" y="18" width="98" height="30" rx="5" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5"/>
-              <text x="311" y="36" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa">Channel Attn</text>
-              <rect x="262" y="56" width="98" height="30" rx="5" fill="rgba(244,114,182,.09)" stroke="#f472b6" stroke-width="1" stroke-opacity=".5"/>
-              <text x="311" y="75" text-anchor="middle" font-family="monospace" font-size="8" fill="#f472b6">Spatial Attn</text>
-              <rect x="390" y="30" width="110" height="44" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.2" stroke-opacity=".5"/>
-              <text x="445" y="50" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#34d399">SupCon</text>
-              <text x="445" y="63" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#34d399">Loss</text>
-              <rect x="532" y="30" width="110" height="44" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
-              <text x="587" y="50" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Multi-Class</text>
-              <text x="587" y="63" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Output</text>
-              <line x1="88" y1="52" x2="114" y2="52" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a2r)"/>
-              <line x1="234" y1="44" x2="262" y2="33" stroke="#d4a843" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
-              <line x1="234" y1="60" x2="262" y2="71" stroke="#d4a843" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
-              <line x1="360" y1="33" x2="390" y2="47" stroke="#a78bfa" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
-              <line x1="360" y1="71" x2="390" y2="57" stroke="#f472b6" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
-              <line x1="500" y1="52" x2="532" y2="52" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a2r)"/>
+              <defs><marker id="a2r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#2dd4a7" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="30" width="82" height="44" rx="6" fill="rgba(77,141,255,.07)" stroke="#4d8dff" stroke-width="1" stroke-opacity=".4"/>
+              <text x="47" y="50" text-anchor="middle" font-family="monospace" font-size="8" fill="#4d8dff">Skin</text>
+              <text x="47" y="63" text-anchor="middle" font-family="monospace" font-size="8" fill="#4d8dff">Image</text>
+              <rect x="114" y="18" width="120" height="68" rx="6" fill="rgba(45,212,167,.09)" stroke="#2dd4a7" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="174" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#2dd4a7">MobileNetV2</text>
+              <text x="174" y="58" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7" fill-opacity=".7">Backbone</text>
+              <text x="174" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7" fill-opacity=".5">Feature Maps</text>
+              <rect x="262" y="18" width="98" height="30" rx="5" fill="rgba(139,127,245,.1)" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".5"/>
+              <text x="311" y="36" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b7ff5">Channel Attn</text>
+              <rect x="262" y="56" width="98" height="30" rx="5" fill="rgba(245,87,139,.09)" stroke="#f5578b" stroke-width="1" stroke-opacity=".5"/>
+              <text x="311" y="75" text-anchor="middle" font-family="monospace" font-size="8" fill="#f5578b">Spatial Attn</text>
+              <rect x="390" y="30" width="110" height="44" rx="6" fill="rgba(45,212,167,.09)" stroke="#2dd4a7" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="445" y="50" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">SupCon</text>
+              <text x="445" y="63" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Loss</text>
+              <rect x="532" y="30" width="110" height="44" rx="6" fill="rgba(45,212,167,.13)" stroke="#2dd4a7" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="587" y="50" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Multi-Class</text>
+              <text x="587" y="63" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Output</text>
+              <line x1="88" y1="52" x2="114" y2="52" stroke="#4d8dff" stroke-width="1" stroke-opacity=".5" marker-end="url(#a2r)"/>
+              <line x1="234" y1="44" x2="262" y2="33" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
+              <line x1="234" y1="60" x2="262" y2="71" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
+              <line x1="360" y1="33" x2="390" y2="47" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
+              <line x1="360" y1="71" x2="390" y2="57" stroke="#f5578b" stroke-width="1" stroke-opacity=".4" marker-end="url(#a2r)"/>
+              <line x1="500" y1="52" x2="532" y2="52" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".5" marker-end="url(#a2r)"/>
             </svg>
           </div>
           <div class="plinks"><button class="plink plink-acc" onclick="event.preventDefault();openCertModal(4)">🎓 Acceptance Cert</button><a href="https://github.com/najnin26/ACAM-MobileNetV2" target="_blank" class="plink">↗ GitHub</a></div>
@@ -1325,29 +1326,29 @@ footer{
           <div class="pub-arch">
             <div class="pub-arch-lbl">Q-EmotionNet Architecture</div>
             <svg viewBox="0 0 700 108" xmlns="http://www.w3.org/2000/svg" style="max-height:108px">
-              <defs><marker id="a3r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
-              <rect x="6" y="30" width="86" height="48" rx="6" fill="rgba(79,205,232,.07)" stroke="#4fcde8" stroke-width="1" stroke-opacity=".4"/>
-              <text x="49" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#4fcde8">Face</text>
-              <text x="49" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#4fcde8">Image</text>
-              <rect x="120" y="22" width="108" height="64" rx="6" fill="rgba(212,168,67,.08)" stroke="#d4a843" stroke-width="1" stroke-opacity=".4"/>
-              <text x="174" y="47" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Classical</text>
-              <text x="174" y="60" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">CNN</text>
-              <text x="174" y="73" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#d4a843" fill-opacity=".6">Feature Maps</text>
-              <rect x="260" y="30" width="108" height="48" rx="6" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5"/>
-              <text x="314" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa">Amplitude</text>
-              <text x="314" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa">Encoding</text>
-              <rect x="400" y="16" width="122" height="76" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.4" stroke-opacity=".6"/>
-              <text x="461" y="41" text-anchor="middle" font-family="monospace" font-size="9" fill="#34d399">VQC Layer</text>
-              <text x="461" y="55" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".8">RX · RY · CNOT</text>
-              <text x="461" y="69" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".8">Entanglement</text>
-              <text x="461" y="82" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".6">Measurement</text>
-              <rect x="558" y="30" width="104" height="48" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
-              <text x="610" y="51" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Emotion</text>
-              <text x="610" y="64" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Class ×7</text>
-              <line x1="92" y1="54" x2="120" y2="54" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
-              <line x1="228" y1="54" x2="260" y2="54" stroke="#d4a843" stroke-width="1" stroke-opacity=".4" marker-end="url(#a3r)"/>
-              <line x1="368" y1="54" x2="400" y2="54" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
-              <line x1="522" y1="54" x2="558" y2="54" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
+              <defs><marker id="a3r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#2dd4a7" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="30" width="86" height="48" rx="6" fill="rgba(77,141,255,.07)" stroke="#4d8dff" stroke-width="1" stroke-opacity=".4"/>
+              <text x="49" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#4d8dff">Face</text>
+              <text x="49" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#4d8dff">Image</text>
+              <rect x="120" y="22" width="108" height="64" rx="6" fill="rgba(45,212,167,.08)" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".4"/>
+              <text x="174" y="47" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Classical</text>
+              <text x="174" y="60" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">CNN</text>
+              <text x="174" y="73" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7" fill-opacity=".6">Feature Maps</text>
+              <rect x="260" y="30" width="108" height="48" rx="6" fill="rgba(139,127,245,.1)" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".5"/>
+              <text x="314" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b7ff5">Amplitude</text>
+              <text x="314" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b7ff5">Encoding</text>
+              <rect x="400" y="16" width="122" height="76" rx="6" fill="rgba(45,212,167,.09)" stroke="#2dd4a7" stroke-width="1.4" stroke-opacity=".6"/>
+              <text x="461" y="41" text-anchor="middle" font-family="monospace" font-size="9" fill="#2dd4a7">VQC Layer</text>
+              <text x="461" y="55" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7" fill-opacity=".8">RX · RY · CNOT</text>
+              <text x="461" y="69" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7" fill-opacity=".8">Entanglement</text>
+              <text x="461" y="82" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7" fill-opacity=".6">Measurement</text>
+              <rect x="558" y="30" width="104" height="48" rx="6" fill="rgba(45,212,167,.13)" stroke="#2dd4a7" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="610" y="51" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Emotion</text>
+              <text x="610" y="64" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Class ×7</text>
+              <line x1="92" y1="54" x2="120" y2="54" stroke="#4d8dff" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
+              <line x1="228" y1="54" x2="260" y2="54" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".4" marker-end="url(#a3r)"/>
+              <line x1="368" y1="54" x2="400" y2="54" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
+              <line x1="522" y1="54" x2="558" y2="54" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".5" marker-end="url(#a3r)"/>
             </svg>
           </div>
           <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/Q-EmotionNet" target="_blank" class="plink">↗ GitHub</a></div>
@@ -1366,32 +1367,32 @@ footer{
           <div class="pub-arch">
             <div class="pub-arch-lbl">Hybrid Transfer Learning Pipeline</div>
             <svg viewBox="0 0 700 112" xmlns="http://www.w3.org/2000/svg" style="max-height:112px">
-              <defs><marker id="a4r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
-              <rect x="6" y="28" width="92" height="56" rx="6" fill="rgba(244,114,182,.07)" stroke="#f472b6" stroke-width="1" stroke-opacity=".4"/>
-              <text x="52" y="50" text-anchor="middle" font-family="monospace" font-size="8" fill="#f472b6">Histopath.</text>
-              <text x="52" y="63" text-anchor="middle" font-family="monospace" font-size="8" fill="#f472b6">Patch</text>
-              <text x="52" y="76" text-anchor="middle" font-family="monospace" font-size="7" fill="#f472b6" fill-opacity=".6">BreakHis</text>
-              <rect x="128" y="20" width="120" height="72" rx="6" fill="rgba(79,205,232,.09)" stroke="#4fcde8" stroke-width="1.2" stroke-opacity=".5"/>
-              <text x="188" y="46" text-anchor="middle" font-family="monospace" font-size="9" fill="#4fcde8">ViT-B/16</text>
-              <text x="188" y="60" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".8">Pre-trained</text>
-              <text x="188" y="74" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".6">768-d CLS token</text>
-              <rect x="130" y="96" width="116" height="14" rx="3" fill="rgba(79,205,232,.05)" stroke="#4fcde8" stroke-width=".6" stroke-opacity=".3"/>
-              <text x="188" y="106" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#4fcde8" fill-opacity=".6">Frozen weights</text>
-              <rect x="284" y="28" width="110" height="56" rx="6" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5"/>
-              <text x="339" y="52" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#a78bfa">Angle</text>
-              <text x="339" y="65" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#a78bfa">Encoding</text>
-              <rect x="432" y="14" width="122" height="84" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.4" stroke-opacity=".6"/>
-              <text x="493" y="40" text-anchor="middle" font-family="monospace" font-size="9" fill="#34d399">Variational</text>
-              <text x="493" y="54" text-anchor="middle" font-family="monospace" font-size="8" fill="#34d399" fill-opacity=".8">Quantum</text>
-              <text x="493" y="68" text-anchor="middle" font-family="monospace" font-size="8" fill="#34d399" fill-opacity=".8">Circuit</text>
-              <text x="493" y="82" text-anchor="middle" font-family="monospace" font-size="7" fill="#34d399" fill-opacity=".6">n=4 qubits</text>
-              <rect x="592" y="28" width="102" height="56" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
-              <text x="643" y="52" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Malignant /</text>
-              <text x="643" y="65" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Benign</text>
-              <line x1="98" y1="56" x2="128" y2="56" stroke="#f472b6" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
-              <line x1="248" y1="56" x2="284" y2="56" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
-              <line x1="394" y1="56" x2="432" y2="56" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
-              <line x1="554" y1="56" x2="592" y2="56" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
+              <defs><marker id="a4r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#2dd4a7" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="28" width="92" height="56" rx="6" fill="rgba(245,87,139,.07)" stroke="#f5578b" stroke-width="1" stroke-opacity=".4"/>
+              <text x="52" y="50" text-anchor="middle" font-family="monospace" font-size="8" fill="#f5578b">Histopath.</text>
+              <text x="52" y="63" text-anchor="middle" font-family="monospace" font-size="8" fill="#f5578b">Patch</text>
+              <text x="52" y="76" text-anchor="middle" font-family="monospace" font-size="7" fill="#f5578b" fill-opacity=".6">BreakHis</text>
+              <rect x="128" y="20" width="120" height="72" rx="6" fill="rgba(77,141,255,.09)" stroke="#4d8dff" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="188" y="46" text-anchor="middle" font-family="monospace" font-size="9" fill="#4d8dff">ViT-B/16</text>
+              <text x="188" y="60" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4d8dff" fill-opacity=".8">Pre-trained</text>
+              <text x="188" y="74" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4d8dff" fill-opacity=".6">768-d CLS token</text>
+              <rect x="130" y="96" width="116" height="14" rx="3" fill="rgba(77,141,255,.05)" stroke="#4d8dff" stroke-width=".6" stroke-opacity=".3"/>
+              <text x="188" y="106" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#4d8dff" fill-opacity=".6">Frozen weights</text>
+              <rect x="284" y="28" width="110" height="56" rx="6" fill="rgba(139,127,245,.1)" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".5"/>
+              <text x="339" y="52" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#8b7ff5">Angle</text>
+              <text x="339" y="65" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#8b7ff5">Encoding</text>
+              <rect x="432" y="14" width="122" height="84" rx="6" fill="rgba(45,212,167,.09)" stroke="#2dd4a7" stroke-width="1.4" stroke-opacity=".6"/>
+              <text x="493" y="40" text-anchor="middle" font-family="monospace" font-size="9" fill="#2dd4a7">Variational</text>
+              <text x="493" y="54" text-anchor="middle" font-family="monospace" font-size="8" fill="#2dd4a7" fill-opacity=".8">Quantum</text>
+              <text x="493" y="68" text-anchor="middle" font-family="monospace" font-size="8" fill="#2dd4a7" fill-opacity=".8">Circuit</text>
+              <text x="493" y="82" text-anchor="middle" font-family="monospace" font-size="7" fill="#2dd4a7" fill-opacity=".6">n=4 qubits</text>
+              <rect x="592" y="28" width="102" height="56" rx="6" fill="rgba(45,212,167,.13)" stroke="#2dd4a7" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="643" y="52" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Malignant /</text>
+              <text x="643" y="65" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Benign</text>
+              <line x1="98" y1="56" x2="128" y2="56" stroke="#f5578b" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
+              <line x1="248" y1="56" x2="284" y2="56" stroke="#4d8dff" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
+              <line x1="394" y1="56" x2="432" y2="56" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
+              <line x1="554" y1="56" x2="592" y2="56" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".5" marker-end="url(#a4r)"/>
             </svg>
           </div>
           <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/quantum-vit-breast-cancer" target="_blank" class="plink">↗ GitHub</a></div>
@@ -1401,43 +1402,43 @@ footer{
     </article>
 
     <!-- Paper 5 -->
-    <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.28s">
+    <article class="pub-entry rev" data-pt="journal" data-ps="acc" style="transition-delay:.28s">
       <div class="pub-main">
         <div>
-          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">IEEE Open Access</span><span class="pyear">2025</span></div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pvenue">IEEE Access</span><span class="pyear">2025</span></div>
           <div class="ptitle">QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping</div>
           <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md. Aminul Islam, Maria Akter Abin, Mahmoud Abouyoussef</div>
           <div class="pub-arch">
             <div class="pub-arch-lbl">QBERT-LSTM Architecture</div>
             <svg viewBox="0 0 700 104" xmlns="http://www.w3.org/2000/svg" style="max-height:104px">
-              <defs><marker id="a5r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
-              <rect x="6" y="28" width="96" height="48" rx="6" fill="rgba(251,191,36,.07)" stroke="#fbbf24" stroke-width="1" stroke-opacity=".4"/>
-              <text x="54" y="49" text-anchor="middle" font-family="monospace" font-size="8" fill="#fbbf24">Social Media</text>
-              <text x="54" y="62" text-anchor="middle" font-family="monospace" font-size="8" fill="#fbbf24">Text</text>
-              <rect x="134" y="18" width="120" height="68" rx="6" fill="rgba(79,205,232,.09)" stroke="#4fcde8" stroke-width="1.2" stroke-opacity=".5"/>
-              <text x="194" y="46" text-anchor="middle" font-family="monospace" font-size="9" fill="#4fcde8">BERT</text>
-              <text x="194" y="60" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".8">Contextual</text>
-              <text x="194" y="74" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".6">Embeddings</text>
-              <rect x="290" y="18" width="120" height="68" rx="6" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1.4" stroke-opacity=".6"/>
-              <text x="350" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#a78bfa">QBERT</text>
-              <text x="350" y="58" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa" fill-opacity=".8">Quantum</text>
-              <text x="350" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#a78bfa" fill-opacity=".6">VQC Encoder</text>
-              <rect x="448" y="18" width="120" height="68" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.2" stroke-opacity=".5"/>
-              <text x="508" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#34d399">BiLSTM</text>
-              <text x="508" y="58" text-anchor="middle" font-family="monospace" font-size="8" fill="#34d399" fill-opacity=".8">Sequence</text>
-              <text x="508" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".6">Modelling</text>
-              <rect x="596" y="28" width="98" height="48" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
-              <text x="645" y="49" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Mental</text>
-              <text x="645" y="62" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Health Class</text>
-              <line x1="102" y1="52" x2="134" y2="52" stroke="#fbbf24" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
-              <line x1="254" y1="52" x2="290" y2="52" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
-              <line x1="410" y1="52" x2="448" y2="52" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
-              <line x1="568" y1="52" x2="596" y2="52" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
+              <defs><marker id="a5r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#2dd4a7" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="28" width="96" height="48" rx="6" fill="rgba(245,185,66,.07)" stroke="#f5b942" stroke-width="1" stroke-opacity=".4"/>
+              <text x="54" y="49" text-anchor="middle" font-family="monospace" font-size="8" fill="#f5b942">Social Media</text>
+              <text x="54" y="62" text-anchor="middle" font-family="monospace" font-size="8" fill="#f5b942">Text</text>
+              <rect x="134" y="18" width="120" height="68" rx="6" fill="rgba(77,141,255,.09)" stroke="#4d8dff" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="194" y="46" text-anchor="middle" font-family="monospace" font-size="9" fill="#4d8dff">BERT</text>
+              <text x="194" y="60" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4d8dff" fill-opacity=".8">Contextual</text>
+              <text x="194" y="74" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4d8dff" fill-opacity=".6">Embeddings</text>
+              <rect x="290" y="18" width="120" height="68" rx="6" fill="rgba(139,127,245,.1)" stroke="#8b7ff5" stroke-width="1.4" stroke-opacity=".6"/>
+              <text x="350" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b7ff5">QBERT</text>
+              <text x="350" y="58" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b7ff5" fill-opacity=".8">Quantum</text>
+              <text x="350" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#8b7ff5" fill-opacity=".6">VQC Encoder</text>
+              <rect x="448" y="18" width="120" height="68" rx="6" fill="rgba(45,212,167,.09)" stroke="#2dd4a7" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="508" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="#2dd4a7">BiLSTM</text>
+              <text x="508" y="58" text-anchor="middle" font-family="monospace" font-size="8" fill="#2dd4a7" fill-opacity=".8">Sequence</text>
+              <text x="508" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7" fill-opacity=".6">Modelling</text>
+              <rect x="596" y="28" width="98" height="48" rx="6" fill="rgba(45,212,167,.13)" stroke="#2dd4a7" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="645" y="49" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Mental</text>
+              <text x="645" y="62" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Health Class</text>
+              <line x1="102" y1="52" x2="134" y2="52" stroke="#f5b942" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
+              <line x1="254" y1="52" x2="290" y2="52" stroke="#4d8dff" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
+              <line x1="410" y1="52" x2="448" y2="52" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
+              <line x1="568" y1="52" x2="596" y2="52" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".5" marker-end="url(#a5r)"/>
             </svg>
           </div>
-          <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/QBERT-LSTM" target="_blank" class="plink">↗ GitHub</a></div>
+          <div class="plinks"><span class="plink plink-acc" style="cursor:default">◆ Accepted</span><a href="https://github.com/najnin26/QBERT-LSTM" target="_blank" class="plink">↗ GitHub</a></div>
         </div>
-        <div style="text-align:right"><div class="pstatus ps-rev">◌ Under Review</div><div class="pnum">05</div></div>
+        <div style="text-align:right"><div class="pstatus ps-acc">◆ Accepted</div><div class="pnum">05</div></div>
       </div>
     </article>
 
@@ -1451,31 +1452,31 @@ footer{
           <div class="pub-arch">
             <div class="pub-arch-lbl">SPARK Framework</div>
             <svg viewBox="0 0 700 108" xmlns="http://www.w3.org/2000/svg" style="max-height:108px">
-              <defs><marker id="a6r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#d4a843" fill-opacity=".5"/></marker></defs>
-              <rect x="6" y="28" width="96" height="52" rx="6" fill="rgba(251,191,36,.07)" stroke="#fbbf24" stroke-width="1" stroke-opacity=".4"/>
-              <text x="54" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#fbbf24">Raw</text>
-              <text x="54" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#fbbf24">Signal</text>
-              <rect x="136" y="18" width="120" height="72" rx="6" fill="rgba(79,205,232,.09)" stroke="#4fcde8" stroke-width="1.2" stroke-opacity=".5"/>
-              <text x="196" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4fcde8">Graph</text>
-              <text x="196" y="57" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4fcde8">Construction</text>
-              <text x="196" y="73" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4fcde8" fill-opacity=".6">G=(V, E, W)</text>
-              <rect x="136" y="94" width="120" height="13" rx="3" fill="rgba(251,191,36,.06)" stroke="#fbbf24" stroke-width=".6" stroke-opacity=".3"/>
-              <text x="196" y="104" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#fbbf24" fill-opacity=".6">Domain Knowledge</text>
-              <rect x="296" y="18" width="120" height="72" rx="6" fill="rgba(167,139,250,.1)" stroke="#a78bfa" stroke-width="1.4" stroke-opacity=".6"/>
-              <text x="356" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#a78bfa">K-Aware</text>
-              <text x="356" y="58" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#a78bfa">GNN</text>
-              <text x="356" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#a78bfa" fill-opacity=".7">Message Pass</text>
-              <rect x="462" y="18" width="120" height="72" rx="6" fill="rgba(52,211,153,.09)" stroke="#34d399" stroke-width="1.2" stroke-opacity=".5"/>
-              <text x="522" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#34d399">Adaptive</text>
-              <text x="522" y="58" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#34d399">Reconstruct</text>
-              <text x="522" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#34d399" fill-opacity=".7">Spectral</text>
-              <rect x="600" y="28" width="94" height="52" rx="6" fill="rgba(212,168,67,.13)" stroke="#d4a843" stroke-width="1.5" stroke-opacity=".7"/>
-              <text x="647" y="51" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Restored</text>
-              <text x="647" y="64" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#d4a843">Signal</text>
-              <line x1="102" y1="54" x2="136" y2="54" stroke="#fbbf24" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
-              <line x1="256" y1="54" x2="296" y2="54" stroke="#4fcde8" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
-              <line x1="416" y1="54" x2="462" y2="54" stroke="#a78bfa" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
-              <line x1="582" y1="54" x2="600" y2="54" stroke="#34d399" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
+              <defs><marker id="a6r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#2dd4a7" fill-opacity=".5"/></marker></defs>
+              <rect x="6" y="28" width="96" height="52" rx="6" fill="rgba(245,185,66,.07)" stroke="#f5b942" stroke-width="1" stroke-opacity=".4"/>
+              <text x="54" y="51" text-anchor="middle" font-family="monospace" font-size="8" fill="#f5b942">Raw</text>
+              <text x="54" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#f5b942">Signal</text>
+              <rect x="136" y="18" width="120" height="72" rx="6" fill="rgba(77,141,255,.09)" stroke="#4d8dff" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="196" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4d8dff">Graph</text>
+              <text x="196" y="57" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#4d8dff">Construction</text>
+              <text x="196" y="73" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#4d8dff" fill-opacity=".6">G=(V, E, W)</text>
+              <rect x="136" y="94" width="120" height="13" rx="3" fill="rgba(245,185,66,.06)" stroke="#f5b942" stroke-width=".6" stroke-opacity=".3"/>
+              <text x="196" y="104" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#f5b942" fill-opacity=".6">Domain Knowledge</text>
+              <rect x="296" y="18" width="120" height="72" rx="6" fill="rgba(139,127,245,.1)" stroke="#8b7ff5" stroke-width="1.4" stroke-opacity=".6"/>
+              <text x="356" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#8b7ff5">K-Aware</text>
+              <text x="356" y="58" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#8b7ff5">GNN</text>
+              <text x="356" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#8b7ff5" fill-opacity=".7">Message Pass</text>
+              <rect x="462" y="18" width="120" height="72" rx="6" fill="rgba(45,212,167,.09)" stroke="#2dd4a7" stroke-width="1.2" stroke-opacity=".5"/>
+              <text x="522" y="44" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Adaptive</text>
+              <text x="522" y="58" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Reconstruct</text>
+              <text x="522" y="72" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#2dd4a7" fill-opacity=".7">Spectral</text>
+              <rect x="600" y="28" width="94" height="52" rx="6" fill="rgba(45,212,167,.13)" stroke="#2dd4a7" stroke-width="1.5" stroke-opacity=".7"/>
+              <text x="647" y="51" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Restored</text>
+              <text x="647" y="64" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#2dd4a7">Signal</text>
+              <line x1="102" y1="54" x2="136" y2="54" stroke="#f5b942" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
+              <line x1="256" y1="54" x2="296" y2="54" stroke="#4d8dff" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
+              <line x1="416" y1="54" x2="462" y2="54" stroke="#8b7ff5" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
+              <line x1="582" y1="54" x2="600" y2="54" stroke="#2dd4a7" stroke-width="1" stroke-opacity=".5" marker-end="url(#a6r)"/>
             </svg>
           </div>
           <div class="plinks"><span class="plink" style="opacity:.4;cursor:default">Under Review</span><a href="https://github.com/najnin26/SPARK-GNN" target="_blank" class="plink">↗ GitHub</a></div>
@@ -1504,8 +1505,9 @@ footer{
       </div>
     </div>
     <div class="rev-r">
-      <div class="cv-hd">Research Experience</div>
+      <div class="cv-hd">Research &amp; Teaching Experience</div>
       <div class="tl">
+        <div class="tlr"><div class="tldot"></div><div><div class="tlyr">Jul 2026 – Present</div><div class="tltitle">Lecturer</div><div class="tlorg">Uttara University · Dhaka, Bangladesh</div><div class="tlbody"><ul><li>Delivering undergraduate courses in AI, machine learning, and quantum computing</li><li>Supervising student research projects in quantum AI and healthcare analytics</li><li>Collaborating on curriculum development and academic outreach</li></ul></div><span class="tlchip">Current Position</span></div></div>
         <div class="tlr"><div class="tldot"></div><div><div class="tlyr">May 2026 – Present</div><div class="tltitle">Senior Research Assistant</div><div class="tlorg">ELITE Research Lab · New York, USA (Remote)</div><div class="tlbody"><ul><li>Leading research in Quantum ML and NLP</li><li>Benchmarking classical vs. quantum model performance</li><li>Developing CNNs, GNNs, QCNNs, and LLM-based systems</li><li>Technical writing and manuscript preparation</li><li>Mentoring junior research interns</li></ul></div><span class="tlchip">Current Position</span></div></div>
         <div class="tlr"><div class="tldot"></div><div><div class="tlyr">Nov 2025 – Apr 2026</div><div class="tltitle">Research Assistant</div><div class="tlorg">ELITE Research Lab · New York, USA (Remote)</div><div class="tlbody"><ul><li>Led research in Quantum ML and NLP pipelines</li><li>Comparative performance analysis across AI frameworks</li><li>Peer-reviewed journal manuscript preparation</li></ul></div></div></div>
         <div class="tlr"><div class="tldot"></div><div><div class="tlyr">Sep 2025 – Oct 2025</div><div class="tltitle">Research Intern</div><div class="tlorg">ELITE Research Lab · New York, USA (Remote)</div><div class="tlbody"><ul><li>Exploratory research in quantum machine learning</li><li>Prototype implementation in Python (PennyLane, PyTorch)</li><li>AI applications in clinical healthcare settings</li></ul></div></div></div>
@@ -1575,12 +1577,12 @@ footer{
     </div>
     <div class="cert-card rev" style="transition-delay:.08s" data-cert-index="1">
       <span class="cert-view-badge">View ↗</span>
-      <div class="cert-ico" style="font-family:'DM Mono',monospace;font-size:.88rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
+      <div class="cert-ico" style="font-family:'JetBrains Mono',monospace;font-size:.88rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
       <div><div class="cert-issuer">IBM · CognitiveClass.ai</div><div class="cert-name">Data Science Tools (DS0105EN)</div><div class="cert-desc">Comprehensive coverage of data science toolkits — Jupyter, RStudio, GitHub, and Watson Studio through IBM's Developer Skills Network.</div></div>
     </div>
     <div class="cert-card rev" style="transition-delay:.16s" data-cert-index="2">
       <span class="cert-view-badge">View ↗</span>
-      <div class="cert-ico" style="font-family:'DM Mono',monospace;font-size:.88rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
+      <div class="cert-ico" style="font-family:'JetBrains Mono',monospace;font-size:.88rem;letter-spacing:-.05em;color:var(--cyan);font-weight:700">IBM</div>
       <div><div class="cert-issuer">IBM · CognitiveClass.ai</div><div class="cert-name">Data Analysis with Python (DA0101EN)</div><div class="cert-desc">Hands-on data analysis covering wrangling, exploratory analysis, model development, and evaluation using real-world datasets.</div></div>
     </div>
     <div class="cert-card rev" style="transition-delay:.24s" data-cert-index="3">
@@ -1601,7 +1603,7 @@ footer{
       <div class="c-card">
         <div class="c-card-top">
           <div class="c-name">Najnin Sultana Shirin</div>
-          <div class="c-role">Senior Research Assistant, ELITE Research Lab<br>M.Sc. Candidate, Jagannath University</div>
+          <div class="c-role">Senior Research Assistant, ELITE Research Lab · Lecturer, Uttara University<br>M.Sc. Candidate, Jagannath University</div>
         </div>
         <div class="c-info">
           <div class="ci"><div class="ci-ico">@</div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:b190305031@cse.jnu.ac.bd">b190305031@cse.jnu.ac.bd</a></div></div></div>
@@ -1632,14 +1634,14 @@ footer{
 <footer>
   <div class="f-l">
     <div class="f-name">Najnin Sultana Shirin</div>
-    <div class="f-sub">Senior Research Assistant · ELITE Research Lab · M.Sc. Candidate, Jagannath University</div>
+    <div class="f-sub">Senior Research Assistant · Lecturer · ELITE Research Lab · Uttara University · M.Sc. Candidate, Jagannath University</div>
   </div>
   <div class="f-links">
-    <a href="https://scholar.google.com/citations?user=6t-c6IsAAAAJ&hl=en" target="_blank">Scholar</a>
-    <a href="https://orcid.org/0009-0009-1492-7935" target="_blank">ORCID</a>
-    <a href="https://www.researchgate.net/profile/Najnin-Sultana-Shirin" target="_blank">ResearchGate</a>
-    <a href="https://github.com/najnin26" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/najnin-shirin-a909262a6" target="_blank">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=6t-c6IsAAAAJ&hl=en" target="_blank">Scholar ↗</a>
+    <a href="https://orcid.org/0009-0009-1492-7935" target="_blank">ORCID ↗</a>
+    <a href="https://www.researchgate.net/profile/Najnin-Sultana-Shirin" target="_blank">ResearchGate ↗</a>
+    <a href="https://github.com/najnin26" target="_blank">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/najnin-shirin-a909262a6" target="_blank">LinkedIn ↗</a>
   </div>
   <div class="f-copy">© 2026 Najnin Sultana Shirin<br>All Rights Reserved</div>
 </footer>
@@ -1800,9 +1802,9 @@ function initCanvas(){
   resize();
   particles=[];
   const isDark=document.documentElement.getAttribute('data-theme')==='dark';
-  const gold=isDark?'212,168,67':'154,108,14';
-  const cyan=isDark?'79,205,232':'14,135,160';
-  const violet=isDark?'167,139,250':'109,40,217';
+  const gold=isDark?'45,212,167':'13,156,120';
+  const cyan=isDark?'77,141,255':'37,99,235';
+  const violet=isDark?'139,127,245':'109,40,217';
   for(let i=0;i<60;i++){
     const colors=[gold,cyan,violet];
     particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,vx:(Math.random()-.5)*.38,vy:(Math.random()-.5)*.38,r:Math.random()*1.7+.5,color:colors[Math.floor(Math.random()*colors.length)],alpha:Math.random()*.45+.1});
@@ -1818,7 +1820,7 @@ function animate(){
     for(let j=i+1;j<particles.length;j++){
       const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
       const dist=Math.sqrt(dx*dx+dy*dy);
-      if(dist<120){ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(212,168,67,${(.2*(1-dist/120)).toFixed(3)})`;ctx.lineWidth=.45;ctx.stroke();}
+      if(dist<120){ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(45,212,167,${(.2*(1-dist/120)).toFixed(3)})`;ctx.lineWidth=.45;ctx.stroke();}
     }
   }
   particles.forEach(p=>{
