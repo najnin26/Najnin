@@ -637,23 +637,29 @@ section:nth-child(even){background:var(--ink2)}
 .qbert-figure:hover{
   transform:scale(1.03);box-shadow:var(--shadow-sm),var(--glow-g);
 }
-.qbert-main{grid-template-columns:minmax(0,1fr) 260px;align-items:start}
+.qbert-main{grid-template-columns:minmax(0,1fr) 190px;align-items:start}
 .qbert-info{display:flex;flex-direction:column;align-items:flex-start}
+.qbert-info .journal-info,.qbert-info .journal-metrics{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
 .journal-info{
-  display:flex;flex-wrap:wrap;gap:.38rem .9rem;margin:.1rem 0 .8rem;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.45rem;
+  margin:.85rem 0 .65rem;padding:.7rem .8rem;
+  border:1px solid var(--border);border-radius:var(--r-sm);
+  background:rgba(0,0,0,.08);
   font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.05em;
   color:var(--paper3);
 }
-.journal-info span strong{color:var(--gold);font-weight:500}
+.journal-info span{display:flex;flex-direction:column;gap:.12rem;min-width:0}
+.journal-info span strong{color:var(--paper4);font-weight:500;font-size:.43rem;letter-spacing:.12em;text-transform:uppercase}
 .journal-metrics{
-  display:flex;flex-wrap:wrap;gap:.45rem;margin:.2rem 0 .85rem;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.45rem;margin:.2rem 0 .85rem;
 }
 .journal-metric{
-  min-width:92px;padding:.38rem .55rem;border:1px solid var(--border2);
+  min-width:0;padding:.55rem .65rem;border:1px solid var(--border2);
   border-radius:4px;background:var(--gold4);display:flex;flex-direction:column;gap:.12rem;
 }
 .journal-metric-label{font-family:'JetBrains Mono',monospace;font-size:.42rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4)}
-.journal-metric-value{font-family:'Sora',serif;font-size:.72rem;color:var(--gold);font-weight:600}
+.journal-metric-value{font-family:'Sora',serif;font-size:.7rem;color:var(--gold);font-weight:600;line-height:1.25;overflow-wrap:anywhere}
+.journal-metric-value.is-pending{font-family:'JetBrains Mono',monospace;font-size:.52rem;font-weight:400;color:var(--paper3)}
 .qbert-side{display:flex;flex-direction:column;align-items:center;gap:.65rem;position:relative;padding-top:2rem}
 .qbert-side .pnum{position:absolute;top:0;right:0;margin:0}
 .qbert-side .pstatus{align-self:stretch;justify-content:center}
@@ -953,6 +959,7 @@ footer{
   #contact .c-grid{grid-template-columns:1fr}
   .cf-row{grid-template-columns:1fr}
   .pub-main{grid-template-columns:1fr}
+  .journal-info,.journal-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
   .prof-grid{grid-template-columns:1fr}
   .stats-strip{flex-direction:column}
   .stat-cell{border-right:none;border-bottom:1px solid var(--border)}
@@ -1531,7 +1538,6 @@ footer{
       </div>
     </article>
 
-  </div>
   </div>
 </section>
 
