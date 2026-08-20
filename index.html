@@ -584,10 +584,12 @@ section:nth-child(even){background:var(--ink2)}
 .pub-entry[data-ps="pub"]{border-left:2px solid var(--gold)}
 .pub-main{padding:1.6rem 1.8rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start;}
 .pub-main > div:first-child{min-width:0}
-.pub-entry .pmeta,.pub-entry .journal-info,.pub-entry .journal-metrics,
+.pub-entry .journal-info,.pub-entry .journal-metrics,
 .pub-entry .pub-arch,.pub-entry .pub-figure,.pub-entry .pub-figure-caption,
-.pub-entry .pstatus,.pub-entry .qbert-side img,.pub-entry .plinks > span,
+.pub-entry .qbert-side img,.pub-entry .plinks > span,
 .pub-entry .plinks .plink-acc{display:none}
+.pub-entry .pmeta{display:flex}
+.pub-entry .pstatus-inline{display:inline-flex}
 .pub-entry .plinks{margin-top:.95rem}
 .pub-entry .pub-main > div:last-child{display:flex;align-items:flex-start;justify-content:flex-end;min-width:74px}
 .pub-entry .pub-main > div:last-child .pnum{display:block}
@@ -597,6 +599,7 @@ section:nth-child(even){background:var(--ink2)}
 .pt-c{background:rgba(77,141,255,.1);color:var(--cyan);border:1px solid rgba(77,141,255,.25)}
 .pvenue{font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--paper3);letter-spacing:.04em;}
 .pyear{font-family:'JetBrains Mono',monospace;font-size:.54rem;color:var(--paper4)}
+.prank{font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;padding:.1rem .4rem;border-radius:3px;color:var(--amber);border:1px solid rgba(245,185,66,.35);background:rgba(245,185,66,.08)}
 .ptitle{font-family:'Sora',serif;font-size:1.08rem;font-weight:600;color:var(--paper);line-height:1.42;margin-bottom:.52rem;}
 .pauthors{font-family:'Inter',sans-serif;font-size:.78rem;color:var(--paper3);font-style:italic;margin-bottom:.6rem;line-height:1.55;}
 .pauthors .me{color:var(--gold);font-style:normal;font-weight:600;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;}
@@ -669,8 +672,8 @@ section:nth-child(even){background:var(--ink2)}
 .journal-metric-value{font-family:'Sora',serif;font-size:.7rem;color:var(--gold);font-weight:600;line-height:1.25;overflow-wrap:anywhere}
 .journal-metric-value.is-pending{font-family:'JetBrains Mono',monospace;font-size:.52rem;font-weight:400;color:var(--paper3)}
 .qbert-side{display:flex;flex-direction:column;align-items:center;gap:.65rem;position:relative;padding-top:0}
-.qbert-side .pnum{position:absolute;top:0;right:0;margin:0}
-.qbert-side .pstatus{align-self:stretch;justify-content:center}
+.qbert-side .pnum{position:static;order:2;margin:0;text-align:right}
+.qbert-side .pstatus{order:1;align-self:auto;justify-content:center}
 .pub-main > div:last-child{display:flex;flex-direction:column;align-items:flex-end;gap:.55rem;min-width:72px}
 .pub-main > div:last-child .pnum{order:1}
 .pub-main > div:last-child .pstatus{order:2}
@@ -1307,7 +1310,7 @@ footer{
     <article class="pub-entry rev" data-pt="journal" data-ps="pub">
       <div class="pub-main">
         <div>
-          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pstatus pstatus-inline ps-pub">Published</span><span class="pvenue">Intelligence-Based Medicine — Elsevier</span><span class="pyear">2026</span></div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="prank">Q2</span><span class="pstatus pstatus-inline ps-pub">Published</span><span class="pvenue">Intelligence-Based Medicine — Elsevier</span><span class="pyear">2026</span></div>
           <div class="journal-info"><span><strong>Type:</strong> Journal Article</span><span><strong>Publisher:</strong> Elsevier</span><span><strong>Year:</strong> 2026</span><span><strong>Status:</strong> Published</span></div>
           <div class="journal-metrics"><div class="journal-metric"><span class="journal-metric-label">Quartile</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Citations</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">CiteScore</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Impact Factor</span><span class="journal-metric-value">Not available</span></div></div>
           <div class="ptitle">Quantum Computing in Medical Diagnostics and Treatment: A Systematic Review of Trends, Challenges and Future Directions</div>
@@ -1402,7 +1405,7 @@ footer{
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.14s">
       <div class="pub-main">
         <div>
-          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pstatus pstatus-inline ps-rev">Under Review</span><span class="pvenue">IEEE Transactions on Quantum Engineering</span><span class="pyear">2025</span></div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="prank">Q1</span><span class="pstatus pstatus-inline ps-rev">Under Review</span><span class="pvenue">IEEE Transactions on Quantum Engineering</span><span class="pyear">2025</span></div>
           <div class="journal-info"><span><strong>Type:</strong> Journal Article</span><span><strong>Publisher:</strong> IEEE</span><span><strong>Year:</strong> 2025</span><span><strong>Status:</strong> Under Review</span></div>
           <div class="journal-metrics"><div class="journal-metric"><span class="journal-metric-label">Quartile</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Citations</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">CiteScore</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Impact Factor</span><span class="journal-metric-value">Not available</span></div></div>
           <div class="ptitle">Q-EmotionNet: A Quantum Convolutional Neural Network for Facial Emotion Recognition via Variational Quantum Circuits</div>
@@ -1445,7 +1448,7 @@ footer{
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.21s">
       <div class="pub-main">
         <div>
-          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pstatus pstatus-inline ps-rev">Under Review</span><span class="pvenue">Quantum Machine Intelligence — Springer Nature</span><span class="pyear">2025</span></div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="prank">Q1</span><span class="pstatus pstatus-inline ps-rev">Under Review</span><span class="pvenue">Quantum Machine Intelligence — Springer Nature</span><span class="pyear">2025</span></div>
           <div class="journal-info"><span><strong>Type:</strong> Journal Article</span><span><strong>Publisher:</strong> Springer Nature</span><span><strong>Year:</strong> 2025</span><span><strong>Status:</strong> Under Review</span></div>
           <div class="journal-metrics"><div class="journal-metric"><span class="journal-metric-label">Quartile</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Citations</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">CiteScore</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Impact Factor</span><span class="journal-metric-value">Not available</span></div></div>
           <div class="ptitle">Hybrid Quantum–Classical Transfer Learning Using Vision Transformer Features for Breast Cancer Histopathology</div>
@@ -1491,7 +1494,7 @@ footer{
     <article class="pub-entry rev qbert-first" data-pt="journal" data-ps="pub" style="transition-delay:.28s">
       <div class="pub-main qbert-main">
         <div class="qbert-info">
-          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pstatus pstatus-inline ps-pub">Published</span><span class="pvenue">IEEE Access</span><span class="pyear">2026</span></div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="prank">Q1</span><span class="pstatus pstatus-inline ps-pub">Published</span><span class="pvenue">IEEE Access</span><span class="pyear">2026</span></div>
           <div class="ptitle">QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping</div>
           <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md. Aminul Islam, Maria Akter Abin, Mahmoud Abouyoussef</div>
           <div class="journal-info"><span><strong>Type:</strong> Journal Article</span><span><strong>Publisher:</strong> IEEE</span><span><strong>Year:</strong> 2026</span><span><strong>Status:</strong> Published</span></div>
@@ -1506,7 +1509,7 @@ footer{
     <article class="pub-entry rev" data-pt="journal" data-ps="review" style="transition-delay:.35s">
       <div class="pub-main">
         <div>
-          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="pstatus pstatus-inline ps-rev">Under Review</span><span class="pvenue">IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</span><span class="pyear">2025</span></div>
+          <div class="pmeta"><span class="ptag pt-j">Journal Article</span><span class="prank">Q1</span><span class="pstatus pstatus-inline ps-rev">Under Review</span><span class="pvenue">IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</span><span class="pyear">2025</span></div>
           <div class="journal-info"><span><strong>Type:</strong> Journal Article</span><span><strong>Publisher:</strong> IEEE</span><span><strong>Year:</strong> 2025</span><span><strong>Status:</strong> Under Review</span></div>
           <div class="journal-metrics"><div class="journal-metric"><span class="journal-metric-label">Quartile</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Citations</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">CiteScore</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Impact Factor</span><span class="journal-metric-value">Not available</span></div></div>
           <div class="ptitle">SPARK — Signal Processing with Adaptive Reconstruction via Knowledge-aware GNNs</div>
