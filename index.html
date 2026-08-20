@@ -583,6 +583,14 @@ section:nth-child(even){background:var(--ink2)}
 .pub-entry:hover{border-color:var(--border2);box-shadow:var(--shadow-sm);background:var(--glass2);}
 .pub-entry[data-ps="pub"]{border-left:2px solid var(--gold)}
 .pub-main{padding:1.6rem 1.8rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start;}
+.pub-main > div:first-child{min-width:0}
+.pub-entry .pmeta,.pub-entry .journal-info,.pub-entry .journal-metrics,
+.pub-entry .pub-arch,.pub-entry .pub-figure,.pub-entry .pub-figure-caption,
+.pub-entry .pstatus,.pub-entry .qbert-side img,.pub-entry .plinks > span,
+.pub-entry .plinks .plink-acc{display:none}
+.pub-entry .plinks{margin-top:.95rem}
+.pub-entry .pub-main > div:last-child{display:flex;align-items:flex-start;justify-content:flex-end;min-width:74px}
+.pub-entry .pub-main > div:last-child .pnum{display:block}
 .pmeta{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;margin-bottom:.7rem}
 .ptag{font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .4rem;border-radius:3px;}
 .pt-j{background:rgba(45,212,167,.1);color:var(--gold);border:1px solid rgba(45,212,167,.25)}
@@ -660,7 +668,7 @@ section:nth-child(even){background:var(--ink2)}
 .journal-metric-label{font-family:'JetBrains Mono',monospace;font-size:.42rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper4)}
 .journal-metric-value{font-family:'Sora',serif;font-size:.7rem;color:var(--gold);font-weight:600;line-height:1.25;overflow-wrap:anywhere}
 .journal-metric-value.is-pending{font-family:'JetBrains Mono',monospace;font-size:.52rem;font-weight:400;color:var(--paper3)}
-.qbert-side{display:flex;flex-direction:column;align-items:center;gap:.65rem;position:relative;padding-top:2rem}
+.qbert-side{display:flex;flex-direction:column;align-items:center;gap:.65rem;position:relative;padding-top:0}
 .qbert-side .pnum{position:absolute;top:0;right:0;margin:0}
 .qbert-side .pstatus{align-self:stretch;justify-content:center}
 .pub-main > div:last-child{display:flex;flex-direction:column;align-items:flex-end;gap:.55rem;min-width:72px}
@@ -959,6 +967,7 @@ footer{
   #contact .c-grid{grid-template-columns:1fr}
   .cf-row{grid-template-columns:1fr}
   .pub-main{grid-template-columns:1fr}
+  .pub-entry .pub-main > div:last-child{grid-row:1;justify-content:flex-end;min-width:0}
   .journal-info,.journal-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
   .prof-grid{grid-template-columns:1fr}
   .stats-strip{flex-direction:column}
@@ -1341,7 +1350,7 @@ footer{
           <div class="pub-arch-lbl" style="margin-top:1rem">Figure 1</div>
           <img class="pub-figure" src="assets/img/fig.jpg" alt="Figure 1: Author's model architecture" loading="lazy"/>
           <div class="pub-figure-caption">Figure 1: Author's model architecture</div>
-          <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank" class="plink live">↗ Full Paper</a><a href="https://github.com/najnin26/Review-Paper-1" target="_blank" class="plink">↗ GitHub</a></div>
+          <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank" class="plink live">↗ Paper PDF</a><a href="https://github.com/najnin26/Review-Paper-1" target="_blank" class="plink">↗ GitHub</a></div>
         </div>
         <div style="text-align:right"><div class="pstatus ps-pub">● Published</div><div class="pnum">02</div></div>
       </div>
@@ -1487,7 +1496,7 @@ footer{
           <div class="pauthors"><span class="me">Najnin Sultana Shirin</span>, Md. Aminul Islam, Maria Akter Abin, Mahmoud Abouyoussef</div>
           <div class="journal-info"><span><strong>Type:</strong> Journal Article</span><span><strong>Publisher:</strong> IEEE</span><span><strong>Year:</strong> 2026</span><span><strong>Status:</strong> Published</span></div>
           <div class="journal-metrics"><div class="journal-metric"><span class="journal-metric-label">Quartile</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Citations</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">CiteScore</span><span class="journal-metric-value">Not available</span></div><div class="journal-metric"><span class="journal-metric-label">Impact Factor</span><span class="journal-metric-value">Not available</span></div></div>
-          <div class="plinks"><span class="plink live" style="cursor:default">● Published</span><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11627771" target="_blank" class="plink live">↗ IEEE Xplore PDF</a><a href="https://github.com/najnin26/QBERT-LSTM" target="_blank" class="plink">↗ GitHub</a></div>
+          <div class="plinks"><span class="plink live" style="cursor:default">● Published</span><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11627771" target="_blank" class="plink live">↗ Paper PDF</a><a href="https://github.com/najnin26/QBERT-LSTM" target="_blank" class="plink">↗ GitHub</a></div>
         </div>
         <div class="qbert-side"><img class="pub-figure qbert-figure" src="assets/img/QBERT-LSTM_pages-to-jpg-0001.jpg" alt="QBERT-LSTM model architecture; click to enlarge" loading="lazy" onclick="openFigureModal()" tabindex="0"/><div class="pnum">01</div><div class="pstatus ps-pub">● Published</div></div>
       </div>
