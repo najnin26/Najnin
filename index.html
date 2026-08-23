@@ -1552,7 +1552,19 @@ document.getElementById('figure-modal').addEventListener('click',e=>{if(e.target
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.getElementById('figure-modal').classList.contains('open'))closeFigureModal();});
 
 function copyBibtex(btn,key){
-  const text=`@article{${key},\n  title   = {See publication title above},\n  author  = {Najnin Sultana Shirin and co-authors},\n  year    = {2026}\n}`;
+  const citations={
+    najnin2026qbertlstm:`@ARTICLE{11627771,
+  author={Shirin, Najnin Sultana and Aminul Islam, Md. and Abin, Maria Akter and Abouyoussef, Mahmoud},
+  journal={IEEE Access},
+  title={QBERT-LSTM: Quantum Intelligence-Based Mental Health Sentiment Analysis Using Web Scraping},
+  year={2026},
+  volume={14},
+  number={},
+  pages={117086-117105},
+  keywords={Modeling; Long short term memory; Bit error rate; Qubit; Sentiment analysis; Social networking (online); Mental health; Convolutional neural networks; Machine learning; Accuracy; Sentiment analysis; multilingual input via translation; quantum machine learning; deep learning; transformer-based models},
+  doi={10.1109/ACCESS.2026.3715875}}`
+  };
+  const text=citations[key]||`@article{${key},\n  title   = {See publication title above},\n  author  = {Najnin Sultana Shirin and co-authors},\n  year    = {2026}\n}`;
   if(navigator.clipboard){navigator.clipboard.writeText(text).catch(()=>{});}
   const original=btn.textContent;
   btn.textContent='Copied!';
