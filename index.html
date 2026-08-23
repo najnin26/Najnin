@@ -1287,8 +1287,8 @@ footer{
         <div class="pub-venue">Intelligence-Based Medicine — Elsevier</div>
         <div class="pub-meta pub-meta-featured">
           <!-- <span class="pub-metric pub-access-meta">DOI: Not available</span> -->
-          <span class="pub-metric pub-access-meta">CiteScore: Not available</span>
-          <span class="pub-metric pub-access-meta">Impact Factor: Not available</span>
+          <span class="pub-metric pub-access-meta">CiteScore: 4.7</span>
+          <span class="pub-metric pub-access-meta">Impact Factor: 3.30</span>
         </div>
         <div class="pub-links">
           <a href="https://www.sciencedirect.com/science/article/pii/S2666521226000141" target="_blank" class="primary">Paper</a>
@@ -1567,6 +1567,14 @@ function copyBibtex(btn,key){
   pages={117086-117105},
   keywords={Modeling; Long short term memory; Bit error rate; Qubit; Sentiment analysis; Social networking (online); Mental health; Convolutional neural networks; Machine learning; Accuracy; Sentiment analysis; multilingual input via translation; quantum machine learning; deep learning; transformer-based models},
   doi={10.1109/ACCESS.2026.3715875}}`
+    ,najnin2026quantummedical:`@article{shirin2026quantum,
+  title={Quantum computing in medical diagnostics and treatment: A systematic review of trends, challenges and future directions},
+  author={Shirin, Najnin Sultana and Hasan, Md Mehedi and Morol, Md Kishor and Fahad, Nafiz and Hosain, Md Tanzib and Hossen, Md Jakir and Nandi, Dip},
+  journal={Intelligence-Based Medicine},
+  pages={100356},
+  year={2026},
+  publisher={Elsevier}
+}`
   };
   const text=citations[key]||`@article{${key},\n  title   = {See publication title above},\n  author  = {Najnin Sultana Shirin and co-authors},\n  year    = {2026}\n}`;
   if(navigator.clipboard){navigator.clipboard.writeText(text).catch(()=>{});}
