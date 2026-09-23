@@ -1149,6 +1149,7 @@ footer{
         <div class="as-bio-text">
           <p>I am a <strong>Research Associate at ELITE Research Lab</strong> and a <strong>Lecturer at Uttara University</strong>, where my research focuses on <strong>Quantum Neural Networks</strong>, <strong>Variational Quantum Circuits (VQCs)</strong>, and <strong>Quantum NLP</strong>, leveraging superposition, entanglement, and interference to design learning systems that exceed classical limits.</p>
           <p>My work spans the full AI stack — from parameterized quantum circuits for classification and optimization, to quantum-inspired models in NLP and Computer Vision. I am particularly interested in how <strong>hybrid classical–quantum systems</strong> can unlock new efficiencies in machine learning. My broader interests include <strong>Large Language Models</strong>, <strong>Graph Signal Processing</strong>, and <strong>Data Science</strong>.</p>
+          <p>My thesis paper, <strong>QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping</strong>, reflects this end-to-end research process: I collected and curated data from online sources, cleaned and processed text for analysis, designed and evaluated hybrid quantum-classical models, and translated the findings into a published research contribution.</p>
         </div>
       </div>
     </div>
@@ -1452,7 +1453,7 @@ footer{
     <button class="fc" data-pf="sys">Systems</button>
   </div>
   <div class="proj-grid" id="projGrid">
-    <div class="proj-card rev" data-pf="qml"><div class="proj-cat">Quantum ML · Mental Health</div><div class="proj-title">QBERT-LSTM Mental Health Detection</div><div class="proj-desc">B.Sc. thesis project: <em>QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping</em> — a hybrid quantum-classical model combining QBERT and LSTM for real-time mental health analysis from scraped social media text.</div><div class="proj-ft"><a href="https://github.com/najnin26" target="_blank" class="proj-gh">↗ GitHub</a><div class="proj-tech"><span class="ptb">PennyLane</span><span class="ptb">BERT</span><span class="ptb">LSTM</span></div></div></div>
+    <div class="proj-card rev" data-pf="qml"><div class="proj-cat">Quantum ML · Mental Health</div><div class="proj-title">QBERT-LSTM Mental Health Detection</div><div class="proj-desc">Hybrid quantum-classical model combining QBERT and LSTM for real-time mental health detection from scraped social media text.</div><div class="proj-ft"><a href="https://github.com/najnin26" target="_blank" class="proj-gh">↗ GitHub</a><div class="proj-tech"><span class="ptb">PennyLane</span><span class="ptb">BERT</span><span class="ptb">LSTM</span></div></div></div>
     <div class="proj-card rev" data-pf="ml" style="transition-delay:.06s"><div class="proj-cat">CV · Medical AI</div><div class="proj-title">Brain Tumor Classification</div><div class="proj-desc">ML and deep learning system for accurate multi-class tumor detection and diagnosis from MRI medical images.</div><div class="proj-ft"><a href="https://github.com/najnin26/Brain-Tumor-Classification" target="_blank" class="proj-gh">↗ GitHub</a><div class="proj-tech"><span class="ptb">CNN</span><span class="ptb">PyTorch</span></div></div></div>
     <div class="proj-card rev" data-pf="ml" style="transition-delay:.12s"><div class="proj-cat">CV · Medical AI</div><div class="proj-title">Chest X-Ray Pneumonia Detection</div><div class="proj-desc">Deep learning for automated detection of pneumonia and lung-related diseases from chest X-ray radiographs.</div><div class="proj-ft"><a href="https://github.com/najnin26/Chest_X-ray_Classification" target="_blank" class="proj-gh">↗ GitHub</a><div class="proj-tech"><span class="ptb">DL</span><span class="ptb">OpenCV</span></div></div></div>
     <div class="proj-card rev" data-pf="ml" style="transition-delay:.18s"><div class="proj-cat">CV · Medical AI</div><div class="proj-title">Retinal Disease Classification</div><div class="proj-desc">Transfer learning approach for detecting retinal conditions and eye diseases from fundus photography.</div><div class="proj-ft"><a href="https://github.com/najnin26/Retinal-Disease" target="_blank" class="proj-gh">↗ GitHub</a><div class="proj-tech"><span class="ptb">Transfer Learning</span></div></div></div>
@@ -1583,7 +1584,14 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.getElement
 
 function copyBibtex(btn,key){
   const citations={
-    najnin2026qbertlstm:`@ARTICLE{11627771,
+    najnin2025qbertlstm_thesis:`@phdthesis{shirin2025qbertlstm,
+  author={Shirin, Najnin Sultana},
+  title={QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping},
+  school={Jagannath University},
+  year={2025},
+  note={B.Sc. Thesis in Computer Science and Engineering}
+}`
+    ,najnin2026qbertlstm:`@ARTICLE{11627771,
   author={Shirin, Najnin Sultana and Aminul Islam, Md. and Abin, Maria Akter and Abouyoussef, Mahmoud},
   journal={IEEE Access},
   title={QBERT-LSTM: Quantum Intelligence Based Real-Time Mental Health Detection Using Web Scraping},
